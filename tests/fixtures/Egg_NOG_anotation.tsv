@@ -1,0 +1,97 @@
+## Tue Sep 30 19:18:07 2025
+## emapper-2.1.12
+## /emapper_web_jobs/home/emapper/miniforge3/envs/eggnog-mapper-2.1/bin/emapper.py --cpu 20 --mp_start_method forkserver --data_dir /dev/shm/ -o out --output_dir /emapper_web_jobs/emapper_jobs/user_data/MM_76haax8z --temp_dir /emapper_web_jobs/emapper_jobs/user_data/MM_76haax8z --override -m diamond --dmnd_ignore_warnings --dmnd_algo ctg -i /emapper_web_jobs/emapper_jobs/user_data/MM_76haax8z/queries.fasta --evalue 0.001 --score 60 --pident 40 --query_cover 20 --subject_cover 20 --itype proteins --tax_scope auto --target_orthologs all --go_evidence non-electronic --pfam_realign none --report_orthologs --decorate_gff yes --excel
+##
+#query	seed_ortholog	evalue	score	eggNOG_OGs	max_annot_lvl	COG_category	Description	Preferred_name	GOs	EC	KEGG_ko	KEGG_Pathway	KEGG_Module	KEGG_Reaction	KEGG_rclass	BRITE	KEGG_TC	CAZy	BiGG_Reaction	PFAMs
+CNIPAN_00014	1140.Synpcc7942_0014	1.65e-69	210.0	COG1716@1|root,COG1716@2|Bacteria,1G7QF@1117|Cyanobacteria,1H1KK@1129|Synechococcus	1117|Cyanobacteria	T	ATPase activity	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00044	582515.KR51_00000850	1.03e-14	70.5	2DZRY@1|root,32VHA@2|Bacteria,1G89M@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00095	1140.Synpcc7942_0092	6.19e-79	234.0	2D9VD@1|root,32TU1@2|Bacteria,1G800@1117|Cyanobacteria,1H1I9@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00103	1140.Synpcc7942_0100	2.79e-131	372.0	2DQKR@1|root,337HA@2|Bacteria,1G9HJ@1117|Cyanobacteria,1H3JR@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00107	269084.syc1400_d	5.09e-199	551.0	2DQK0@1|root,337CW@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00123	1140.Synpcc7942_0119	2.89e-129	367.0	28YVW@1|root,2ZKP3@2|Bacteria,1GGX7@1117|Cyanobacteria,1H2A5@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00145	313624.NSP_40230	1.06e-10	62.8	2AKN9@1|root,31BER@2|Bacteria,1G6QA@1117|Cyanobacteria,1HNPN@1161|Nostocales	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00174	1140.Synpcc7942_0167	8.12e-48	152.0	28WP3@1|root,2ZINT@2|Bacteria,1GFZF@1117|Cyanobacteria,1H3M9@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00220	1140.Synpcc7942_0213	8.05e-134	378.0	2DQ7P@1|root,33553@2|Bacteria,1GH5S@1117|Cyanobacteria,1H3C8@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00222	1140.Synpcc7942_0215	5.2e-98	283.0	COG0494@1|root,COG0494@2|Bacteria,1G7Q3@1117|Cyanobacteria,1H271@1129|Synechococcus	1117|Cyanobacteria	L	nUDIX hydrolase	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00303	1140.Synpcc7942_0293	6.52e-75	224.0	2E5JV@1|root,330B3@2|Bacteria,1G91J@1117|Cyanobacteria,1H1K8@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00377	1140.Synpcc7942_0363	3.28e-62	190.0	2CGHN@1|root,32S41@2|Bacteria,1G7X3@1117|Cyanobacteria,1H1IZ@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00392	1173027.Mic7113_2510	1.25e-13	68.6	2E5W5@1|root,330K7@2|Bacteria,1G9NK@1117|Cyanobacteria,1HCSR@1150|Oscillatoriales	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00428	1140.Synpcc7942_0413	3.05e-90	265.0	2CICE@1|root,32ZM4@2|Bacteria,1G8ZN@1117|Cyanobacteria	1117|Cyanobacteria	C	electron donor, via FMN and iron-sulfur (Fe-S) centers, to quinones in the respiratory and or the photosynthetic chain. The immediate electron acceptor for the enzyme in this species is believed to be plastoquinone. Couples the redox reaction to proton translocation, and thus conserves the redox energy in a proton gradient. Cyanobacterial NDH-1 also plays a role in inorganic carbon- concentration	ndhL	-	1.6.5.3	ko:K05583	ko00190,ko01100,map00190,map01100	M00145	R11945	RC00061	ko00000,ko00001,ko00002,ko01000	-	-	-	NdhL
+CNIPAN_00437	1140.Synpcc7942_0422	9.65e-271	741.0	2EYNW@1|root,33RWD@2|Bacteria,1GPWQ@1117|Cyanobacteria,1GZS0@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00444	1140.Synpcc7942_0429	2.76e-76	233.0	2CXH9@1|root,32T20@2|Bacteria,1G833@1117|Cyanobacteria,1H3KE@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00453	1140.Synpcc7942_0437	1.04e-84	252.0	COG4469@1|root,COG4469@2|Bacteria,1GAY4@1117|Cyanobacteria	1117|Cyanobacteria	S	Competence protein CoiA-like family	-	-	-	ko:K06198	-	-	-	-	ko00000	-	-	-	CoiA
+CNIPAN_00459	1140.Synpcc7942_0444	4.79e-151	426.0	COG2948@1|root,COG2948@2|Bacteria	2|Bacteria	U	multi-organism process	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00516	1140.Synpcc7942_0500	7.74e-83	244.0	2953T@1|root,2ZSGG@2|Bacteria,1GFTR@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00525	1140.Synpcc7942_0509	5.02e-105	303.0	2E0G3@1|root,32IV3@2|Bacteria,1GNVI@1117|Cyanobacteria,1H1PG@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00535	1140.Synpcc7942_0519	4.69e-115	330.0	2AETM@1|root,314QQ@2|Bacteria,1G6R9@1117|Cyanobacteria,1H41G@1129|Synechococcus	1117|Cyanobacteria	S	Alternative locus ID	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00543	1140.Synpcc7942_0527	8.4e-152	432.0	2F9AP@1|root,341MR@2|Bacteria,1GEID@1117|Cyanobacteria,1GZZT@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00563	1140.Synpcc7942_0547	3.2e-116	333.0	2DFTN@1|root,2ZT3W@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00600	1140.Synpcc7942_0581	1.3e-71	216.0	2AERS@1|root,314NH@2|Bacteria,1G6KP@1117|Cyanobacteria,1H1MU@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00632	1140.Synpcc7942_0607	1.79e-70	213.0	2AKSF@1|root,31BJF@2|Bacteria,1G6J3@1117|Cyanobacteria,1H12U@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00642	1140.Synpcc7942_0617	5.95e-84	248.0	2AQQ1@1|root,349JM@2|Bacteria,1GJDU@1117|Cyanobacteria,1H3FZ@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00646	1140.Synpcc7942_0621	5.89e-278	760.0	COG0574@1|root,COG0574@2|Bacteria	2|Bacteria	G	Belongs to the PEP-utilizing enzyme family	-	-	2.7.9.2	ko:K01007	ko00620,ko00680,ko00720,ko01100,ko01120,ko01200,map00620,map00680,map00720,map01100,map01120,map01200	M00173,M00374	R00199	RC00002,RC00015	ko00000,ko00001,ko00002,ko01000	-	-	-	60KD_IMP,PEP-utilizers,PPDK_N,Rhodanese
+CNIPAN_00757	1140.Synpcc7942_0722	6.02e-248	682.0	28JXH@1|root,2ZA3Z@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	RecT
+CNIPAN_00764	269084.syc0803_c	1.65e-113	326.0	2DSZG@1|root,33I25@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00766	1140.Synpcc7942_0730	1.89e-122	349.0	2DNUK@1|root,32Z8E@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00782	1140.Synpcc7942_0742	5.39e-111	319.0	2A5KS@1|root,30UB9@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00786	1140.Synpcc7942_0746	7.53e-110	317.0	2A1Q9@1|root,30PYP@2|Bacteria,1GH6F@1117|Cyanobacteria,1H3ET@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00799	1140.Synpcc7942_0757	2.45e-162	456.0	arCOG04954@1|root,2Z95Q@2|Bacteria,1GCVS@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00801	1140.Synpcc7942_0759	0.0	909.0	2DGBT@1|root,2ZVBM@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00890	1140.Synpcc7942_0843	6.56e-92	269.0	2E3SY@1|root,32YQE@2|Bacteria,1G956@1117|Cyanobacteria,1H1ZK@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_00922	269084.syc0665_d	2.17e-113	325.0	2E5DC@1|root,3305C@2|Bacteria,1G9B4@1117|Cyanobacteria,1H21B@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01041	1140.Synpcc7942_0988	1e-68	209.0	2AIVE@1|root,319CP@2|Bacteria,1G6QT@1117|Cyanobacteria,1H0PU@1129|Synechococcus	1117|Cyanobacteria	S	Protein of unknown function (DUF2488)	ycf54	-	-	-	-	-	-	-	-	-	-	-	Ycf54
+CNIPAN_01042	1140.Synpcc7942_0989	8.55e-108	310.0	2AHIV@1|root,317WH@2|Bacteria,1G6WD@1117|Cyanobacteria,1H1FM@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01097	1140.Synpcc7942_1042	2.19e-77	230.0	2CJ88@1|root,32S9F@2|Bacteria,1G8AR@1117|Cyanobacteria,1H1NM@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01101	1140.Synpcc7942_1046	4.12e-90	265.0	2C0ZH@1|root,32VUV@2|Bacteria,1G89N@1117|Cyanobacteria,1H38U@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01153	1140.Synpcc7942_1095	5.23e-97	282.0	COG3170@1|root,COG3170@2|Bacteria,1G9EU@1117|Cyanobacteria,1H22D@1129|Synechococcus	1117|Cyanobacteria	NU	Tfp pilus assembly protein FimV	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01209	1140.Synpcc7942_1147	6.58e-162	454.0	28V0B@1|root,2ZH3Z@2|Bacteria,1GGC6@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01313	1140.Synpcc7942_1247	7.88e-54	168.0	2E4DD@1|root,32Z8S@2|Bacteria,1G8ZW@1117|Cyanobacteria,1H1BW@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01333	1140.Synpcc7942_1267	1.13e-174	488.0	COG3206@1|root,COG3206@2|Bacteria,1G19Q@1117|Cyanobacteria,1H15T@1129|Synechococcus	1117|Cyanobacteria	M	protein involved in exopolysaccharide biosynthesis	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01347	1140.Synpcc7942_1281	2.81e-165	462.0	COG0457@1|root,COG0457@2|Bacteria,1GPWY@1117|Cyanobacteria,1H1S0@1129|Synechococcus	1117|Cyanobacteria	S	Tetratricopeptide repeat	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01370	1140.Synpcc7942_1303	1.08e-87	258.0	COG0515@1|root,COG0515@2|Bacteria,1G8TC@1117|Cyanobacteria	1117|Cyanobacteria	KLT	serine threonine protein kinase	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01371	1140.Synpcc7942_1304	1.67e-87	262.0	COG3206@1|root,COG3206@2|Bacteria,1G71F@1117|Cyanobacteria	1117|Cyanobacteria	M	protein involved in exopolysaccharide biosynthesis	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01403	1140.Synpcc7942_1336	7.88e-269	734.0	COG0457@1|root,COG0457@2|Bacteria,1G0YR@1117|Cyanobacteria,1H4BR@1129|Synechococcus	1117|Cyanobacteria	S	Domain of unknown function (DUF4915)	-	-	-	-	-	-	-	-	-	-	-	-	Acetyltransf_1,DUF4915,Glyco_transf_41,TPR_1,TPR_11,TPR_2,TPR_8
+CNIPAN_01429	1140.Synpcc7942_1362	1.13e-112	323.0	2DG2N@1|root,2ZU7E@2|Bacteria,1GFYA@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01430	1499498.EV05_1415	2.91e-13	66.2	28XQM@1|root,33KRW@2|Bacteria,1GBAC@1117|Cyanobacteria,1MN6N@1212|Prochloraceae	1117|Cyanobacteria	S	Alternative locus ID	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01444	1140.Synpcc7942_1376	9.33e-121	347.0	2EKN6@1|root,33EBW@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01454	1140.Synpcc7942_1385	1.88e-47	151.0	28YXP@1|root,2ZKQQ@2|Bacteria,1GFT5@1117|Cyanobacteria,1H1KW@1129|Synechococcus	1117|Cyanobacteria	S	Alternative locus ID	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01536	1140.Synpcc7942_1633	1e-177	494.0	28PX0@1|root,2ZCH4@2|Bacteria,1G5CC@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01537	1140.Synpcc7942_1632	1.15e-109	316.0	2BVTZ@1|root,32U84@2|Bacteria,1G7UE@1117|Cyanobacteria,1H1JQ@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01617	1140.Synpcc7942_1558	3.34e-272	743.0	2CCG7@1|root,30376@2|Bacteria,1GPQJ@1117|Cyanobacteria,1H3P6@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01620	1140.Synpcc7942_1556	2.19e-141	398.0	2EGS1@1|root,33AI5@2|Bacteria,1GB69@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01625	1140.Synpcc7942_1551	2.22e-183	509.0	2DUF3@1|root,32UX3@2|Bacteria,1G8AK@1117|Cyanobacteria,1H28J@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01629	1140.Synpcc7942_1547	9.88e-47	154.0	COG1413@1|root,COG1413@2|Bacteria	2|Bacteria	C	deoxyhypusine monooxygenase activity	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01725	1140.Synpcc7942_1646	8.5e-156	439.0	2F9AP@1|root,341MR@2|Bacteria,1GEID@1117|Cyanobacteria,1GZZT@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01734	1140.Synpcc7942_1655	1.43e-140	396.0	2C5FI@1|root,323H2@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01740	1140.Synpcc7942_1661	3.78e-126	359.0	2E8EN@1|root,332T1@2|Bacteria,1GABZ@1117|Cyanobacteria	1117|Cyanobacteria	S	Circadian oscillating protein COP23	-	-	-	-	-	-	-	-	-	-	-	-	COP23
+CNIPAN_01742	313612.L8106_24265	1.38e-11	63.2	2E3S8@1|root,32YPU@2|Bacteria,1G9EZ@1117|Cyanobacteria,1HD1Z@1150|Oscillatoriales	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01789	1140.Synpcc7942_1711	1.34e-116	335.0	2CBM1@1|root,31KNS@2|Bacteria,1G70R@1117|Cyanobacteria,1H1S5@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01900	313612.L8106_05650	6.81e-14	65.9	2BJZV@1|root,32ECQ@2|Bacteria,1GJHV@1117|Cyanobacteria,1HDJ3@1150|Oscillatoriales	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01956	1140.Synpcc7942_1876	1.77e-81	241.0	2DWSE@1|root,341P7@2|Bacteria,1GE9A@1117|Cyanobacteria,1H10Y@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_01995	1140.Synpcc7942_1914	1.03e-106	307.0	29JX3@1|root,306UD@2|Bacteria,1G5S3@1117|Cyanobacteria,1H0YB@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02027	1140.Synpcc7942_1946	3.53e-115	329.0	2CK8T@1|root,332XG@2|Bacteria,1GAAA@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02032	1140.Synpcc7942_1951	1.55e-79	236.0	2C96A@1|root,343D0@2|Bacteria,1GFJ6@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02034	1140.Synpcc7942_1952	1.47e-76	228.0	2CIW3@1|root,32S8N@2|Bacteria,1G8A8@1117|Cyanobacteria,1H1XV@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02071	1140.Synpcc7942_1988	1.23e-276	756.0	2EWN3@1|root,33Q00@2|Bacteria,1GCEK@1117|Cyanobacteria,1GZ9F@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02121	1140.Synpcc7942_2037	1.58e-154	433.0	COG1073@1|root,COG1073@2|Bacteria,1G55N@1117|Cyanobacteria,1H3RQ@1129|Synechococcus	1117|Cyanobacteria	S	alpha beta	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02152	1140.Synpcc7942_2068	4.29e-135	382.0	292UY@1|root,2ZQCI@2|Bacteria,1G5XT@1117|Cyanobacteria,1H0UE@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02172	1140.Synpcc7942_2088	2.02e-63	194.0	2E5J8@1|root,330AI@2|Bacteria,1G8ZV@1117|Cyanobacteria,1H23S@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02192	1140.Synpcc7942_2108	1.21e-86	254.0	2EEVF@1|root,338NW@2|Bacteria,1GGQY@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02210	1140.Synpcc7942_2125	3.65e-74	223.0	COG1645@1|root,COG1645@2|Bacteria,1GHBI@1117|Cyanobacteria,1H42I@1129|Synechococcus	1117|Cyanobacteria	S	bacterial-type flagellum-dependent swarming motility	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02254	1140.Synpcc7942_2165	1.91e-85	251.0	2BJXZ@1|root,32EAH@2|Bacteria	2|Bacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02261	118166.JH976537_gene2231	3.85e-13	66.2	2E3ZM@1|root,32YWI@2|Bacteria,1G95P@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02371	1173023.KE650771_gene1794	6.49e-10	61.2	COG0515@1|root,COG0515@2|Bacteria,1GKH1@1117|Cyanobacteria,1JM6A@1189|Stigonemataceae	1117|Cyanobacteria	KLT	serine threonine protein kinase	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02376	1140.Synpcc7942_2281	1.21e-191	534.0	28IAF@1|root,2Z8D1@2|Bacteria,1G2J5@1117|Cyanobacteria,1GYI3@1129|Synechococcus	1117|Cyanobacteria	S	Alternative locus ID	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02390	1140.Synpcc7942_2295	2.53e-264	724.0	2E1MH@1|root,32WYN@2|Bacteria,1G7Y3@1117|Cyanobacteria	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02521	1140.Synpcc7942_2422	8.92e-175	491.0	COG3266@1|root,COG3266@2|Bacteria,1G63Y@1117|Cyanobacteria,1H4C3@1129|Synechococcus	1117|Cyanobacteria	S	domain, Protein	-	-	-	-	-	-	-	-	-	-	-	-	T2SSC
+CNIPAN_02548	1140.Synpcc7942_2447	3.02e-44	143.0	2FGJ1@1|root,2ZQFE@2|Bacteria,1GGZV@1117|Cyanobacteria,1H4B0@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02573	1140.Synpcc7942_2469	2.26e-168	472.0	COG3206@1|root,COG3206@2|Bacteria,1G19Q@1117|Cyanobacteria,1H15T@1129|Synechococcus	1117|Cyanobacteria	M	protein involved in exopolysaccharide biosynthesis	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02588	1140.Synpcc7942_2484	1.96e-156	439.0	COG4966@1|root,COG4966@2|Bacteria	2|Bacteria	NU	pilus assembly protein PilW	-	-	-	-	-	-	-	-	-	-	-	-	N_methyl
+CNIPAN_02611	1140.Synpcc7942_2507	4.03e-57	177.0	2E3W7@1|root,3304G@2|Bacteria,1G97J@1117|Cyanobacteria,1H3M4@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02622	1140.Synpcc7942_2517	8.03e-141	400.0	COG3468@1|root,COG3468@2|Bacteria,1G9DD@1117|Cyanobacteria,1H45H@1129|Synechococcus	1117|Cyanobacteria	MU	outer membrane autotransporter barrel domain protein	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02637	1140.Synpcc7942_2533	1.07e-82	244.0	29EVC@1|root,301T3@2|Bacteria,1G6YD@1117|Cyanobacteria,1H1X2@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02675	1140.Synpcc7942_2568	8.04e-111	318.0	2B79R@1|root,320CM@2|Bacteria,1G6NW@1117|Cyanobacteria,1H1WB@1129|Synechococcus	1117|Cyanobacteria	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CNIPAN_02719	1140.Synpcc7942_2605	9.53e-110	320.0	COG1922@1|root,COG1922@2|Bacteria,1GPXF@1117|Cyanobacteria,1H1VK@1129|Synechococcus	1117|Cyanobacteria	M	lipopolysaccharide N-acetylmannosaminouronosyltransferase activity	-	-	-	-	-	-	-	-	-	-	-	-	-
+## 89 queries scanned
+## Total time (seconds): 0.5661497116088867
+## Rate: 157.20 q/s

@@ -1,0 +1,1387 @@
+##gff-version 3
+##feature-ontology http://song.cvs.sourceforge.net/viewvc/song/ontology/sofa.obo?revision=1.269
+##interproscan-version 5.75-106.0
+##sequence-region CNIPAN_00014 1 114
+CNIPAN_00014	.	polypeptide	1	114	.	+	.	ID=CNIPAN_00014;md5=2f458aff0eb6d6af38fa435f42e8486e
+CNIPAN_00014	TMHMM	protein_match	35	57	.	+	.	date=21-09-2025;Target=CNIPAN_00014 35 57;ID=match$1_35_57;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00014	TMHMM	protein_match	87	109	.	+	.	date=21-09-2025;Target=CNIPAN_00014 87 109;ID=match$2_87_109;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00014	Phobius	protein_match	89	107	.	+	.	date=21-09-2025;Target=CNIPAN_00014 89 107;ID=match$3_89_107;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00014	TMHMM	protein_match	3	20	.	+	.	date=21-09-2025;Target=CNIPAN_00014 3 20;ID=match$4_3_20;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00014	Phobius	protein_match	27	37	.	+	.	date=21-09-2025;Target=CNIPAN_00014 27 37;ID=match$5_27_37;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00014	Phobius	protein_match	1	6	.	+	.	date=21-09-2025;Target=CNIPAN_00014 1 6;ID=match$6_1_6;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00014	Phobius	protein_match	38	57	.	+	.	date=21-09-2025;Target=CNIPAN_00014 38 57;ID=match$7_38_57;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00014	Phobius	protein_match	84	88	.	+	.	date=21-09-2025;Target=CNIPAN_00014 84 88;ID=match$8_84_88;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00014	Phobius	protein_match	7	26	.	+	.	date=21-09-2025;Target=CNIPAN_00014 7 26;ID=match$9_7_26;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00014	TMHMM	protein_match	64	83	.	+	.	date=21-09-2025;Target=CNIPAN_00014 64 83;ID=match$10_64_83;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00014	Phobius	protein_match	108	114	.	+	.	date=21-09-2025;Target=CNIPAN_00014 108 114;ID=match$11_108_114;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00014	Phobius	protein_match	58	63	.	+	.	date=21-09-2025;Target=CNIPAN_00014 58 63;ID=match$12_58_63;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00014	Phobius	protein_match	64	83	.	+	.	date=21-09-2025;Target=CNIPAN_00014 64 83;ID=match$13_64_83;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+##sequence-region CNIPAN_00444 1 179
+CNIPAN_00444	.	polypeptide	1	179	.	+	.	ID=CNIPAN_00444;md5=82a9651dffdfbb575811bcacc0ebc493
+CNIPAN_00444	Phobius	protein_match	1	7	.	+	.	date=21-09-2025;Target=CNIPAN_00444 1 7;ID=match$14_1_7;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00444	Phobius	protein_match	29	179	.	+	.	date=21-09-2025;Target=CNIPAN_00444 29 179;ID=match$15_29_179;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00444	SignalP_EUK	protein_match	1	28	.	+	.	date=21-09-2025;Target=CNIPAN_00444 1 28;ID=match$16_1_28;Name=SignalP-noTM;status=T
+CNIPAN_00444	Phobius	protein_match	1	28	.	+	.	date=21-09-2025;Target=CNIPAN_00444 1 28;ID=match$17_1_28;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00444	Phobius	protein_match	20	28	.	+	.	date=21-09-2025;Target=CNIPAN_00444 20 28;ID=match$18_20_28;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00444	SignalP_GRAM_POSITIVE	protein_match	1	28	.	+	.	date=21-09-2025;Target=CNIPAN_00444 1 28;ID=match$19_1_28;Name=SignalP-TM;status=T
+CNIPAN_00444	Phobius	protein_match	8	19	.	+	.	date=21-09-2025;Target=CNIPAN_00444 8 19;ID=match$20_8_19;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00444	SignalP_EUK	protein_match	1	28	.	+	.	date=21-09-2025;Target=CNIPAN_00444 1 28;ID=match$21_1_28;Name=SignalP-noTM;status=T
+##sequence-region CNIPAN_00646 1 392
+CNIPAN_00646	.	polypeptide	1	392	.	+	.	ID=CNIPAN_00646;md5=c2786ec2467fa0fa3b2d75a3e690600d
+CNIPAN_00646	Phobius	protein_match	119	124	.	+	.	date=21-09-2025;Target=CNIPAN_00646 119 124;ID=match$22_119_124;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00646	Phobius	protein_match	125	143	.	+	.	date=21-09-2025;Target=CNIPAN_00646 125 143;ID=match$23_125_143;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00646	TMHMM	protein_match	7	25	.	+	.	date=21-09-2025;Target=CNIPAN_00646 7 25;ID=match$24_7_25;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00646	Phobius	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00646 1 23;ID=match$25_1_23;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00646	SignalP_EUK	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00646 1 23;ID=match$26_1_23;Name=SignalP-TM;status=T
+CNIPAN_00646	Phobius	protein_match	64	69	.	+	.	date=21-09-2025;Target=CNIPAN_00646 64 69;ID=match$27_64_69;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00646	Phobius	protein_match	20	23	.	+	.	date=21-09-2025;Target=CNIPAN_00646 20 23;ID=match$28_20_23;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00646	Phobius	protein_match	144	148	.	+	.	date=21-09-2025;Target=CNIPAN_00646 144 148;ID=match$29_144_148;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00646	Phobius	protein_match	171	392	.	+	.	date=21-09-2025;Target=CNIPAN_00646 171 392;ID=match$30_171_392;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00646	Phobius	protein_match	149	170	.	+	.	date=21-09-2025;Target=CNIPAN_00646 149 170;ID=match$31_149_170;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00646	TMHMM	protein_match	125	144	.	+	.	date=21-09-2025;Target=CNIPAN_00646 125 144;ID=match$32_125_144;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00646	Phobius	protein_match	1	7	.	+	.	date=21-09-2025;Target=CNIPAN_00646 1 7;ID=match$33_1_7;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00646	TMHMM	protein_match	69	86	.	+	.	date=21-09-2025;Target=CNIPAN_00646 69 86;ID=match$34_69_86;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00646	Phobius	protein_match	70	86	.	+	.	date=21-09-2025;Target=CNIPAN_00646 70 86;ID=match$35_70_86;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00646	Phobius	protein_match	92	118	.	+	.	date=21-09-2025;Target=CNIPAN_00646 92 118;ID=match$36_92_118;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00646	Phobius	protein_match	24	46	.	+	.	date=21-09-2025;Target=CNIPAN_00646 24 46;ID=match$37_24_46;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00646	Phobius	protein_match	87	91	.	+	.	date=21-09-2025;Target=CNIPAN_00646 87 91;ID=match$38_87_91;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00646	TMHMM	protein_match	148	170	.	+	.	date=21-09-2025;Target=CNIPAN_00646 148 170;ID=match$39_148_170;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00646	Phobius	protein_match	47	63	.	+	.	date=21-09-2025;Target=CNIPAN_00646 47 63;ID=match$40_47_63;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00646	Phobius	protein_match	8	19	.	+	.	date=21-09-2025;Target=CNIPAN_00646 8 19;ID=match$41_8_19;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00646	TMHMM	protein_match	40	62	.	+	.	date=21-09-2025;Target=CNIPAN_00646 40 62;ID=match$42_40_62;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00646	TMHMM	protein_match	96	118	.	+	.	date=21-09-2025;Target=CNIPAN_00646 96 118;ID=match$43_96_118;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+##sequence-region CNIPAN_00594 1 185
+CNIPAN_00594	.	polypeptide	1	185	.	+	.	ID=CNIPAN_00594;md5=f74e22389ba139b7175cccc9b610950a
+CNIPAN_00594	Phobius	protein_match	23	31	.	+	.	date=21-09-2025;Target=CNIPAN_00594 23 31;ID=match$44_23_31;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00594	Phobius	protein_match	32	185	.	+	.	date=21-09-2025;Target=CNIPAN_00594 32 185;ID=match$45_32_185;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00594	TMHMM	protein_match	12	34	.	+	.	date=21-09-2025;Target=CNIPAN_00594 12 34;ID=match$46_12_34;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00594	Phobius	protein_match	11	22	.	+	.	date=21-09-2025;Target=CNIPAN_00594 11 22;ID=match$47_11_22;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00594	Phobius	protein_match	1	10	.	+	.	date=21-09-2025;Target=CNIPAN_00594 1 10;ID=match$48_1_10;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00594	SignalP_GRAM_POSITIVE	protein_match	1	31	.	+	.	date=21-09-2025;Target=CNIPAN_00594 1 31;ID=match$49_1_31;Name=SignalP-TM;status=T
+CNIPAN_00594	SignalP_EUK	protein_match	1	31	.	+	.	date=21-09-2025;Target=CNIPAN_00594 1 31;ID=match$50_1_31;Name=SignalP-noTM;status=T
+CNIPAN_00594	SignalP_EUK	protein_match	1	31	.	+	.	date=21-09-2025;Target=CNIPAN_00594 1 31;ID=match$51_1_31;Name=SignalP-noTM;status=T
+CNIPAN_00594	Phobius	protein_match	1	31	.	+	.	date=21-09-2025;Target=CNIPAN_00594 1 31;ID=match$52_1_31;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+##sequence-region CNIPAN_00214 1 74
+CNIPAN_00214	.	polypeptide	1	74	.	+	.	ID=CNIPAN_00214;md5=b76d1a84f9a738413d015f0ebb9f5a41
+CNIPAN_00214	Phobius	protein_match	1	9	.	+	.	date=21-09-2025;Target=CNIPAN_00214 1 9;ID=match$53_1_9;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00214	Phobius	protein_match	19	23	.	+	.	date=21-09-2025;Target=CNIPAN_00214 19 23;ID=match$54_19_23;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00214	Phobius	protein_match	24	74	.	+	.	date=21-09-2025;Target=CNIPAN_00214 24 74;ID=match$55_24_74;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00214	Phobius	protein_match	10	18	.	+	.	date=21-09-2025;Target=CNIPAN_00214 10 18;ID=match$56_10_18;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00214	Phobius	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00214 1 23;ID=match$57_1_23;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+##sequence-region CNIPAN_00428 1 138
+CNIPAN_00428	.	polypeptide	1	138	.	+	.	ID=CNIPAN_00428;md5=b5426ea36dafe70c466716ac2f44827a
+CNIPAN_00428	Phobius	protein_match	67	93	.	+	.	date=21-09-2025;Target=CNIPAN_00428 67 93;ID=match$58_67_93;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00428	Phobius	protein_match	130	138	.	+	.	date=21-09-2025;Target=CNIPAN_00428 130 138;ID=match$59_130_138;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00428	TMHMM	protein_match	107	129	.	+	.	date=21-09-2025;Target=CNIPAN_00428 107 129;ID=match$60_107_129;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00428	Phobius	protein_match	108	129	.	+	.	date=21-09-2025;Target=CNIPAN_00428 108 129;ID=match$61_108_129;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00428	Phobius	protein_match	1	66	.	+	.	date=21-09-2025;Target=CNIPAN_00428 1 66;ID=match$62_1_66;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00428	Phobius	protein_match	94	107	.	+	.	date=21-09-2025;Target=CNIPAN_00428 94 107;ID=match$63_94_107;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00428	Pfam	protein_match	68	135	2.4E-25	+	.	date=21-09-2025;Target=CNIPAN_00428 68 135;Ontology_term="GO:0016655";ID=match$64_68_135;signature_desc=NADH dehydrogenase transmembrane subunit;Name=PF10716;status=T;Dbxref="InterPro:IPR019654"
+CNIPAN_00428	TMHMM	protein_match	70	92	.	+	.	date=21-09-2025;Target=CNIPAN_00428 70 92;ID=match$65_70_92;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00428	Hamap	protein_match	67	136	20.057289	+	.	date=21-09-2025;Target=CNIPAN_00428 67 136;Ontology_term="GO:0016655";ID=match$66_67_136;signature_desc=NAD(P)H-quinone oxidoreductase subunit L [ndhL].;Name=MF_01355;status=T;Dbxref="InterPro:IPR019654"
+CNIPAN_00428	PANTHER	protein_match	77	133	1.2E-10	+	.	date=21-09-2025;Target=CNIPAN_00428 77 133;ID=match$67_77_133;Name=PTHR36727;status=T
+##sequence-region CNIPAN_00107 1 274
+CNIPAN_00107	.	polypeptide	1	274	.	+	.	ID=CNIPAN_00107;md5=6b9479260eb7ed558b9bd025bdbd7ef2
+CNIPAN_00107	Phobius	protein_match	4	19	.	+	.	date=21-09-2025;Target=CNIPAN_00107 4 19;ID=match$68_4_19;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00107	SignalP_EUK	protein_match	1	26	.	+	.	date=21-09-2025;Target=CNIPAN_00107 1 26;ID=match$69_1_26;Name=SignalP-noTM;status=T
+CNIPAN_00107	SignalP_EUK	protein_match	1	26	.	+	.	date=21-09-2025;Target=CNIPAN_00107 1 26;ID=match$70_1_26;Name=SignalP-noTM;status=T
+CNIPAN_00107	Phobius	protein_match	27	274	.	+	.	date=21-09-2025;Target=CNIPAN_00107 27 274;ID=match$71_27_274;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00107	SignalP_GRAM_POSITIVE	protein_match	1	26	.	+	.	date=21-09-2025;Target=CNIPAN_00107 1 26;ID=match$72_1_26;Name=SignalP-TM;status=T
+CNIPAN_00107	Phobius	protein_match	1	26	.	+	.	date=21-09-2025;Target=CNIPAN_00107 1 26;ID=match$73_1_26;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00107	Phobius	protein_match	1	3	.	+	.	date=21-09-2025;Target=CNIPAN_00107 1 3;ID=match$74_1_3;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00107	Phobius	protein_match	20	26	.	+	.	date=21-09-2025;Target=CNIPAN_00107 20 26;ID=match$75_20_26;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+##sequence-region CNIPAN_00525 1 157
+CNIPAN_00525	.	polypeptide	1	157	.	+	.	ID=CNIPAN_00525;md5=f184170ab49cc87da639466774a227b1
+CNIPAN_00525	Phobius	protein_match	1	7	.	+	.	date=21-09-2025;Target=CNIPAN_00525 1 7;ID=match$76_1_7;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00525	SignalP_GRAM_POSITIVE	protein_match	1	26	.	+	.	date=21-09-2025;Target=CNIPAN_00525 1 26;ID=match$77_1_26;Name=SignalP-TM;status=T
+CNIPAN_00525	SignalP_EUK	protein_match	1	26	.	+	.	date=21-09-2025;Target=CNIPAN_00525 1 26;ID=match$78_1_26;Name=SignalP-noTM;status=T
+CNIPAN_00525	Phobius	protein_match	27	157	.	+	.	date=21-09-2025;Target=CNIPAN_00525 27 157;ID=match$79_27_157;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00525	SignalP_EUK	protein_match	1	26	.	+	.	date=21-09-2025;Target=CNIPAN_00525 1 26;ID=match$80_1_26;Name=SignalP-noTM;status=T
+CNIPAN_00525	Phobius	protein_match	8	20	.	+	.	date=21-09-2025;Target=CNIPAN_00525 8 20;ID=match$81_8_20;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00525	Phobius	protein_match	21	26	.	+	.	date=21-09-2025;Target=CNIPAN_00525 21 26;ID=match$82_21_26;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00525	Phobius	protein_match	1	26	.	+	.	date=21-09-2025;Target=CNIPAN_00525 1 26;ID=match$83_1_26;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+##sequence-region CNIPAN_00516 1 117
+CNIPAN_00516	.	polypeptide	1	117	.	+	.	ID=CNIPAN_00516;md5=20ea4513d240a00382595201b0d31626
+CNIPAN_00516	Phobius	protein_match	6	24	.	+	.	date=21-09-2025;Target=CNIPAN_00516 6 24;ID=match$84_6_24;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00516	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00516 1 5;ID=match$85_1_5;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00516	TMHMM	protein_match	5	24	.	+	.	date=21-09-2025;Target=CNIPAN_00516 5 24;ID=match$86_5_24;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00516	Phobius	protein_match	25	117	.	+	.	date=21-09-2025;Target=CNIPAN_00516 25 117;ID=match$87_25_117;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00486 1 177
+CNIPAN_00486	.	polypeptide	1	177	.	+	.	ID=CNIPAN_00486;md5=8d80bb3f6e9818a58b0c14197eba470e
+CNIPAN_00486	Coils	protein_match	18	38	.	+	.	date=21-09-2025;Target=CNIPAN_00486 18 38;ID=match$88_18_38;Name=Coil;status=T
+##sequence-region CNIPAN_00755 1 67
+CNIPAN_00755	.	polypeptide	1	67	.	+	.	ID=CNIPAN_00755;md5=2d22407662b465f9a76d137ff10a3814
+CNIPAN_00755	Phobius	protein_match	45	67	.	+	.	date=21-09-2025;Target=CNIPAN_00755 45 67;ID=match$89_45_67;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00755	Phobius	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00755 1 23;ID=match$90_1_23;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00755	TMHMM	protein_match	24	46	.	+	.	date=21-09-2025;Target=CNIPAN_00755 24 46;ID=match$91_24_46;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00755	Phobius	protein_match	24	44	.	+	.	date=21-09-2025;Target=CNIPAN_00755 24 44;ID=match$92_24_44;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+##sequence-region CNIPAN_00476 1 145
+CNIPAN_00476	.	polypeptide	1	145	.	+	.	ID=CNIPAN_00476;md5=e59d546afa94028acb44d213ad97a423
+CNIPAN_00476	Phobius	protein_match	32	57	.	+	.	date=21-09-2025;Target=CNIPAN_00476 32 57;ID=match$93_32_57;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00476	Coils	protein_match	86	106	.	+	.	date=21-09-2025;Target=CNIPAN_00476 86 106;ID=match$94_86_106;Name=Coil;status=T
+CNIPAN_00476	Phobius	protein_match	58	78	.	+	.	date=21-09-2025;Target=CNIPAN_00476 58 78;ID=match$95_58_78;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00476	Phobius	protein_match	12	31	.	+	.	date=21-09-2025;Target=CNIPAN_00476 12 31;ID=match$96_12_31;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00476	Phobius	protein_match	79	145	.	+	.	date=21-09-2025;Target=CNIPAN_00476 79 145;ID=match$97_79_145;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00476	TMHMM	protein_match	9	31	.	+	.	date=21-09-2025;Target=CNIPAN_00476 9 31;ID=match$98_9_31;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00476	TMHMM	protein_match	56	78	.	+	.	date=21-09-2025;Target=CNIPAN_00476 56 78;ID=match$99_56_78;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00476	Phobius	protein_match	1	11	.	+	.	date=21-09-2025;Target=CNIPAN_00476 1 11;ID=match$100_1_11;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00145 1 132
+CNIPAN_00145	.	polypeptide	1	132	.	+	.	ID=CNIPAN_00145;md5=78086d8f9a1709542777614fd34900e2
+CNIPAN_00145	Phobius	protein_match	1	49	.	+	.	date=21-09-2025;Target=CNIPAN_00145 1 49;ID=match$101_1_49;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00145	Phobius	protein_match	50	64	.	+	.	date=21-09-2025;Target=CNIPAN_00145 50 64;ID=match$102_50_64;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00145	Phobius	protein_match	65	89	.	+	.	date=21-09-2025;Target=CNIPAN_00145 65 89;ID=match$103_65_89;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00145	TMHMM	protein_match	67	89	.	+	.	date=21-09-2025;Target=CNIPAN_00145 67 89;ID=match$104_67_89;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00145	Phobius	protein_match	1	32	.	+	.	date=21-09-2025;Target=CNIPAN_00145 1 32;ID=match$105_1_32;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00145	Phobius	protein_match	33	44	.	+	.	date=21-09-2025;Target=CNIPAN_00145 33 44;ID=match$106_33_44;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00145	Phobius	protein_match	90	132	.	+	.	date=21-09-2025;Target=CNIPAN_00145 90 132;ID=match$107_90_132;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00145	TMHMM	protein_match	33	52	.	+	.	date=21-09-2025;Target=CNIPAN_00145 33 52;ID=match$108_33_52;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00145	Phobius	protein_match	45	49	.	+	.	date=21-09-2025;Target=CNIPAN_00145 45 49;ID=match$109_45_49;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+##sequence-region CNIPAN_00453 1 125
+CNIPAN_00453	.	polypeptide	1	125	.	+	.	ID=CNIPAN_00453;md5=d14ccb998c8ddcd38f73c1e1a378a9a9
+CNIPAN_00453	Pfam	protein_match	6	102	8.9E-6	+	.	date=21-09-2025;Target=CNIPAN_00453 6 102;ID=match$110_6_102;signature_desc=Competence protein CoiA, nuclease-like domain;Name=PF06054;status=T;Dbxref="InterPro:IPR010330"
+##sequence-region CNIPAN_00767 1 65
+CNIPAN_00767	.	polypeptide	1	65	.	+	.	ID=CNIPAN_00767;md5=d97f030e6da4fc6908dde4f2c0338137
+CNIPAN_00767	Phobius	protein_match	3	10	.	+	.	date=21-09-2025;Target=CNIPAN_00767 3 10;ID=match$111_3_10;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00767	Phobius	protein_match	1	14	.	+	.	date=21-09-2025;Target=CNIPAN_00767 1 14;ID=match$112_1_14;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00767	Phobius	protein_match	11	14	.	+	.	date=21-09-2025;Target=CNIPAN_00767 11 14;ID=match$113_11_14;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00767	Phobius	protein_match	1	2	.	+	.	date=21-09-2025;Target=CNIPAN_00767 1 2;ID=match$114_1_2;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00767	Phobius	protein_match	15	65	.	+	.	date=21-09-2025;Target=CNIPAN_00767 15 65;ID=match$115_15_65;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00168 1 116
+CNIPAN_00168	.	polypeptide	1	116	.	+	.	ID=CNIPAN_00168;md5=704473b8f1cba2438ba55a930bd15d11
+CNIPAN_00168	SignalP_GRAM_POSITIVE	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00168 1 23;ID=match$116_1_23;Name=SignalP-TM;status=T
+CNIPAN_00168	Phobius	protein_match	5	18	.	+	.	date=21-09-2025;Target=CNIPAN_00168 5 18;ID=match$117_5_18;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00168	Phobius	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00168 1 23;ID=match$118_1_23;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00168	SignalP_EUK	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00168 1 23;ID=match$119_1_23;Name=SignalP-noTM;status=T
+CNIPAN_00168	SignalP_EUK	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00168 1 23;ID=match$120_1_23;Name=SignalP-noTM;status=T
+CNIPAN_00168	Phobius	protein_match	1	4	.	+	.	date=21-09-2025;Target=CNIPAN_00168 1 4;ID=match$121_1_4;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00168	Phobius	protein_match	19	23	.	+	.	date=21-09-2025;Target=CNIPAN_00168 19 23;ID=match$122_19_23;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00168	Phobius	protein_match	24	116	.	+	.	date=21-09-2025;Target=CNIPAN_00168 24 116;ID=match$123_24_116;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00183 1 112
+CNIPAN_00183	.	polypeptide	1	112	.	+	.	ID=CNIPAN_00183;md5=4b1ea524959fa7e6240cd56a434682cb
+CNIPAN_00183	Gene3D	protein_match	20	98	1.2E-6	+	.	date=21-09-2025;Target=CNIPAN_00183 20 98;ID=match$124_20_98;Name=G3DSA:6.10.250.370;status=T
+CNIPAN_00183	MobiDBLite	protein_match	1	20	.	+	.	date=21-09-2025;Target=CNIPAN_00183 1 20;ID=match$125_1_20;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00183	Coils	protein_match	40	91	.	+	.	date=21-09-2025;Target=CNIPAN_00183 40 91;ID=match$126_40_91;Name=Coil;status=T
+##sequence-region CNIPAN_00123 1 185
+CNIPAN_00123	.	polypeptide	1	185	.	+	.	ID=CNIPAN_00123;md5=c6846c74a39826e8b72795cae81f35bf
+CNIPAN_00123	Phobius	protein_match	1	7	.	+	.	date=21-09-2025;Target=CNIPAN_00123 1 7;ID=match$127_1_7;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00123	SignalP_GRAM_POSITIVE	protein_match	1	31	.	+	.	date=21-09-2025;Target=CNIPAN_00123 1 31;ID=match$128_1_31;Name=SignalP-TM;status=T
+CNIPAN_00123	SignalP_EUK	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00123 1 23;ID=match$129_1_23;Name=SignalP-noTM;status=T
+CNIPAN_00123	Phobius	protein_match	8	18	.	+	.	date=21-09-2025;Target=CNIPAN_00123 8 18;ID=match$130_8_18;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00123	Phobius	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00123 1 23;ID=match$131_1_23;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00123	Phobius	protein_match	24	185	.	+	.	date=21-09-2025;Target=CNIPAN_00123 24 185;ID=match$132_24_185;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00123	Phobius	protein_match	19	23	.	+	.	date=21-09-2025;Target=CNIPAN_00123 19 23;ID=match$133_19_23;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00123	SignalP_EUK	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00123 1 23;ID=match$134_1_23;Name=SignalP-noTM;status=T
+##sequence-region CNIPAN_00380 1 45
+CNIPAN_00380	.	polypeptide	1	45	.	+	.	ID=CNIPAN_00380;md5=4764a67dab5df9694ac6efe4930e0ab8
+CNIPAN_00380	TMHMM	protein_match	7	24	.	+	.	date=21-09-2025;Target=CNIPAN_00380 7 24;ID=match$135_7_24;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00380	Phobius	protein_match	6	24	.	+	.	date=21-09-2025;Target=CNIPAN_00380 6 24;ID=match$136_6_24;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00380	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00380 1 5;ID=match$137_1_5;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00380	Phobius	protein_match	25	45	.	+	.	date=21-09-2025;Target=CNIPAN_00380 25 45;ID=match$138_25_45;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00672 1 62
+CNIPAN_00672	.	polypeptide	1	62	.	+	.	ID=CNIPAN_00672;md5=cf3d179e0c86ff1ef9780c9de446156e
+CNIPAN_00672	Phobius	protein_match	1	18	.	+	.	date=21-09-2025;Target=CNIPAN_00672 1 18;ID=match$139_1_18;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00672	Phobius	protein_match	44	61	.	+	.	date=21-09-2025;Target=CNIPAN_00672 44 61;ID=match$140_44_61;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00672	Phobius	protein_match	38	43	.	+	.	date=21-09-2025;Target=CNIPAN_00672 38 43;ID=match$141_38_43;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00672	TMHMM	protein_match	15	37	.	+	.	date=21-09-2025;Target=CNIPAN_00672 15 37;ID=match$142_15_37;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00672	Phobius	protein_match	62	62	.	+	.	date=21-09-2025;Target=CNIPAN_00672 62 62;ID=match$143_62_62;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00672	Phobius	protein_match	19	37	.	+	.	date=21-09-2025;Target=CNIPAN_00672 19 37;ID=match$144_19_37;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00672	TMHMM	protein_match	44	61	.	+	.	date=21-09-2025;Target=CNIPAN_00672 44 61;ID=match$145_44_61;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+##sequence-region CNIPAN_00222 1 129
+CNIPAN_00222	.	polypeptide	1	129	.	+	.	ID=CNIPAN_00222;md5=e9c3142fb574aa0c2940d24ccde72c50
+CNIPAN_00222	Phobius	protein_match	84	129	.	+	.	date=21-09-2025;Target=CNIPAN_00222 84 129;ID=match$146_84_129;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00222	Phobius	protein_match	65	83	.	+	.	date=21-09-2025;Target=CNIPAN_00222 65 83;ID=match$147_65_83;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00222	TMHMM	protein_match	65	87	.	+	.	date=21-09-2025;Target=CNIPAN_00222 65 87;ID=match$148_65_87;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00222	Phobius	protein_match	1	64	.	+	.	date=21-09-2025;Target=CNIPAN_00222 1 64;ID=match$149_1_64;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00758 1 82
+CNIPAN_00758	.	polypeptide	1	82	.	+	.	ID=CNIPAN_00758;md5=f42c048ba11441c24070d231ed3015da
+CNIPAN_00758	Phobius	protein_match	1	2	.	+	.	date=21-09-2025;Target=CNIPAN_00758 1 2;ID=match$150_1_2;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00758	Phobius	protein_match	3	8	.	+	.	date=21-09-2025;Target=CNIPAN_00758 3 8;ID=match$151_3_8;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00758	Phobius	protein_match	1	13	.	+	.	date=21-09-2025;Target=CNIPAN_00758 1 13;ID=match$152_1_13;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00758	Phobius	protein_match	14	82	.	+	.	date=21-09-2025;Target=CNIPAN_00758 14 82;ID=match$153_14_82;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00758	Phobius	protein_match	9	13	.	+	.	date=21-09-2025;Target=CNIPAN_00758 9 13;ID=match$154_9_13;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+##sequence-region CNIPAN_00600 1 115
+CNIPAN_00600	.	polypeptide	1	115	.	+	.	ID=CNIPAN_00600;md5=ef4b1e751958c66184c992ca561ba2c4
+CNIPAN_00600	Coils	protein_match	93	113	.	+	.	date=21-09-2025;Target=CNIPAN_00600 93 113;ID=match$155_93_113;Name=Coil;status=T
+##sequence-region CNIPAN_00782 1 161
+CNIPAN_00782	.	polypeptide	1	161	.	+	.	ID=CNIPAN_00782;md5=cf54b996ac3e2d813576d9bbb205f5bb
+CNIPAN_00782	Pfam	protein_match	3	161	1.5E-45	+	.	date=21-09-2025;Target=CNIPAN_00782 3 161;ID=match$156_3_161;signature_desc=Baseplate wedge 3 tail fiber network component;Name=PF25691;status=T;Dbxref="InterPro:IPR058040"
+##sequence-region CNIPAN_00823 1 154
+CNIPAN_00823	.	polypeptide	1	154	.	+	.	ID=CNIPAN_00823;md5=0e788866a9bd6d4da3bc9f95858ac86a
+CNIPAN_00823	Phobius	protein_match	45	154	.	+	.	date=21-09-2025;Target=CNIPAN_00823 45 154;ID=match$157_45_154;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00823	Phobius	protein_match	15	26	.	+	.	date=21-09-2025;Target=CNIPAN_00823 15 26;ID=match$158_15_26;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00823	Phobius	protein_match	1	14	.	+	.	date=21-09-2025;Target=CNIPAN_00823 1 14;ID=match$159_1_14;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00823	Phobius	protein_match	1	44	.	+	.	date=21-09-2025;Target=CNIPAN_00823 1 44;ID=match$160_1_44;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00823	Phobius	protein_match	27	44	.	+	.	date=21-09-2025;Target=CNIPAN_00823 27 44;ID=match$161_27_44;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+##sequence-region CNIPAN_00090 1 64
+CNIPAN_00090	.	polypeptide	1	64	.	+	.	ID=CNIPAN_00090;md5=747a24bd8429e12886499ee059c7813f
+CNIPAN_00090	Phobius	protein_match	46	64	.	+	.	date=21-09-2025;Target=CNIPAN_00090 46 64;ID=match$162_46_64;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00090	PIRSR	protein_match	25	57	3.5E-4	+	.	date=21-09-2025;Target=CNIPAN_00090 25 57;ID=match$163_25_57;Name=PIRSR037322-1;status=T
+CNIPAN_00090	Phobius	protein_match	23	45	.	+	.	date=21-09-2025;Target=CNIPAN_00090 23 45;ID=match$164_23_45;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00090	TMHMM	protein_match	22	44	.	+	.	date=21-09-2025;Target=CNIPAN_00090 22 44;ID=match$165_22_44;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00090	Phobius	protein_match	1	22	.	+	.	date=21-09-2025;Target=CNIPAN_00090 1 22;ID=match$166_1_22;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00075 1 94
+CNIPAN_00075	.	polypeptide	1	94	.	+	.	ID=CNIPAN_00075;md5=7d959bbda63ceaf8edf224ab8598b2a1
+CNIPAN_00075	SignalP_GRAM_POSITIVE	protein_match	1	25	.	+	.	date=21-09-2025;Target=CNIPAN_00075 1 25;ID=match$167_1_25;Name=SignalP-TM;status=T
+##sequence-region CNIPAN_00135 1 195
+CNIPAN_00135	.	polypeptide	1	195	.	+	.	ID=CNIPAN_00135;md5=0f8b6aa398bc8cc7302dca77dd2ef858
+CNIPAN_00135	Phobius	protein_match	27	195	.	+	.	date=21-09-2025;Target=CNIPAN_00135 27 195;ID=match$168_27_195;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00135	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00135 1 5;ID=match$169_1_5;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00135	TMHMM	protein_match	7	26	.	+	.	date=21-09-2025;Target=CNIPAN_00135 7 26;ID=match$170_7_26;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00135	Phobius	protein_match	6	26	.	+	.	date=21-09-2025;Target=CNIPAN_00135 6 26;ID=match$171_6_26;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+##sequence-region CNIPAN_00011 1 158
+CNIPAN_00011	.	polypeptide	1	158	.	+	.	ID=CNIPAN_00011;md5=a1b15ee069175a31f42dce8b0cd67ac7
+CNIPAN_00011	Coils	protein_match	99	126	.	+	.	date=21-09-2025;Target=CNIPAN_00011 99 126;ID=match$172_99_126;Name=Coil;status=T
+##sequence-region CNIPAN_00490 1 45
+CNIPAN_00490	.	polypeptide	1	45	.	+	.	ID=CNIPAN_00490;md5=6a10151617beaf92e87027b0ab87b75c
+CNIPAN_00490	TMHMM	protein_match	5	27	.	+	.	date=21-09-2025;Target=CNIPAN_00490 5 27;ID=match$173_5_27;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00490	Phobius	protein_match	6	30	.	+	.	date=21-09-2025;Target=CNIPAN_00490 6 30;ID=match$174_6_30;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00490	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00490 1 5;ID=match$175_1_5;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00490	Phobius	protein_match	31	45	.	+	.	date=21-09-2025;Target=CNIPAN_00490 31 45;ID=match$176_31_45;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00035 1 109
+CNIPAN_00035	.	polypeptide	1	109	.	+	.	ID=CNIPAN_00035;md5=917bd516e046d525a67f6d3a629097e1
+CNIPAN_00035	Phobius	protein_match	33	38	.	+	.	date=21-09-2025;Target=CNIPAN_00035 33 38;ID=match$177_33_38;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00035	Phobius	protein_match	56	66	.	+	.	date=21-09-2025;Target=CNIPAN_00035 56 66;ID=match$178_56_66;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00035	TMHMM	protein_match	35	57	.	+	.	date=21-09-2025;Target=CNIPAN_00035 35 57;ID=match$179_35_57;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00035	TMHMM	protein_match	67	89	.	+	.	date=21-09-2025;Target=CNIPAN_00035 67 89;ID=match$180_67_89;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00035	Phobius	protein_match	90	109	.	+	.	date=21-09-2025;Target=CNIPAN_00035 90 109;ID=match$181_90_109;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00035	TMHMM	protein_match	11	33	.	+	.	date=21-09-2025;Target=CNIPAN_00035 11 33;ID=match$182_11_33;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00035	Phobius	protein_match	39	55	.	+	.	date=21-09-2025;Target=CNIPAN_00035 39 55;ID=match$183_39_55;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00035	Phobius	protein_match	67	89	.	+	.	date=21-09-2025;Target=CNIPAN_00035 67 89;ID=match$184_67_89;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00035	Phobius	protein_match	1	11	.	+	.	date=21-09-2025;Target=CNIPAN_00035 1 11;ID=match$185_1_11;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00035	Phobius	protein_match	12	32	.	+	.	date=21-09-2025;Target=CNIPAN_00035 12 32;ID=match$186_12_32;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+##sequence-region CNIPAN_00065 1 55
+CNIPAN_00065	.	polypeptide	1	55	.	+	.	ID=CNIPAN_00065;md5=59179853c1c651e13d29624f87291f0c
+CNIPAN_00065	Pfam	protein_match	3	39	0.001	+	.	date=21-09-2025;Target=CNIPAN_00065 3 39;ID=match$187_3_39;signature_desc=Protein of unknown function (DUF2887);Name=PF11103;status=T;Dbxref="InterPro:IPR022573"
+##sequence-region CNIPAN_00774 1 212
+CNIPAN_00774	.	polypeptide	1	212	.	+	.	ID=CNIPAN_00774;md5=0b653607049c4a4b79ed8e47e70c7ef3
+CNIPAN_00774	Phobius	protein_match	1	22	.	+	.	date=21-09-2025;Target=CNIPAN_00774 1 22;ID=match$188_1_22;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00774	Phobius	protein_match	18	22	.	+	.	date=21-09-2025;Target=CNIPAN_00774 18 22;ID=match$189_18_22;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00774	Phobius	protein_match	23	212	.	+	.	date=21-09-2025;Target=CNIPAN_00774 23 212;ID=match$190_23_212;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00774	Phobius	protein_match	10	17	.	+	.	date=21-09-2025;Target=CNIPAN_00774 10 17;ID=match$191_10_17;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00774	Phobius	protein_match	1	9	.	+	.	date=21-09-2025;Target=CNIPAN_00774 1 9;ID=match$192_1_9;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00774	Gene3D	protein_match	2	142	2.9E-9	+	.	date=21-09-2025;Target=CNIPAN_00774 2 142;ID=match$193_2_142;Name=G3DSA:3.30.70.1700;status=T;Dbxref="InterPro:IPR038512"
+CNIPAN_00774	MobiDBLite	protein_match	159	183	.	+	.	date=21-09-2025;Target=CNIPAN_00774 159 183;ID=match$194_159_183;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region CNIPAN_00543 1 278
+CNIPAN_00543	.	polypeptide	1	278	.	+	.	ID=CNIPAN_00543;md5=934e8112fa2cdd70e92b849fde826899
+CNIPAN_00543	Phobius	protein_match	1	12	.	+	.	date=21-09-2025;Target=CNIPAN_00543 1 12;ID=match$195_1_12;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00543	TMHMM	protein_match	13	32	.	+	.	date=21-09-2025;Target=CNIPAN_00543 13 32;ID=match$196_13_32;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00543	Phobius	protein_match	34	278	.	+	.	date=21-09-2025;Target=CNIPAN_00543 34 278;ID=match$197_34_278;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00543	MobiDBLite	protein_match	87	115	.	+	.	date=21-09-2025;Target=CNIPAN_00543 87 115;ID=match$198_87_115;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00543	Phobius	protein_match	13	33	.	+	.	date=21-09-2025;Target=CNIPAN_00543 13 33;ID=match$199_13_33;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00543	MobiDBLite	protein_match	33	115	.	+	.	date=21-09-2025;Target=CNIPAN_00543 33 115;ID=match$200_33_115;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00543	MobiDBLite	protein_match	57	80	.	+	.	date=21-09-2025;Target=CNIPAN_00543 57 80;ID=match$201_57_80;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region CNIPAN_00152 1 231
+CNIPAN_00152	.	polypeptide	1	231	.	+	.	ID=CNIPAN_00152;md5=671972a4881388a2c862e30240c81fd2
+CNIPAN_00152	Phobius	protein_match	30	44	.	+	.	date=21-09-2025;Target=CNIPAN_00152 30 44;ID=match$202_30_44;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00152	Phobius	protein_match	1	29	.	+	.	date=21-09-2025;Target=CNIPAN_00152 1 29;ID=match$203_1_29;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00152	Phobius	protein_match	9	24	.	+	.	date=21-09-2025;Target=CNIPAN_00152 9 24;ID=match$204_9_24;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00152	Phobius	protein_match	45	68	.	+	.	date=21-09-2025;Target=CNIPAN_00152 45 68;ID=match$205_45_68;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00152	Phobius	protein_match	69	231	.	+	.	date=21-09-2025;Target=CNIPAN_00152 69 231;ID=match$206_69_231;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00152	TMHMM	protein_match	9	31	.	+	.	date=21-09-2025;Target=CNIPAN_00152 9 31;ID=match$207_9_31;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00152	Phobius	protein_match	25	29	.	+	.	date=21-09-2025;Target=CNIPAN_00152 25 29;ID=match$208_25_29;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00152	TMHMM	protein_match	46	68	.	+	.	date=21-09-2025;Target=CNIPAN_00152 46 68;ID=match$209_46_68;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00152	Phobius	protein_match	1	8	.	+	.	date=21-09-2025;Target=CNIPAN_00152 1 8;ID=match$210_1_8;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+##sequence-region CNIPAN_00179 1 97
+CNIPAN_00179	.	polypeptide	1	97	.	+	.	ID=CNIPAN_00179;md5=bdce28fd5465b5126573ad21ea48244f
+CNIPAN_00179	Phobius	protein_match	6	13	.	+	.	date=21-09-2025;Target=CNIPAN_00179 6 13;ID=match$211_6_13;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00179	Phobius	protein_match	19	97	.	+	.	date=21-09-2025;Target=CNIPAN_00179 19 97;ID=match$212_19_97;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00179	Phobius	protein_match	14	18	.	+	.	date=21-09-2025;Target=CNIPAN_00179 14 18;ID=match$213_14_18;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00179	Phobius	protein_match	1	18	.	+	.	date=21-09-2025;Target=CNIPAN_00179 1 18;ID=match$214_1_18;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00179	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00179 1 5;ID=match$215_1_5;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+##sequence-region CNIPAN_00757 1 360
+CNIPAN_00757	.	polypeptide	1	360	.	+	.	ID=CNIPAN_00757;md5=919765c3ea2ed7efc9cf7e85d32157a7
+CNIPAN_00757	Coils	protein_match	234	254	.	+	.	date=21-09-2025;Target=CNIPAN_00757 234 254;ID=match$216_234_254;Name=Coil;status=T
+##sequence-region CNIPAN_00267 1 110
+CNIPAN_00267	.	polypeptide	1	110	.	+	.	ID=CNIPAN_00267;md5=20727fc7f143943b7130ff44cfcaf004
+CNIPAN_00267	MobiDBLite	protein_match	44	54	.	+	.	date=21-09-2025;Target=CNIPAN_00267 44 54;ID=match$217_44_54;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00267	MobiDBLite	protein_match	44	70	.	+	.	date=21-09-2025;Target=CNIPAN_00267 44 70;ID=match$218_44_70;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region CNIPAN_00377 1 94
+CNIPAN_00377	.	polypeptide	1	94	.	+	.	ID=CNIPAN_00377;md5=6ce1d11aaec0c03f98a966f43e621b55
+CNIPAN_00377	PANTHER	protein_match	5	74	2.5E-15	+	.	date=21-09-2025;Target=CNIPAN_00377 5 74;ID=match$219_5_74;Name=PTHR36729;status=T
+CNIPAN_00377	Pfam	protein_match	6	77	5.7E-23	+	.	date=21-09-2025;Target=CNIPAN_00377 6 77;ID=match$220_6_77;signature_desc=Domain of unknown function (DUF7734);Name=PF24869;status=T;Dbxref="InterPro:IPR056636"
+##sequence-region CNIPAN_00370 1 40
+CNIPAN_00370	.	polypeptide	1	40	.	+	.	ID=CNIPAN_00370;md5=c32d26d9c4112a0f21feafc261f2bb37
+CNIPAN_00370	MobiDBLite	protein_match	28	40	.	+	.	date=21-09-2025;Target=CNIPAN_00370 28 40;ID=match$221_28_40;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00370	MobiDBLite	protein_match	20	40	.	+	.	date=21-09-2025;Target=CNIPAN_00370 20 40;ID=match$222_20_40;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region CNIPAN_00877 1 66
+CNIPAN_00877	.	polypeptide	1	66	.	+	.	ID=CNIPAN_00877;md5=70c716ee01f2f2a858a8e8b0d14459c7
+CNIPAN_00877	Phobius	protein_match	36	56	.	+	.	date=21-09-2025;Target=CNIPAN_00877 36 56;ID=match$223_36_56;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00877	Phobius	protein_match	25	35	.	+	.	date=21-09-2025;Target=CNIPAN_00877 25 35;ID=match$224_25_35;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00877	Phobius	protein_match	6	24	.	+	.	date=21-09-2025;Target=CNIPAN_00877 6 24;ID=match$225_6_24;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00877	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00877 1 5;ID=match$226_1_5;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00877	Phobius	protein_match	57	66	.	+	.	date=21-09-2025;Target=CNIPAN_00877 57 66;ID=match$227_57_66;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00535 1 172
+CNIPAN_00535	.	polypeptide	1	172	.	+	.	ID=CNIPAN_00535;md5=998485e1a9f77ee91be618e2c3b80992
+CNIPAN_00535	PIRSF	protein_match	2	172	2.1E-70	+	.	date=21-09-2025;Target=CNIPAN_00535 2 172;ID=match$228_2_172;Name=PIRSF020893;status=T;Dbxref="InterPro:IPR016780"
+##sequence-region CNIPAN_00575 1 63
+CNIPAN_00575	.	polypeptide	1	63	.	+	.	ID=CNIPAN_00575;md5=ac5ebb6c7b92d39894f9251fea8ae17c
+CNIPAN_00575	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00575 1 5;ID=match$229_1_5;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00575	Phobius	protein_match	6	26	.	+	.	date=21-09-2025;Target=CNIPAN_00575 6 26;ID=match$230_6_26;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00575	Phobius	protein_match	27	63	.	+	.	date=21-09-2025;Target=CNIPAN_00575 27 63;ID=match$231_27_63;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00389 1 94
+CNIPAN_00389	.	polypeptide	1	94	.	+	.	ID=CNIPAN_00389;md5=c99ad0fa70e707d8b2cc937209af69c1
+CNIPAN_00389	SignalP_EUK	protein_match	1	27	.	+	.	date=21-09-2025;Target=CNIPAN_00389 1 27;ID=match$232_1_27;Name=SignalP-noTM;status=T
+CNIPAN_00389	Phobius	protein_match	1	27	.	+	.	date=21-09-2025;Target=CNIPAN_00389 1 27;ID=match$233_1_27;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00389	MobiDBLite	protein_match	60	87	.	+	.	date=21-09-2025;Target=CNIPAN_00389 60 87;ID=match$234_60_87;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00389	SignalP_EUK	protein_match	1	27	.	+	.	date=21-09-2025;Target=CNIPAN_00389 1 27;ID=match$235_1_27;Name=SignalP-noTM;status=T
+CNIPAN_00389	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00389 1 5;ID=match$236_1_5;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00389	Phobius	protein_match	18	27	.	+	.	date=21-09-2025;Target=CNIPAN_00389 18 27;ID=match$237_18_27;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00389	MobiDBLite	protein_match	48	94	.	+	.	date=21-09-2025;Target=CNIPAN_00389 48 94;ID=match$238_48_94;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00389	Phobius	protein_match	28	94	.	+	.	date=21-09-2025;Target=CNIPAN_00389 28 94;ID=match$239_28_94;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00389	Phobius	protein_match	6	17	.	+	.	date=21-09-2025;Target=CNIPAN_00389 6 17;ID=match$240_6_17;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00389	SignalP_GRAM_POSITIVE	protein_match	1	24	.	+	.	date=21-09-2025;Target=CNIPAN_00389 1 24;ID=match$241_1_24;Name=SignalP-TM;status=T
+##sequence-region CNIPAN_00796 1 64
+CNIPAN_00796	.	polypeptide	1	64	.	+	.	ID=CNIPAN_00796;md5=67f77cd52dbea2375e1e06484be27543
+CNIPAN_00796	Phobius	protein_match	28	36	.	+	.	date=21-09-2025;Target=CNIPAN_00796 28 36;ID=match$242_28_36;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00796	Phobius	protein_match	1	27	.	+	.	date=21-09-2025;Target=CNIPAN_00796 1 27;ID=match$243_1_27;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00796	Phobius	protein_match	11	22	.	+	.	date=21-09-2025;Target=CNIPAN_00796 11 22;ID=match$244_11_22;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00796	TMHMM	protein_match	9	28	.	+	.	date=21-09-2025;Target=CNIPAN_00796 9 28;ID=match$245_9_28;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00796	Phobius	protein_match	1	10	.	+	.	date=21-09-2025;Target=CNIPAN_00796 1 10;ID=match$246_1_10;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00796	Phobius	protein_match	23	27	.	+	.	date=21-09-2025;Target=CNIPAN_00796 23 27;ID=match$247_23_27;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00796	Phobius	protein_match	37	54	.	+	.	date=21-09-2025;Target=CNIPAN_00796 37 54;ID=match$248_37_54;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00796	Phobius	protein_match	55	64	.	+	.	date=21-09-2025;Target=CNIPAN_00796 55 64;ID=match$249_55_64;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00366 1 78
+CNIPAN_00366	.	polypeptide	1	78	.	+	.	ID=CNIPAN_00366;md5=3f530ac0ab404c79c2329312e90ded16
+CNIPAN_00366	Phobius	protein_match	28	36	.	+	.	date=21-09-2025;Target=CNIPAN_00366 28 36;ID=match$250_28_36;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00366	TMHMM	protein_match	4	26	.	+	.	date=21-09-2025;Target=CNIPAN_00366 4 26;ID=match$251_4_26;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00366	Phobius	protein_match	1	27	.	+	.	date=21-09-2025;Target=CNIPAN_00366 1 27;ID=match$252_1_27;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00366	TMHMM	protein_match	33	55	.	+	.	date=21-09-2025;Target=CNIPAN_00366 33 55;ID=match$253_33_55;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00366	Phobius	protein_match	37	55	.	+	.	date=21-09-2025;Target=CNIPAN_00366 37 55;ID=match$254_37_55;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00366	Phobius	protein_match	4	22	.	+	.	date=21-09-2025;Target=CNIPAN_00366 4 22;ID=match$255_4_22;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00366	Phobius	protein_match	23	27	.	+	.	date=21-09-2025;Target=CNIPAN_00366 23 27;ID=match$256_23_27;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00366	Phobius	protein_match	1	3	.	+	.	date=21-09-2025;Target=CNIPAN_00366 1 3;ID=match$257_1_3;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00366	Phobius	protein_match	56	78	.	+	.	date=21-09-2025;Target=CNIPAN_00366 56 78;ID=match$258_56_78;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00437 1 380
+CNIPAN_00437	.	polypeptide	1	380	.	+	.	ID=CNIPAN_00437;md5=60a1ffcbfa953a9cbb60b6fcb0fbbfca
+CNIPAN_00437	Phobius	protein_match	30	380	.	+	.	date=21-09-2025;Target=CNIPAN_00437 30 380;ID=match$259_30_380;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00437	Phobius	protein_match	1	29	.	+	.	date=21-09-2025;Target=CNIPAN_00437 1 29;ID=match$260_1_29;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00437	Phobius	protein_match	1	6	.	+	.	date=21-09-2025;Target=CNIPAN_00437 1 6;ID=match$261_1_6;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00437	SignalP_EUK	protein_match	1	20	.	+	.	date=21-09-2025;Target=CNIPAN_00437 1 20;ID=match$262_1_20;Name=SignalP-noTM;status=T
+CNIPAN_00437	Phobius	protein_match	23	29	.	+	.	date=21-09-2025;Target=CNIPAN_00437 23 29;ID=match$263_23_29;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00437	Phobius	protein_match	7	22	.	+	.	date=21-09-2025;Target=CNIPAN_00437 7 22;ID=match$264_7_22;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00437	SignalP_GRAM_POSITIVE	protein_match	1	29	.	+	.	date=21-09-2025;Target=CNIPAN_00437 1 29;ID=match$265_1_29;Name=SignalP-TM;status=T
+CNIPAN_00437	SignalP_EUK	protein_match	1	20	.	+	.	date=21-09-2025;Target=CNIPAN_00437 1 20;ID=match$266_1_20;Name=SignalP-noTM;status=T
+##sequence-region CNIPAN_00177 1 84
+CNIPAN_00177	.	polypeptide	1	84	.	+	.	ID=CNIPAN_00177;md5=25659005f6f44c51dcd26e3d8ad0446f
+CNIPAN_00177	MobiDBLite	protein_match	24	36	.	+	.	date=21-09-2025;Target=CNIPAN_00177 24 36;ID=match$267_24_36;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00177	MobiDBLite	protein_match	48	59	.	+	.	date=21-09-2025;Target=CNIPAN_00177 48 59;ID=match$268_48_59;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00177	MobiDBLite	protein_match	1	62	.	+	.	date=21-09-2025;Target=CNIPAN_00177 1 62;ID=match$269_1_62;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region CNIPAN_00632 1 116
+CNIPAN_00632	.	polypeptide	1	116	.	+	.	ID=CNIPAN_00632;md5=d8a231ec704f524fc059e4e6b53f171a
+CNIPAN_00632	PANTHER	protein_match	24	112	1.1E-18	+	.	date=21-09-2025;Target=CNIPAN_00632 24 112;ID=match$270_24_112;Name=PTHR36776;status=T
+##sequence-region CNIPAN_00161 1 76
+CNIPAN_00161	.	polypeptide	1	76	.	+	.	ID=CNIPAN_00161;md5=afa805f3cefbcbe36c225017e606c8a5
+CNIPAN_00161	Phobius	protein_match	36	54	.	+	.	date=21-09-2025;Target=CNIPAN_00161 36 54;ID=match$271_36_54;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00161	Phobius	protein_match	55	76	.	+	.	date=21-09-2025;Target=CNIPAN_00161 55 76;ID=match$272_55_76;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00161	Phobius	protein_match	16	20	.	+	.	date=21-09-2025;Target=CNIPAN_00161 16 20;ID=match$273_16_20;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00161	Phobius	protein_match	21	35	.	+	.	date=21-09-2025;Target=CNIPAN_00161 21 35;ID=match$274_21_35;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00161	TMHMM	protein_match	5	22	.	+	.	date=21-09-2025;Target=CNIPAN_00161 5 22;ID=match$275_5_22;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00161	Phobius	protein_match	1	3	.	+	.	date=21-09-2025;Target=CNIPAN_00161 1 3;ID=match$276_1_3;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00161	Phobius	protein_match	4	15	.	+	.	date=21-09-2025;Target=CNIPAN_00161 4 15;ID=match$277_4_15;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00161	TMHMM	protein_match	32	54	.	+	.	date=21-09-2025;Target=CNIPAN_00161 32 54;ID=match$278_32_54;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00161	SignalP_EUK	protein_match	1	16	.	+	.	date=21-09-2025;Target=CNIPAN_00161 1 16;ID=match$279_1_16;Name=SignalP-TM;status=T
+CNIPAN_00161	Phobius	protein_match	1	20	.	+	.	date=21-09-2025;Target=CNIPAN_00161 1 20;ID=match$280_1_20;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+##sequence-region CNIPAN_00163 1 172
+CNIPAN_00163	.	polypeptide	1	172	.	+	.	ID=CNIPAN_00163;md5=0ff1aac59d5ce3e2980e007e263377b1
+CNIPAN_00163	Coils	protein_match	65	92	.	+	.	date=21-09-2025;Target=CNIPAN_00163 65 92;ID=match$281_65_92;Name=Coil;status=T
+##sequence-region CNIPAN_00016 1 67
+CNIPAN_00016	.	polypeptide	1	67	.	+	.	ID=CNIPAN_00016;md5=4b3628f01d314bd3c50b243f17286890
+CNIPAN_00016	Phobius	protein_match	1	7	.	+	.	date=21-09-2025;Target=CNIPAN_00016 1 7;ID=match$282_1_7;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00016	SignalP_GRAM_NEGATIVE	protein_match	1	22	.	+	.	date=21-09-2025;Target=CNIPAN_00016 1 22;ID=match$283_1_22;Name=SignalP-noTM;status=T
+CNIPAN_00016	Phobius	protein_match	16	20	.	+	.	date=21-09-2025;Target=CNIPAN_00016 16 20;ID=match$284_16_20;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00016	MobiDBLite	protein_match	27	50	.	+	.	date=21-09-2025;Target=CNIPAN_00016 27 50;ID=match$285_27_50;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00016	ProSiteProfiles	protein_match	1	21	6.0	+	.	date=21-09-2025;Target=CNIPAN_00016 1 21;ID=match$286_1_21;signature_desc=Prokaryotic membrane lipoprotein lipid attachment site profile.;Name=PS51257;status=T
+CNIPAN_00016	MobiDBLite	protein_match	52	67	.	+	.	date=21-09-2025;Target=CNIPAN_00016 52 67;ID=match$287_52_67;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00016	Phobius	protein_match	8	15	.	+	.	date=21-09-2025;Target=CNIPAN_00016 8 15;ID=match$288_8_15;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00016	Phobius	protein_match	21	67	.	+	.	date=21-09-2025;Target=CNIPAN_00016 21 67;ID=match$289_21_67;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00016	MobiDBLite	protein_match	22	67	.	+	.	date=21-09-2025;Target=CNIPAN_00016 22 67;ID=match$290_22_67;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+CNIPAN_00016	Phobius	protein_match	1	20	.	+	.	date=21-09-2025;Target=CNIPAN_00016 1 20;ID=match$291_1_20;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00016	SignalP_GRAM_NEGATIVE	protein_match	1	20	.	+	.	date=21-09-2025;Target=CNIPAN_00016 1 20;ID=match$292_1_20;Name=SignalP-noTM;status=T
+CNIPAN_00016	SignalP_GRAM_POSITIVE	protein_match	1	25	.	+	.	date=21-09-2025;Target=CNIPAN_00016 1 25;ID=match$293_1_25;Name=SignalP-TM;status=T
+##sequence-region CNIPAN_00459 1 227
+CNIPAN_00459	.	polypeptide	1	227	.	+	.	ID=CNIPAN_00459;md5=890490290898739c4d05226b53334990
+CNIPAN_00459	SignalP_GRAM_NEGATIVE	protein_match	1	23	.	+	.	date=21-09-2025;Target=CNIPAN_00459 1 23;ID=match$294_1_23;Name=SignalP-noTM;status=T
+CNIPAN_00459	Phobius	protein_match	29	227	.	+	.	date=21-09-2025;Target=CNIPAN_00459 29 227;ID=match$295_29_227;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00459	Phobius	protein_match	6	16	.	+	.	date=21-09-2025;Target=CNIPAN_00459 6 16;ID=match$296_6_16;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00459	SignalP_GRAM_POSITIVE	protein_match	1	28	.	+	.	date=21-09-2025;Target=CNIPAN_00459 1 28;ID=match$297_1_28;Name=SignalP-TM;status=T
+CNIPAN_00459	Phobius	protein_match	1	28	.	+	.	date=21-09-2025;Target=CNIPAN_00459 1 28;ID=match$298_1_28;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00459	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00459 1 5;ID=match$299_1_5;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00459	Phobius	protein_match	17	28	.	+	.	date=21-09-2025;Target=CNIPAN_00459 17 28;ID=match$300_17_28;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+CNIPAN_00459	SignalP_GRAM_NEGATIVE	protein_match	1	28	.	+	.	date=21-09-2025;Target=CNIPAN_00459 1 28;ID=match$301_1_28;Name=SignalP-noTM;status=T
+##sequence-region CNIPAN_00392 1 112
+CNIPAN_00392	.	polypeptide	1	112	.	+	.	ID=CNIPAN_00392;md5=b6c1f555f98028d9700708365992c168
+CNIPAN_00392	Phobius	protein_match	51	84	.	+	.	date=21-09-2025;Target=CNIPAN_00392 51 84;ID=match$302_51_84;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00392	Phobius	protein_match	85	105	.	+	.	date=21-09-2025;Target=CNIPAN_00392 85 105;ID=match$303_85_105;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00392	TMHMM	protein_match	28	50	.	+	.	date=21-09-2025;Target=CNIPAN_00392 28 50;ID=match$304_28_50;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00392	Phobius	protein_match	28	50	.	+	.	date=21-09-2025;Target=CNIPAN_00392 28 50;ID=match$305_28_50;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00392	TMHMM	protein_match	85	107	.	+	.	date=21-09-2025;Target=CNIPAN_00392 85 107;ID=match$306_85_107;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00392	Phobius	protein_match	106	112	.	+	.	date=21-09-2025;Target=CNIPAN_00392 106 112;ID=match$307_106_112;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00392	Phobius	protein_match	1	27	.	+	.	date=21-09-2025;Target=CNIPAN_00392 1 27;ID=match$308_1_27;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00766 1 179
+CNIPAN_00766	.	polypeptide	1	179	.	+	.	ID=CNIPAN_00766;md5=eb4541dcabd717645dfdc053236fd014
+CNIPAN_00766	MobiDBLite	protein_match	50	79	.	+	.	date=21-09-2025;Target=CNIPAN_00766 50 79;ID=match$309_50_79;signature_desc=consensus disorder prediction;Name=mobidb-lite;status=T
+##sequence-region CNIPAN_00008 1 107
+CNIPAN_00008	.	polypeptide	1	107	.	+	.	ID=CNIPAN_00008;md5=7f85c5e777a6b832289b238df23a3885
+CNIPAN_00008	Phobius	protein_match	6	25	.	+	.	date=21-09-2025;Target=CNIPAN_00008 6 25;ID=match$310_6_25;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00008	TMHMM	protein_match	5	27	.	+	.	date=21-09-2025;Target=CNIPAN_00008 5 27;ID=match$311_5_27;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00008	Coils	protein_match	24	51	.	+	.	date=21-09-2025;Target=CNIPAN_00008 24 51;ID=match$312_24_51;Name=Coil;status=T
+CNIPAN_00008	Phobius	protein_match	1	5	.	+	.	date=21-09-2025;Target=CNIPAN_00008 1 5;ID=match$313_1_5;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00008	Phobius	protein_match	26	107	.	+	.	date=21-09-2025;Target=CNIPAN_00008 26 107;ID=match$314_26_107;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00706 1 48
+CNIPAN_00706	.	polypeptide	1	48	.	+	.	ID=CNIPAN_00706;md5=21047ba0ef1b39ac5b83cee624a2a8cf
+CNIPAN_00706	Phobius	protein_match	1	30	.	+	.	date=21-09-2025;Target=CNIPAN_00706 1 30;ID=match$315_1_30;signature_desc=Signal peptide region;Name=SIGNAL_PEPTIDE;status=T
+CNIPAN_00706	Phobius	protein_match	31	48	.	+	.	date=21-09-2025;Target=CNIPAN_00706 31 48;ID=match$316_31_48;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00706	Phobius	protein_match	1	10	.	+	.	date=21-09-2025;Target=CNIPAN_00706 1 10;ID=match$317_1_10;signature_desc=N-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_N_REGION;status=T
+CNIPAN_00706	Phobius	protein_match	11	22	.	+	.	date=21-09-2025;Target=CNIPAN_00706 11 22;ID=match$318_11_22;signature_desc=Hydrophobic region of a signal peptide.;Name=SIGNAL_PEPTIDE_H_REGION;status=T
+CNIPAN_00706	TMHMM	protein_match	10	29	.	+	.	date=21-09-2025;Target=CNIPAN_00706 10 29;ID=match$319_10_29;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00706	Phobius	protein_match	23	30	.	+	.	date=21-09-2025;Target=CNIPAN_00706 23 30;ID=match$320_23_30;signature_desc=C-terminal region of a signal peptide.;Name=SIGNAL_PEPTIDE_C_REGION;status=T
+##sequence-region CNIPAN_00149 1 34
+CNIPAN_00149	.	polypeptide	1	34	.	+	.	ID=CNIPAN_00149;md5=429f0693f77bc3c945a64f30c320fedc
+CNIPAN_00149	Phobius	protein_match	32	34	.	+	.	date=21-09-2025;Target=CNIPAN_00149 32 34;ID=match$321_32_34;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00149	Phobius	protein_match	12	31	.	+	.	date=21-09-2025;Target=CNIPAN_00149 12 31;ID=match$322_12_31;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00149	TMHMM	protein_match	9	31	.	+	.	date=21-09-2025;Target=CNIPAN_00149 9 31;ID=match$323_9_31;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00149	Phobius	protein_match	1	11	.	+	.	date=21-09-2025;Target=CNIPAN_00149 1 11;ID=match$324_1_11;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+##sequence-region CNIPAN_00797 1 58
+CNIPAN_00797	.	polypeptide	1	58	.	+	.	ID=CNIPAN_00797;md5=7d220c5d2a8ff6583b536c979a1a9f0a
+CNIPAN_00797	Phobius	protein_match	36	54	.	+	.	date=21-09-2025;Target=CNIPAN_00797 36 54;ID=match$325_36_54;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00797	TMHMM	protein_match	12	31	.	+	.	date=21-09-2025;Target=CNIPAN_00797 12 31;ID=match$326_12_31;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TMhelix;status=T
+CNIPAN_00797	Phobius	protein_match	12	30	.	+	.	date=21-09-2025;Target=CNIPAN_00797 12 30;ID=match$327_12_30;signature_desc=Region of a membrane-bound protein predicted to be embedded in the membrane.;Name=TRANSMEMBRANE;status=T
+CNIPAN_00797	Phobius	protein_match	55	58	.	+	.	date=21-09-2025;Target=CNIPAN_00797 55 58;ID=match$328_55_58;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00797	Phobius	protein_match	1	11	.	+	.	date=21-09-2025;Target=CNIPAN_00797 1 11;ID=match$329_1_11;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.;Name=CYTOPLASMIC_DOMAIN;status=T
+CNIPAN_00797	Phobius	protein_match	31	35	.	+	.	date=21-09-2025;Target=CNIPAN_00797 31 35;ID=match$330_31_35;signature_desc=Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.;Name=NON_CYTOPLASMIC_DOMAIN;status=T
+##FASTA
+>CNIPAN_00008
+MLTWAIAIANGILALVLLWAAGKVWRLRGNLRQWRRELRQVNRQVSTVLAAAPADLQQAA
+DQVSQSRWQYLRLRQLWQQWQLLLKFLGLLQPWVPLFTPPKKSRAAQ
+>CNIPAN_00011
+MSRFPEPPPEQLYAELQRLQEELLLRDQLIQQLSHQLYTELDRQVAPATASEAADAIAVE
+SIPISSDQPPVDLQQNYLQLKARNQQLEHQLLQLPQVYQRKFEERLQPLQARLQFLEAEN
+QRLQAQLMDELPLLPEAPTHQPVQLPLRTYVPDYSALQ
+>CNIPAN_00014
+MNLLKLFAGIGLVIYGIYQVGQKIFFTTRSSSFDWGGFPASTSVIIFVAGILALLFIPGK
+LSNIGWGIMVVGIIMIFYSTSIIVSPVSLVEFLIAIAAMVGGLKLMYSSSRYIL
+>CNIPAN_00016
+MRLKPVELFLALGLATTAVACGQQASEPTNPTTPEVTPTTPTNPAPQAAPDGGEGGEGGE
+GGEGGEG
+>CNIPAN_00035
+MSEVDLLQSSNYLVGIGAALLVLVVYAFLFWLLRLIANFLIGIIILICAVLPFFIVQSGT
+LSSNSDIWILSAVLGAACAIISLVIYPYSSFYESRIKEKIEKNILGRRD
+>CNIPAN_00065
+MKTDKLFYAIFATLPDLVTELVDGIPPAARYRFAALIVKLVGQAPPPQHSSPLTG
+>CNIPAN_00075
+MLQIHLRSLNYGTVVISTQATATQAAPLELTGHTPARKVLQTLLRLIFPQLQARSSELKM
+ICTNNPLFQYWFQVEAIIEAGSGMTRTEVPCLSR
+>CNIPAN_00090
+MDEPPISDCPLTWQDLDLGSPTVAVRCLGLGLLSLVACCLLFQLLGTITFDPIAIDAVTS
+GQQR
+>CNIPAN_00107
+MNYALPLTAFVGSFTLMLLVGAPVKACPPGHYQMGGGNAGWVGCAPMDGGVGSGNSAPSI
+ADMNITAPRLSTYDAKQWVDFFEQMAQSSIETERELVGKENPEVYEALLQGVWIFGSSKL
+DSKVPMCTATFATRRGGVMFQDWTGDEPGTFLAFYNVNIQRVNQVKRVRVRLEQSGESQT
+VEAFQTNYPLVDTMGMLMFRVPSTEALLSSIEDNQDFNIYMRESDIETRRGLGLLLLPNR
+GRNDVEYKVVSGEWHSGLSARDALKACIQKRDAR
+>CNIPAN_00123
+MLQKVTRFLGILAPLCLASSLSAAPPPETFAIRSTADLERLLAGLSRDRDAGARQEIQAL
+MAVLLEKGVPVRYQPNGELGPGQRFVRFGVFSTSGQLTLTDQPLRDTRTLLTTLRHEAWH
+AVQACATNGRPRGQLKPVGIRTTAAAQQAVIDKGYRPHDHAIEAEAFTAQFVPYQSLEAL
+REYCP
+>CNIPAN_00135
+MGWLKGTIAVIAIAIGGTAAAGWVYYRPVLAPFQLQANSSGTEASQERRLLYACNPDRAG
+LILLPGALPEAKAAIAREITDPQQQQLASQLLENLERETKLGVGTSIGPVWLKQQESTIS
+RVVGETVRQQLTTELQKESDPLAAALGNQFTDALLQPLVNQVTTQVIGVANVVLEQNINR
+ACGTTAAFGSAPAAE
+>CNIPAN_00145
+MLKPKTDTSSSALRNRQIQFLRVWRRRRQQPRIWLASLGLLWSLWDLRAEWLLMAEQFTW
+AALRYAMLYHLLTWLVLIVCLTSLLGILVDRCWPQRRDRRLQRQLDRILAVGARHPLWQR
+LHSLGSEGSSAS
+>CNIPAN_00149
+MTALTYSDLGLLILFLSPGLLLSVLILGTFAKGG
+>CNIPAN_00152
+MVDLYLQRLLAVTLLLGGVPSLVLGIGIASTNPAAWGYSREQQEASIILFGGGGLVATSA
+GSLLELNFRKQRQLRQRQRLQRFLHGLIRESQGSLGVIEWVTCASARVPWPTEELKSFLK
+TEALLLNAEVSSDELGNIRYRFPFDPQRQEQQQQLRRLLHDLIQQNQGRVSLVDWVTQAS
+ALVTWPTADLRAFLEAEASLLEASPEVVDNNALYYCFQPTALPTAPPSASA
+>CNIPAN_00161
+MKSGLFLLQLLGLSIAISWTIRELGPRFPLPATDTVALTLVLLPPLLLGVALVWRWRSLA
+IAASPQPQTEVEGKSP
+>CNIPAN_00163
+MTKRKSPRLHRPRRSRVEPCEPVIDSIPWELYEALRQQHEALLDWVAQLEATVADPLLQP
+PSVPAAATDAQVQRLRTENQELRDRLDRQQRYICQLKRALESSLEGQVPMELLASLQPTV
+EAAPSPATIPPVPAELLSSPLEPAIASTTVAPSPRKSFAAVQLPRFREVHRS
+>CNIPAN_00168
+MRCNVAWLLGCLSLGLLIPPVQAENWIRVAAVTNPDLTIFVEAAVQRDGNGRYRQVTVRW
+AEVGQPPATVQLKVDCQDPNQGLSYALNGGTGLSDRWQAVNARTKSAALKFVCREY
+>CNIPAN_00177
+MLNDRDRAKLQKLKQQMQAPAPEPPKEAEVSLRQEFDDLLQGRKRIKPQTTGKSKTQTEA
+LPANDYVEFRKLLLEDSGDRPRQD
+>CNIPAN_00179
+MKRDRIPALLAWIAAKYAEELDARLLATPTEELWGRHIIWLFLLTRSEQEDPSDRRAINN
+FLAELADEEMAAARQIFFQIIEKRRSENLATQAPDLA
+>CNIPAN_00183
+MLKPSPLNNTDSNTPSSTGASWFSSLRQSCYWWLSALSGTVETEEEIKRLKQETEQLRQQ
+NAKLDEMLSQRKLETEQLKSETERLKQQNAKIDAIFSKYSINSTPAPKTEQS
+>CNIPAN_00214
+MLRGYHPRSLAALLMTYLRFSDRAIVGLIQRDEGENPNSDRRQELFVAPSKAALDGRWQT
+DSDRNLQSDERHGV
+>CNIPAN_00222
+MSLSLRYHPQWIADWCQEHGWTDVFIECRQFWAFPPGAVLPQPIPAEVLIAIKKTQGLSP
+FEQQWFSIWLGLLCGAIAIAWFWTTPIPLLSLFAGSAGLVAWLDDSDGPATPSSSPVERP
+ESIRALYLD
+>CNIPAN_00267
+MVLDKLFGKKEKFFLEIDSSAASTETAAVETAVTPVAAAVETPTAAAGVATPEPAATPAP
+EPVAEETPAKEIPNVTFAADLSVPTINTGRRLPGPSLDPFVQIASEVVRR
+>CNIPAN_00366
+MQELLITFFISWATAGCIFGLFCSTVAGSKGHNTTSWFLAGFFFNFIALIAVAGLSDTLS
+QEYLYEIANKLPRRSVNY
+>CNIPAN_00370
+MLERAAEAVGLEAGSEATRIQGKVQPTFRKDYDRHGGSAS
+>CNIPAN_00377
+MTLPIHQLEQYSLRHRDWVLRVLAEDQGKAVELLVFRGFSSSLTQPTDFDPDVPVLPASA
+TIQSVQRFRSPYNAEQPLAPPQTWADFAAALEAE
+>CNIPAN_00380
+MTPSRWGSLIVVAIAVGLAIAFNIDELAALIGATEAKEEVQTPAQ
+>CNIPAN_00389
+MSPKFVVHIAAKAALLLPLMAAGATEAVNVPQARSSAIEVELTELSPTATPATLIASNDF
+GGSDFGNNSRNNSDSNNQSDSGNQRRNGNNSDFG
+>CNIPAN_00392
+MARLKATDLPLVSPMLLRPLPERFLRSLAVAGTVGFVAPLAVMGLLWLAMTSLSWVPGIG
+SWGQSGLEILRYFCDTFGSGNPLCGLLVIGATCAVVGMMFDTYAVSVSRASR
+>CNIPAN_00428
+MTLMFKVLGFPEFESCHSIPFAIEAQFSKSAASTVPPRPLVAFPIPPLARAWTQAFKIRA
+KHLSMTVTLIIAALYLALAGAYLLVVPAALYLYLQKRWYVASSWERAFMYFLVFFFFPGL
+LLLAPLLNFRPRSRQIPA
+>CNIPAN_00437
+MTQRITALTTAALLWGSAIAVLPPEAVQAAEVNPTLLRRCQSALAERIGQRIQVQTDTLS
+SYFISNAEQGIRGRGNLDSSGNFRPFQFDCQLNTRDGRVVSLEYNYQSAGNDDTVSDSLR
+RSCQEALANRIGQRILLSADTLRAYPISRNEQGVSGEGTLDRSGNFRPFTFDCQVNLRNG
+RVKRISYDYQAENNPPEISPALVQACQAELRNRLSPQVRLQQASLRSYFISNAEQGLRGD
+AVLDRNSQPFRFDCQANLRTGQITRLDYDSAGAIAELTPIFTNFQDGDRVTSNGFVVMGR
+TRPNARVRIEVRSSAAVLGGLIDIGNTVLLDREVIADRDGNFSVQVRRPVVVSSSTRYVV
+RASASLNGETRQNEIVLRQQ
+>CNIPAN_00444
+MTRLSIPLAAIAFSSLAGLSLSTPAAQAADFADCAATLTGLGLAAPVAANACAGAQFPAD
+LSSCTDRLTSSLKLTAADSLAACRSVRKPLAVASCAERLQAAGDATPALIADGCRLSLVP
+ERYANCVLGLGDGLDLTRDQLLRACSNNGDVPRRIYPNFTTLGETQRESIPAVSPAPRP
+>CNIPAN_00453
+MEHHPESPEHLQGKLEISKYFQEVYKGMIDAQEAFIEIEHPISEAGKNGRIADVAVVFST
+GYRIIGECQLAKIEAADIYQRTQDYYSISADVLWFLGGAADTPENRQAAVDLDVFAGTIN
+FTYST
+>CNIPAN_00459
+MNFARTCGLALAACLAGGAVLEAQPAAAGPDRWDRCERPGRGNRRACLEQLNRFNRFDQF
+DRRGVPIPVVDRRFLRSGSRMNLFFPGRDRIILRRGEVLPLEGRLARDIFDNRGRVLVPR
+NSRILGQLRPDGRGLRFVSDRLILPNGGVYPIRAHSGLIFSEPSFGRPDLSTVLITGAAR
+TLLSNLPGYNGAIDRSFDDVLQRDNSQIIVLDSSDLGLELLSDLTFR
+>CNIPAN_00476
+MLDSDRREGLLPPLRVLLTLLLAIGVIFRSYEPQDITLPWTGLSLPFIPDSRAELFDAAY
+NCFWIATLVAIALVLLEWDGQRIGRNRRAESRNRDAAREQQEARRARIQAQVLVAIGQQQ
+LNDSAESRQRLADAIALLQEYGDLL
+>CNIPAN_00486
+MQTKPRRLAPRPAAPEALAELDAAIAQLEAEVQSLPADLASDMQQELAQLDGLAAEIAAQ
+AAALTASLQTFAAKATQLNPVYRRWRQQQGAALLPPTAIDGQRHHVRLQRQRPAHLWETA
+SCEVPSIEQHGGCYRLVKQTVALGWTPPTLDQPVAAESLQSWLTRSRQRVLKDFSGL
+>CNIPAN_00490
+MTEFLPSILAVVALSLMVAVTAGVIYLTAVDWRDKRRRAREGSSR
+>CNIPAN_00516
+MDKRHLLGLAIGGIAIAGLAYWLGSELLRELTQAEVYPGPWQTQPLAELDSSLSSHNVPN
+CQPYRYRTNQLDPEIGEYLVACPTLAGQQPQAYLVLLPLQKVVSGPFPLDPSLANAP
+>CNIPAN_00525
+MGRSPKSVITAIAIASLALLSQPAIASPWSATLQPLLQSLNRFGFRVQIRQPGREGLYGY
+FAPKERLIVVNPVVFELGLDEVTLVHEAVHAAQFCAGRTQLQVLGLPYDPPPQLRRSFLR
+YRDPRRQQLEAEAYAVQARSDRLVEVQRLLNQYCKPR
+>CNIPAN_00535
+MTDSVPTIPDHPDFGTAIALAQQLLALEPTDAVIEAIARLVASRDGARGFFVTYLTSDEP
+WADQPAPALIAALRSQPTYVEDLMVRNLAMSTAMGLTHERNADPAMAAQSQRVSRRSAEH
+LRQLQSPSLRQQIQDLQQSLTAEGPFSDFLDRWGYDAEQRAAIASAIAPLLD
+>CNIPAN_00543
+MLSHPEGGSVNRAYAYLGLLLLVSSYFTAPAIARPVRGGGSRPSISRPVTRPAPSRPNVS
+RPVTTPNRPNITRPINTPNRPVNVPSRPITTPNRPINNPNRPINTPNRPIINQPINNRPI
+INRPIGSGNTIINNRPININNINTRPNWVNRNWAASRPWGGYGWYGSWANPPWGWWTANT
+AIWGITSLASAAIISSSIDNAVSTNVVYIPVPNSSYELYYGTIAPTSSSVTTFAFGYEGQ
+TYQAVADCQQGLLNGQPPTTAAEAELLNAACQVAFASF
+>CNIPAN_00575
+MLTELPIAAQTAALAALTAVVIGPWYPKLQQSPLQQTLLRSSLAAQSVCRDREPATLWPT
+PFC
+>CNIPAN_00594
+MVVRRDVMRSLFLSALLAATTVATGALPATAQSIFNRDAFFNRVTPELAPWASPQVLLER
+LPRQWKGNFNYEGSTQAQNYPTGLQVTGYSISGRVLSFSGLLNWGSDRQSDVFGYIDSQT
+GQIEFYERQNLGPTAASSSGGGFIGFLALPDEQRIPGEALFYWVPNSIIQPTGVLAIKPA
+PATNR
+>CNIPAN_00600
+MTVLTLQLSNGSLSLPLNLAAGLELKSVLQQLLQQLRQAATPLSPGQRPTPQPSTDHRLE
+VGEIHLEVFCNPNLWPSPFAAKVLLSLRQGELRLSLETELSRLMEDLDQYLESIR
+>CNIPAN_00632
+MAIIADSWVLVVVTEPLAPITLPPAQDATAEGQWLCAALQDWLDHEFIPEAVNSDIARRV
+AQIYERQRLEGETDVGCLLLAILLEMRGFDFSQSFFSEFAVANAVSELLLRQLGIP
+>CNIPAN_00646
+MGISPPFSAVVLVLLALAIGALPRQKPLTLRGVVQLDPQAMPWQQSLLALLRGSLVFAIA
+AGLDLARSPLYLLALLALSVGGYLSQRQPLLTAIAVAFFWADWPTATIALLLGIVSVIVV
+QNSRWSWALAIAAFPVVTALMHGQDGVRVALTVLLALWLVMVSTPLSPGLDTAFSRPERG
+IRDLTSLVGTQAPIGHRAHNLVQLHQQSGATPPAWVLQPGDDPEWLLQVADVTPEEPLAV
+LSSPVGGSIQAEDCQIVRDLVELRQAIYVVLADYQRQPVGSGVAIILQRSPLARYAGWVM
+LRSQTVDIWGLPGDRQNLHRSSRPRDHYRWENQTVSLMPNSTGDLPRTVLDRLMARLEPL
+QRSLSPNEELMLEWADDGEQAWLLQLFVTVCS
+>CNIPAN_00672
+MAQAAGGNPLVSQRGETSIYIGLILLGILLSLLIGLVSRQFMKALYFSGALALILIAIVI
+LL
+>CNIPAN_00706
+MLGWGLEKISAVVFLVLTSLFSPCWHSSLRNFALNSLFRRQLHVYLRW
+>CNIPAN_00755
+MNHKQTRRARLAHRRELQRRQREALPTIVLTAFAVGLFAGYGWAAQAYGQHITSPASDRQ
+VVNREQL
+>CNIPAN_00757
+MSSELARTEQPAPLGVFSGAESFALAQRMAQALAASSLVPEAYRGDVSNTLIALEVSQRI
+GASPLMVMQNLHIIEGRPAWSSQFVIAALNSCGRFTPLRFRVEDRGEQTVTYDYWTGKKG
+ERQKHTASMKVHDRTCIASATDKATGEVIEGPEVSIAMAVAEGWYTKSGSKWQTMPELML
+RYRAAKFFGSLYAPDMLMGLQTADEVRDIERVEVKDLSVSRSTAIASSQSAIAKDELEKA
+YEVVEAELDRLADQTFAEVVEPEVVEPAPVPRPVAKRQTVGSSPELREKYEKALEAAGVD
+EVGRQTLEAIAKVKSSDDLSEKQVASIIEKLEPEKISALNSGVNPKTGEILVQLTPEASA
+>CNIPAN_00758
+MKVSVFAAGQSQADRLLVIQCADQSEAASAWGRVYELAIAFRVQIAAVRVWIQSEREYLS
+WFRIAEAAGELGESQPKSPKQG
+>CNIPAN_00766
+MSQRVSARAYARMRNVSHKGVLEAIQSGRLPSAVKVGQRWEIDPAQADREWSQNTNVNHH
+KSKAPRVVAEPEDSSLPGLNESKAEREYYLAKLAQLDYEERAGQLVSAEDVRVTWFSHAR
+RVRDAILNVPIRIVDEVRAIAGELDENQRHEILLCLQRELVQALEELAGPEELPPQSQS
+>CNIPAN_00767
+MKVAQLSLLFCTLRQHMKLHKPSFSMHSQPQILASLQKSAQKKLSVDAGLRPVLESNTDG
+DRYCN
+>CNIPAN_00774
+MPNRRREIRSAIAAALMEKTAAEDRVFQSRTNTLTEDELPAIMVLSRSEKIPSPERGHPP
+SGWNSSIRRTATIAVECVAQVLQDIDDVLDDLAGEVEAELEHLTIAGMESAELRLTETEL
+DVSYEGSLPIGAVRLTYEVAYFTVYRDCADPYVDEAAAEGDGPIERSGAYPGGQILPGCP
+GEQVGDACPMPAADISLGDLDLGTYQPPVPPR
+>CNIPAN_00782
+MAAILTTSGRVAIAIAIQQRTAHLAWGNGDPSWGITPPAPPSSASDLLAEVGRRKATSVD
+FVVPDPDGDIAVPEGRFSLSPTPTNSVCFDFFFQFEDGVGEVIREVAIFLDTVAGESVPL
+GKNYLEPSEVDDPGTLLVIQRISPITRALTTRQRFQFVVTF
+>CNIPAN_00796
+MSSDDRQRFNVLAGLATLLFIAFSVMAYQDKELRPRFAELTMIYVSSLFALMTPRSQDKD
+DGGN
+>CNIPAN_00797
+MSQILQHKDEIFTVFLYVHAAALVIVNLTPTPKDNQVLGGVYRAVEFAAGFLGARAKK
+>CNIPAN_00823
+MSHSVSSLSPQTDRWLAPLAIALFLGQSSERPPESLLPAWEAIAAELWQRRSVPTFTGIE
+TLPCRYLQPDRGLQPSWSEPRRLPELPLLWAIAQQQTRESEAIALELADLGRHYGTVILP
+LTWWQSLPQVRLRALGEQLAAWQTGYRWPPGTKT
+>CNIPAN_00877
+MTLNFYVFSIKIFSLDFEAILLLLSDFKSSINDDVVVLMMLLEINNLNFTGFAFSFGCEE
+LPSIKH
+>match$1_35_57
+WGGFPASTSVIIFVAGILALLFI
+>match$2_87_109
+VSLVEFLIAIAAMVGGLKLMYSS
+>match$3_89_107
+LVEFLIAIAAMVGGLKLMY
+>match$4_3_20
+LLKLFAGIGLVIYGIYQV
+>match$5_27_37
+TTRSSSFDWGG
+>match$6_1_6
+MNLLKL
+>match$7_38_57
+FPASTSVIIFVAGILALLFI
+>match$8_84_88
+VSPVS
+>match$9_7_26
+FAGIGLVIYGIYQVGQKIFF
+>match$10_64_83
+IGWGIMVVGIIMIFYSTSII
+>match$11_108_114
+SSSRYIL
+>match$12_58_63
+PGKLSN
+>match$13_64_83
+IGWGIMVVGIIMIFYSTSII
+>match$14_1_7
+MTRLSIP
+>match$15_29_179
+ADFADCAATLTGLGLAAPVAANACAGAQFPADLSSCTDRLTSSLKLTAADSLAACRSVRK
+PLAVASCAERLQAAGDATPALIADGCRLSLVPERYANCVLGLGDGLDLTRDQLLRACSNN
+GDVPRRIYPNFTTLGETQRESIPAVSPAPRP
+>match$16_1_28
+MTRLSIPLAAIAFSSLAGLSLSTPAAQA
+>match$17_1_28
+MTRLSIPLAAIAFSSLAGLSLSTPAAQA
+>match$18_20_28
+SLSTPAAQA
+>match$19_1_28
+MTRLSIPLAAIAFSSLAGLSLSTPAAQA
+>match$20_8_19
+LAAIAFSSLAGL
+>match$21_1_28
+MTRLSIPLAAIAFSSLAGLSLSTPAAQA
+>match$22_119_124
+VVQNSR
+>match$23_125_143
+WSWALAIAAFPVVTALMHG
+>match$24_7_25
+FSAVVLVLLALAIGALPRQ
+>match$25_1_23
+MGISPPFSAVVLVLLALAIGALP
+>match$26_1_23
+MGISPPFSAVVLVLLALAIGALP
+>match$27_64_69
+DLARSP
+>match$28_20_23
+GALP
+>match$29_144_148
+QDGVR
+>match$30_171_392
+DTAFSRPERGIRDLTSLVGTQAPIGHRAHNLVQLHQQSGATPPAWVLQPGDDPEWLLQVA
+DVTPEEPLAVLSSPVGGSIQAEDCQIVRDLVELRQAIYVVLADYQRQPVGSGVAIILQRS
+PLARYAGWVMLRSQTVDIWGLPGDRQNLHRSSRPRDHYRWENQTVSLMPNSTGDLPRTVL
+DRLMARLEPLQRSLSPNEELMLEWADDGEQAWLLQLFVTVCS
+>match$31_149_170
+VALTVLLALWLVMVSTPLSPGL
+>match$32_125_144
+WSWALAIAAFPVVTALMHGQ
+>match$33_1_7
+MGISPPF
+>match$34_69_86
+PLYLLALLALSVGGYLSQ
+>match$35_70_86
+LYLLALLALSVGGYLSQ
+>match$36_92_118
+TAIAVAFFWADWPTATIALLLGIVSVI
+>match$37_24_46
+RQKPLTLRGVVQLDPQAMPWQQS
+>match$38_87_91
+RQPLL
+>match$39_148_170
+RVALTVLLALWLVMVSTPLSPGL
+>match$40_47_63
+LLALLRGSLVFAIAAGL
+>match$41_8_19
+SAVVLVLLALAI
+>match$42_40_62
+AMPWQQSLLALLRGSLVFAIAAG
+>match$43_96_118
+VAFFWADWPTATIALLLGIVSVI
+>match$44_23_31
+ATGALPATA
+>match$45_32_185
+QSIFNRDAFFNRVTPELAPWASPQVLLERLPRQWKGNFNYEGSTQAQNYPTGLQVTGYSI
+SGRVLSFSGLLNWGSDRQSDVFGYIDSQTGQIEFYERQNLGPTAASSSGGGFIGFLALPD
+EQRIPGEALFYWVPNSIIQPTGVLAIKPAPATNR
+>match$46_12_34
+FLSALLAATTVATGALPATAQSI
+>match$47_11_22
+LFLSALLAATTV
+>match$48_1_10
+MVVRRDVMRS
+>match$49_1_31
+MVVRRDVMRSLFLSALLAATTVATGALPATA
+>match$50_1_31
+MVVRRDVMRSLFLSALLAATTVATGALPATA
+>match$51_1_31
+MVVRRDVMRSLFLSALLAATTVATGALPATA
+>match$52_1_31
+MVVRRDVMRSLFLSALLAATTVATGALPATA
+>match$53_1_9
+MLRGYHPRS
+>match$54_19_23
+RFSDR
+>match$55_24_74
+AIVGLIQRDEGENPNSDRRQELFVAPSKAALDGRWQTDSDRNLQSDERHGV
+>match$56_10_18
+LAALLMTYL
+>match$57_1_23
+MLRGYHPRSLAALLMTYLRFSDR
+>match$58_67_93
+VTLIIAALYLALAGAYLLVVPAALYLY
+>match$59_130_138
+RPRSRQIPA
+>match$60_107_129
+AFMYFLVFFFFPGLLLLAPLLNF
+>match$61_108_129
+FMYFLVFFFFPGLLLLAPLLNF
+>match$62_1_66
+MTLMFKVLGFPEFESCHSIPFAIEAQFSKSAASTVPPRPLVAFPIPPLARAWTQAFKIRA
+KHLSMT
+>match$63_94_107
+LQKRWYVASSWERA
+>match$64_68_135
+TLIIAALYLALAGAYLLVVPAALYLYLQKRWYVASSWERAFMYFLVFFFFPGLLLLAPLL
+NFRPRSRQ
+>match$65_70_92
+IIAALYLALAGAYLLVVPAALYL
+>match$66_67_136
+VTLIIAALYLALAGAYLLVVPAALYLYLQKRWYVASSWERAFMYFLVFFFFPGLLLLAPL
+LNFRPRSRQI
+>match$67_77_133
+ALAGAYLLVVPAALYLYLQKRWYVASSWERAFMYFLVFFFFPGLLLLAPLLNFRPRS
+>match$68_4_19
+ALPLTAFVGSFTLMLL
+>match$69_1_26
+MNYALPLTAFVGSFTLMLLVGAPVKA
+>match$70_1_26
+MNYALPLTAFVGSFTLMLLVGAPVKA
+>match$71_27_274
+CPPGHYQMGGGNAGWVGCAPMDGGVGSGNSAPSIADMNITAPRLSTYDAKQWVDFFEQMA
+QSSIETERELVGKENPEVYEALLQGVWIFGSSKLDSKVPMCTATFATRRGGVMFQDWTGD
+EPGTFLAFYNVNIQRVNQVKRVRVRLEQSGESQTVEAFQTNYPLVDTMGMLMFRVPSTEA
+LLSSIEDNQDFNIYMRESDIETRRGLGLLLLPNRGRNDVEYKVVSGEWHSGLSARDALKA
+CIQKRDAR
+>match$72_1_26
+MNYALPLTAFVGSFTLMLLVGAPVKA
+>match$73_1_26
+MNYALPLTAFVGSFTLMLLVGAPVKA
+>match$74_1_3
+MNY
+>match$75_20_26
+VGAPVKA
+>match$76_1_7
+MGRSPKS
+>match$77_1_26
+MGRSPKSVITAIAIASLALLSQPAIA
+>match$78_1_26
+MGRSPKSVITAIAIASLALLSQPAIA
+>match$79_27_157
+SPWSATLQPLLQSLNRFGFRVQIRQPGREGLYGYFAPKERLIVVNPVVFELGLDEVTLVH
+EAVHAAQFCAGRTQLQVLGLPYDPPPQLRRSFLRYRDPRRQQLEAEAYAVQARSDRLVEV
+QRLLNQYCKPR
+>match$80_1_26
+MGRSPKSVITAIAIASLALLSQPAIA
+>match$81_8_20
+VITAIAIASLALL
+>match$82_21_26
+SQPAIA
+>match$83_1_26
+MGRSPKSVITAIAIASLALLSQPAIA
+>match$84_6_24
+LLGLAIGGIAIAGLAYWLG
+>match$85_1_5
+MDKRH
+>match$86_5_24
+HLLGLAIGGIAIAGLAYWLG
+>match$87_25_117
+SELLRELTQAEVYPGPWQTQPLAELDSSLSSHNVPNCQPYRYRTNQLDPEIGEYLVACPT
+LAGQQPQAYLVLLPLQKVVSGPFPLDPSLANAP
+>match$88_18_38
+LAELDAAIAQLEAEVQSLPAD
+>match$89_45_67
+AQAYGQHITSPASDRQVVNREQL
+>match$90_1_23
+MNHKQTRRARLAHRRELQRRQRE
+>match$91_24_46
+ALPTIVLTAFAVGLFAGYGWAAQ
+>match$92_24_44
+ALPTIVLTAFAVGLFAGYGWA
+>match$93_32_57
+EPQDITLPWTGLSLPFIPDSRAELFD
+>match$94_86_106
+NRRAESRNRDAAREQQEARRA
+>match$95_58_78
+AAYNCFWIATLVAIALVLLEW
+>match$96_12_31
+PPLRVLLTLLLAIGVIFRSY
+>match$97_79_145
+DGQRIGRNRRAESRNRDAAREQQEARRARIQAQVLVAIGQQQLNDSAESRQRLADAIALL
+QEYGDLL
+>match$98_9_31
+GLLPPLRVLLTLLLAIGVIFRSY
+>match$99_56_78
+FDAAYNCFWIATLVAIALVLLEW
+>match$100_1_11
+MLDSDRREGLL
+>match$101_1_49
+MLKPKTDTSSSALRNRQIQFLRVWRRRRQQPRIWLASLGLLWSLWDLRA
+>match$102_50_64
+EWLLMAEQFTWAALR
+>match$103_65_89
+YAMLYHLLTWLVLIVCLTSLLGILV
+>match$104_67_89
+MLYHLLTWLVLIVCLTSLLGILV
+>match$105_1_32
+MLKPKTDTSSSALRNRQIQFLRVWRRRRQQPR
+>match$106_33_44
+IWLASLGLLWSL
+>match$107_90_132
+DRCWPQRRDRRLQRQLDRILAVGARHPLWQRLHSLGSEGSSAS
+>match$108_33_52
+IWLASLGLLWSLWDLRAEWL
+>match$109_45_49
+WDLRA
+>match$110_6_102
+ESPEHLQGKLEISKYFQEVYKGMIDAQEAFIEIEHPISEAGKNGRIADVAVVFSTGYRII
+GECQLAKIEAADIYQRTQDYYSISADVLWFLGGAADT
+>match$111_3_10
+VAQLSLLF
+>match$112_1_14
+MKVAQLSLLFCTLR
+>match$113_11_14
+CTLR
+>match$114_1_2
+MK
+>match$115_15_65
+QHMKLHKPSFSMHSQPQILASLQKSAQKKLSVDAGLRPVLESNTDGDRYCN
+>match$116_1_23
+MRCNVAWLLGCLSLGLLIPPVQA
+>match$117_5_18
+VAWLLGCLSLGLLI
+>match$118_1_23
+MRCNVAWLLGCLSLGLLIPPVQA
+>match$119_1_23
+MRCNVAWLLGCLSLGLLIPPVQA
+>match$120_1_23
+MRCNVAWLLGCLSLGLLIPPVQA
+>match$121_1_4
+MRCN
+>match$122_19_23
+PPVQA
+>match$123_24_116
+ENWIRVAAVTNPDLTIFVEAAVQRDGNGRYRQVTVRWAEVGQPPATVQLKVDCQDPNQGL
+SYALNGGTGLSDRWQAVNARTKSAALKFVCREY
+>match$124_20_98
+ASWFSSLRQSCYWWLSALSGTVETEEEIKRLKQETEQLRQQNAKLDEMLSQRKLETEQLK
+SETERLKQQNAKIDAIFSK
+>match$125_1_20
+MLKPSPLNNTDSNTPSSTGA
+>match$126_40_91
+TVETEEEIKRLKQETEQLRQQNAKLDEMLSQRKLETEQLKSETERLKQQNAK
+>match$127_1_7
+MLQKVTR
+>match$128_1_31
+MLQKVTRFLGILAPLCLASSLSAAPPPETFA
+>match$129_1_23
+MLQKVTRFLGILAPLCLASSLSA
+>match$130_8_18
+FLGILAPLCLA
+>match$131_1_23
+MLQKVTRFLGILAPLCLASSLSA
+>match$132_24_185
+APPPETFAIRSTADLERLLAGLSRDRDAGARQEIQALMAVLLEKGVPVRYQPNGELGPGQ
+RFVRFGVFSTSGQLTLTDQPLRDTRTLLTTLRHEAWHAVQACATNGRPRGQLKPVGIRTT
+AAAQQAVIDKGYRPHDHAIEAEAFTAQFVPYQSLEALREYCP
+>match$133_19_23
+SSLSA
+>match$134_1_23
+MLQKVTRFLGILAPLCLASSLSA
+>match$135_7_24
+GSLIVVAIAVGLAIAFNI
+>match$136_6_24
+WGSLIVVAIAVGLAIAFNI
+>match$137_1_5
+MTPSR
+>match$138_25_45
+DELAALIGATEAKEEVQTPAQ
+>match$139_1_18
+MAQAAGGNPLVSQRGETS
+>match$140_44_61
+ALYFSGALALILIAIVIL
+>match$141_38_43
+SRQFMK
+>match$142_15_37
+GETSIYIGLILLGILLSLLIGLV
+>match$143_62_62
+L
+>match$144_19_37
+IYIGLILLGILLSLLIGLV
+>match$145_44_61
+ALYFSGALALILIAIVIL
+>match$146_84_129
+TTPIPLLSLFAGSAGLVAWLDDSDGPATPSSSPVERPESIRALYLD
+>match$147_65_83
+WFSIWLGLLCGAIAIAWFW
+>match$148_65_87
+WFSIWLGLLCGAIAIAWFWTTPI
+>match$149_1_64
+MSLSLRYHPQWIADWCQEHGWTDVFIECRQFWAFPPGAVLPQPIPAEVLIAIKKTQGLSP
+FEQQ
+>match$150_1_2
+MK
+>match$151_3_8
+VSVFAA
+>match$152_1_13
+MKVSVFAAGQSQA
+>match$153_14_82
+DRLLVIQCADQSEAASAWGRVYELAIAFRVQIAAVRVWIQSEREYLSWFRIAEAAGELGE
+SQPKSPKQG
+>match$154_9_13
+GQSQA
+>match$155_93_113
+RLSLETELSRLMEDLDQYLES
+>match$156_3_161
+AILTTSGRVAIAIAIQQRTAHLAWGNGDPSWGITPPAPPSSASDLLAEVGRRKATSVDFV
+VPDPDGDIAVPEGRFSLSPTPTNSVCFDFFFQFEDGVGEVIREVAIFLDTVAGESVPLGK
+NYLEPSEVDDPGTLLVIQRISPITRALTTRQRFQFVVTF
+>match$157_45_154
+AELWQRRSVPTFTGIETLPCRYLQPDRGLQPSWSEPRRLPELPLLWAIAQQQTRESEAIA
+LELADLGRHYGTVILPLTWWQSLPQVRLRALGEQLAAWQTGYRWPPGTKT
+>match$158_15_26
+WLAPLAIALFLG
+>match$159_1_14
+MSHSVSSLSPQTDR
+>match$160_1_44
+MSHSVSSLSPQTDRWLAPLAIALFLGQSSERPPESLLPAWEAIA
+>match$161_27_44
+QSSERPPESLLPAWEAIA
+>match$162_46_64
+GTITFDPIAIDAVTSGQQR
+>match$163_25_57
+VRCLGLGLLSLVACCLLFQLLGTITFDPIAIDA
+>match$164_23_45
+VAVRCLGLGLLSLVACCLLFQLL
+>match$165_22_44
+TVAVRCLGLGLLSLVACCLLFQL
+>match$166_1_22
+MDEPPISDCPLTWQDLDLGSPT
+>match$167_1_25
+MLQIHLRSLNYGTVVISTQATATQA
+>match$168_27_195
+RPVLAPFQLQANSSGTEASQERRLLYACNPDRAGLILLPGALPEAKAAIAREITDPQQQQ
+LASQLLENLERETKLGVGTSIGPVWLKQQESTISRVVGETVRQQLTTELQKESDPLAAAL
+GNQFTDALLQPLVNQVTTQVIGVANVVLEQNINRACGTTAAFGSAPAAE
+>match$169_1_5
+MGWLK
+>match$170_7_26
+TIAVIAIAIGGTAAAGWVYY
+>match$171_6_26
+GTIAVIAIAIGGTAAAGWVYY
+>match$172_99_126
+QRKFEERLQPLQARLQFLEAENQRLQAQ
+>match$173_5_27
+LPSILAVVALSLMVAVTAGVIYL
+>match$174_6_30
+PSILAVVALSLMVAVTAGVIYLTAV
+>match$175_1_5
+MTEFL
+>match$176_31_45
+DWRDKRRRAREGSSR
+>match$177_33_38
+LRLIAN
+>match$178_56_66
+VQSGTLSSNSD
+>match$179_35_57
+LIANFLIGIIILICAVLPFFIVQ
+>match$180_67_89
+IWILSAVLGAACAIISLVIYPYS
+>match$181_90_109
+SFYESRIKEKIEKNILGRRD
+>match$182_11_33
+NYLVGIGAALLVLVVYAFLFWLL
+>match$183_39_55
+FLIGIIILICAVLPFFI
+>match$184_67_89
+IWILSAVLGAACAIISLVIYPYS
+>match$185_1_11
+MSEVDLLQSSN
+>match$186_12_32
+YLVGIGAALLVLVVYAFLFWL
+>match$187_3_39
+TDKLFYAIFATLPDLVTELVDGIPPAARYRFAALIVK
+>match$188_1_22
+MPNRRREIRSAIAAALMEKTAA
+>match$189_18_22
+EKTAA
+>match$190_23_212
+EDRVFQSRTNTLTEDELPAIMVLSRSEKIPSPERGHPPSGWNSSIRRTATIAVECVAQVL
+QDIDDVLDDLAGEVEAELEHLTIAGMESAELRLTETELDVSYEGSLPIGAVRLTYEVAYF
+TVYRDCADPYVDEAAAEGDGPIERSGAYPGGQILPGCPGEQVGDACPMPAADISLGDLDL
+GTYQPPVPPR
+>match$191_10_17
+SAIAAALM
+>match$192_1_9
+MPNRRREIR
+>match$193_2_142
+PNRRREIRSAIAAALMEKTAAEDRVFQSRTNTLTEDELPAIMVLSRSEKIPSPERGHPPS
+GWNSSIRRTATIAVECVAQVLQDIDDVLDDLAGEVEAELEHLTIAGMESAELRLTETELD
+VSYEGSLPIGAVRLTYEVAYF
+>match$194_159_183
+EGDGPIERSGAYPGGQILPGCPGEQ
+>match$195_1_12
+MLSHPEGGSVNR
+>match$196_13_32
+AYAYLGLLLLVSSYFTAPAI
+>match$197_34_278
+RPVRGGGSRPSISRPVTRPAPSRPNVSRPVTTPNRPNITRPINTPNRPVNVPSRPITTPN
+RPINNPNRPINTPNRPIINQPINNRPIINRPIGSGNTIINNRPININNINTRPNWVNRNW
+AASRPWGGYGWYGSWANPPWGWWTANTAIWGITSLASAAIISSSIDNAVSTNVVYIPVPN
+SSYELYYGTIAPTSSSVTTFAFGYEGQTYQAVADCQQGLLNGQPPTTAAEAELLNAACQV
+AFASF
+>match$198_87_115
+RPITTPNRPINNPNRPINTPNRPIINQPI
+>match$199_13_33
+AYAYLGLLLLVSSYFTAPAIA
+>match$200_33_115
+ARPVRGGGSRPSISRPVTRPAPSRPNVSRPVTTPNRPNITRPINTPNRPVNVPSRPITTP
+NRPINNPNRPINTPNRPIINQPI
+>match$201_57_80
+PNVSRPVTTPNRPNITRPINTPNR
+>match$202_30_44
+STNPAAWGYSREQQE
+>match$203_1_29
+MVDLYLQRLLAVTLLLGGVPSLVLGIGIA
+>match$204_9_24
+LLAVTLLLGGVPSLVL
+>match$205_45_68
+ASIILFGGGGLVATSAGSLLELNF
+>match$206_69_231
+RKQRQLRQRQRLQRFLHGLIRESQGSLGVIEWVTCASARVPWPTEELKSFLKTEALLLNA
+EVSSDELGNIRYRFPFDPQRQEQQQQLRRLLHDLIQQNQGRVSLVDWVTQASALVTWPTA
+DLRAFLEAEASLLEASPEVVDNNALYYCFQPTALPTAPPSASA
+>match$207_9_31
+LLAVTLLLGGVPSLVLGIGIAST
+>match$208_25_29
+GIGIA
+>match$209_46_68
+SIILFGGGGLVATSAGSLLELNF
+>match$210_1_8
+MVDLYLQR
+>match$211_6_13
+IPALLAWI
+>match$212_19_97
+EELDARLLATPTEELWGRHIIWLFLLTRSEQEDPSDRRAINNFLAELADEEMAAARQIFF
+QIIEKRRSENLATQAPDLA
+>match$213_14_18
+AAKYA
+>match$214_1_18
+MKRDRIPALLAWIAAKYA
+>match$215_1_5
+MKRDR
+>match$216_234_254
+KDELEKAYEVVEAELDRLADQ
+>match$217_44_54
+TAAAGVATPEP
+>match$218_44_70
+TAAAGVATPEPAATPAPEPVAEETPAK
+>match$219_5_74
+IHQLEQYSLRHRDWVLRVLAEDQGKAVELLVFRGFSSSLTQPTDFDPDVPVLPASATIQS
+VQRFRSPYNA
+>match$220_6_77
+HQLEQYSLRHRDWVLRVLAEDQGKAVELLVFRGFSSSLTQPTDFDPDVPVLPASATIQSV
+QRFRSPYNAEQP
+>match$221_28_40
+FRKDYDRHGGSAS
+>match$222_20_40
+IQGKVQPTFRKDYDRHGGSAS
+>match$223_36_56
+VVLMMLLEINNLNFTGFAFSF
+>match$224_25_35
+SDFKSSINDDV
+>match$225_6_24
+YVFSIKIFSLDFEAILLLL
+>match$226_1_5
+MTLNF
+>match$227_57_66
+GCEELPSIKH
+>match$228_2_172
+TDSVPTIPDHPDFGTAIALAQQLLALEPTDAVIEAIARLVASRDGARGFFVTYLTSDEPW
+ADQPAPALIAALRSQPTYVEDLMVRNLAMSTAMGLTHERNADPAMAAQSQRVSRRSAEHL
+RQLQSPSLRQQIQDLQQSLTAEGPFSDFLDRWGYDAEQRAAIASAIAPLLD
+>match$229_1_5
+MLTEL
+>match$230_6_26
+PIAAQTAALAALTAVVIGPWY
+>match$231_27_63
+PKLQQSPLQQTLLRSSLAAQSVCRDREPATLWPTPFC
+>match$232_1_27
+MSPKFVVHIAAKAALLLPLMAAGATEA
+>match$233_1_27
+MSPKFVVHIAAKAALLLPLMAAGATEA
+>match$234_60_87
+FGGSDFGNNSRNNSDSNNQSDSGNQRRN
+>match$235_1_27
+MSPKFVVHIAAKAALLLPLMAAGATEA
+>match$236_1_5
+MSPKF
+>match$237_18_27
+PLMAAGATEA
+>match$238_48_94
+TATPATLIASNDFGGSDFGNNSRNNSDSNNQSDSGNQRRNGNNSDFG
+>match$239_28_94
+VNVPQARSSAIEVELTELSPTATPATLIASNDFGGSDFGNNSRNNSDSNNQSDSGNQRRN
+GNNSDFG
+>match$240_6_17
+VVHIAAKAALLL
+>match$241_1_24
+MSPKFVVHIAAKAALLLPLMAAGA
+>match$242_28_36
+YQDKELRPR
+>match$243_1_27
+MSSDDRQRFNVLAGLATLLFIAFSVMA
+>match$244_11_22
+VLAGLATLLFIA
+>match$245_9_28
+FNVLAGLATLLFIAFSVMAY
+>match$246_1_10
+MSSDDRQRFN
+>match$247_23_27
+FSVMA
+>match$248_37_54
+FAELTMIYVSSLFALMTP
+>match$249_55_64
+RSQDKDDGGN
+>match$250_28_36
+GSKGHNTTS
+>match$251_4_26
+LLITFFISWATAGCIFGLFCSTV
+>match$252_1_27
+MQELLITFFISWATAGCIFGLFCSTVA
+>match$253_33_55
+NTTSWFLAGFFFNFIALIAVAGL
+>match$254_37_55
+WFLAGFFFNFIALIAVAGL
+>match$255_4_22
+LLITFFISWATAGCIFGLF
+>match$256_23_27
+CSTVA
+>match$257_1_3
+MQE
+>match$258_56_78
+SDTLSQEYLYEIANKLPRRSVNY
+>match$259_30_380
+AEVNPTLLRRCQSALAERIGQRIQVQTDTLSSYFISNAEQGIRGRGNLDSSGNFRPFQFD
+CQLNTRDGRVVSLEYNYQSAGNDDTVSDSLRRSCQEALANRIGQRILLSADTLRAYPISR
+NEQGVSGEGTLDRSGNFRPFTFDCQVNLRNGRVKRISYDYQAENNPPEISPALVQACQAE
+LRNRLSPQVRLQQASLRSYFISNAEQGLRGDAVLDRNSQPFRFDCQANLRTGQITRLDYD
+SAGAIAELTPIFTNFQDGDRVTSNGFVVMGRTRPNARVRIEVRSSAAVLGGLIDIGNTVL
+LDREVIADRDGNFSVQVRRPVVVSSSTRYVVRASASLNGETRQNEIVLRQQ
+>match$260_1_29
+MTQRITALTTAALLWGSAIAVLPPEAVQA
+>match$261_1_6
+MTQRIT
+>match$262_1_20
+MTQRITALTTAALLWGSAIA
+>match$263_23_29
+PPEAVQA
+>match$264_7_22
+ALTTAALLWGSAIAVL
+>match$265_1_29
+MTQRITALTTAALLWGSAIAVLPPEAVQA
+>match$266_1_20
+MTQRITALTTAALLWGSAIA
+>match$267_24_36
+PPKEAEVSLRQEF
+>match$268_48_59
+PQTTGKSKTQTE
+>match$269_1_62
+MLNDRDRAKLQKLKQQMQAPAPEPPKEAEVSLRQEFDDLLQGRKRIKPQTTGKSKTQTEA
+LP
+>match$270_24_112
+PAQDATAEGQWLCAALQDWLDHEFIPEAVNSDIARRVAQIYERQRLEGETDVGCLLLAIL
+LEMRGFDFSQSFFSEFAVANAVSELLLRQ
+>match$271_36_54
+VALTLVLLPPLLLGVALVW
+>match$272_55_76
+RWRSLAIAASPQPQTEVEGKSP
+>match$273_16_20
+AISWT
+>match$274_21_35
+IRELGPRFPLPATDT
+>match$275_5_22
+LFLLQLLGLSIAISWTIR
+>match$276_1_3
+MKS
+>match$277_4_15
+GLFLLQLLGLSI
+>match$278_32_54
+ATDTVALTLVLLPPLLLGVALVW
+>match$279_1_16
+MKSGLFLLQLLGLSIA
+>match$280_1_20
+MKSGLFLLQLLGLSIAISWT
+>match$281_65_92
+AAATDAQVQRLRTENQELRDRLDRQQRY
+>match$282_1_7
+MRLKPVE
+>match$283_1_22
+MRLKPVELFLALGLATTAVACG
+>match$284_16_20
+TTAVA
+>match$285_27_50
+EPTNPTTPEVTPTTPTNPAPQAAP
+>match$286_1_21
+MRLKPVELFLALGLATTAVAC
+>match$287_52_67
+GGEGGEGGEGGEGGEG
+>match$288_8_15
+LFLALGLA
+>match$289_21_67
+CGQQASEPTNPTTPEVTPTTPTNPAPQAAPDGGEGGEGGEGGEGGEG
+>match$290_22_67
+GQQASEPTNPTTPEVTPTTPTNPAPQAAPDGGEGGEGGEGGEGGEG
+>match$291_1_20
+MRLKPVELFLALGLATTAVA
+>match$292_1_20
+MRLKPVELFLALGLATTAVA
+>match$293_1_25
+MRLKPVELFLALGLATTAVACGQQA
+>match$294_1_23
+MNFARTCGLALAACLAGGAVLEA
+>match$295_29_227
+GPDRWDRCERPGRGNRRACLEQLNRFNRFDQFDRRGVPIPVVDRRFLRSGSRMNLFFPGR
+DRIILRRGEVLPLEGRLARDIFDNRGRVLVPRNSRILGQLRPDGRGLRFVSDRLILPNGG
+VYPIRAHSGLIFSEPSFGRPDLSTVLITGAARTLLSNLPGYNGAIDRSFDDVLQRDNSQI
+IVLDSSDLGLELLSDLTFR
+>match$296_6_16
+TCGLALAACLA
+>match$297_1_28
+MNFARTCGLALAACLAGGAVLEAQPAAA
+>match$298_1_28
+MNFARTCGLALAACLAGGAVLEAQPAAA
+>match$299_1_5
+MNFAR
+>match$300_17_28
+GGAVLEAQPAAA
+>match$301_1_28
+MNFARTCGLALAACLAGGAVLEAQPAAA
+>match$302_51_84
+TSLSWVPGIGSWGQSGLEILRYFCDTFGSGNPLC
+>match$303_85_105
+GLLVIGATCAVVGMMFDTYAV
+>match$304_28_50
+LAVAGTVGFVAPLAVMGLLWLAM
+>match$305_28_50
+LAVAGTVGFVAPLAVMGLLWLAM
+>match$306_85_107
+GLLVIGATCAVVGMMFDTYAVSV
+>match$307_106_112
+SVSRASR
+>match$308_1_27
+MARLKATDLPLVSPMLLRPLPERFLRS
+>match$309_50_79
+EWSQNTNVNHHKSKAPRVVAEPEDSSLPGL
+>match$310_6_25
+IAIANGILALVLLWAAGKVW
+>match$311_5_27
+AIAIANGILALVLLWAAGKVWRL
+>match$312_24_51
+VWRLRGNLRQWRRELRQVNRQVSTVLAA
+>match$313_1_5
+MLTWA
+>match$314_26_107
+RLRGNLRQWRRELRQVNRQVSTVLAAAPADLQQAADQVSQSRWQYLRLRQLWQQWQLLLK
+FLGLLQPWVPLFTPPKKSRAAQ
+>match$315_1_30
+MLGWGLEKISAVVFLVLTSLFSPCWHSSLR
+>match$316_31_48
+NFALNSLFRRQLHVYLRW
+>match$317_1_10
+MLGWGLEKIS
+>match$318_11_22
+AVVFLVLTSLFS
+>match$319_10_29
+SAVVFLVLTSLFSPCWHSSL
+>match$320_23_30
+PCWHSSLR
+>match$321_32_34
+KGG
+>match$322_12_31
+LILFLSPGLLLSVLILGTFA
+>match$323_9_31
+LGLLILFLSPGLLLSVLILGTFA
+>match$324_1_11
+MTALTYSDLGL
+>match$325_36_54
+QVLGGVYRAVEFAAGFLGA
+>match$326_12_31
+FTVFLYVHAAALVIVNLTPT
+>match$327_12_30
+FTVFLYVHAAALVIVNLTP
+>match$328_55_58
+RAKK
+>match$329_1_11
+MSQILQHKDEI
+>match$330_31_35
+TPKDN
