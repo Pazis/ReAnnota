@@ -1,0 +1,17 @@
+name: ReAnnota
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # System tools
+  - circos
+  - perl
+  
+  # Python runtime
+  - python=3.10
+  
+  # Install the package itself in editable mode with pip
+  - pip
+  - pip:
+      - -e .  # Installs ReAnnota from pyproject.toml

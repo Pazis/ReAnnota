@@ -1,0 +1,64 @@
+[project]
+name = "ReAnnota"
+version = "0.1.0"
+description = "Cyanobacteria genome annotation enhancement pipeline"
+authors = [
+    {name = "Aggelos Pazis", email = "pazisangel@bio.auth.gr"},
+    {name = "Efthymios Parisis", email = "eparisis@bio.auth.gr"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pandas>=2.1.0",
+    "biopython>=1.82",
+    "matplotlib>=3.7.0",
+    "numpy>=1.24.0",
+    "typer>=0.9.0",
+    "python-circos>=0.3.0",
+    "requests>=2.31.0",
+    "demjson3>=3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+
+[project.scripts]
+reannota = "reannota.cli:app"
+isolate-hypotheticals = "reannota.analysis.isolate_hypotheticals:main"
+
+[project.urls]
+Homepage = "https://https://github.com/Pazis/ReAnnota/tree/master"
+Repository = "https://https://github.com/Pazis/ReAnnota/tree/master"
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatchling.build.targets.wheel]
+packages = ["src/ReAnnota"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=ReAnnota --cov-report=html --cov-report=term-missing"
