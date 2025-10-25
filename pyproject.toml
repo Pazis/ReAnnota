@@ -29,8 +29,8 @@ dev = [
 ]
 
 [project.scripts]
-cyano-annotate = "ReAnnota.cli:app"
-isolate-hypotheticals = "ReAnnota.analysis.isolate_hypotheticals:main"
+reannota = "reannota.cli:app"
+isolate-hypotheticals = "reannota.analysis.isolate_hypotheticals:main"
 
 [project.urls]
 Homepage = "https://https://github.com/Pazis/ReAnnota/tree/master"

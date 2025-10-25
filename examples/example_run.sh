@@ -51,9 +51,9 @@ echo ""
 echo "=== Step 1: Checking prerequisites ==="
 echo ""
 
-# Check if ReAnnota command is available
-if ! command -v ReAnnota &> /dev/null; then
-    echo "❌ ERROR: 'ReAnnota' command not found!"
+# Check if reannota command is available
+if ! command -v reannota &> /dev/null; then
+    echo "❌ ERROR: 'reannota' command not found!"
     echo ""
     echo "The package is not installed. Please install it first:"
     echo ""

@@ -15,7 +15,6 @@ from reannota.parsers import (
     egg_dict_to_tsv,
     ipr_dictotsv,
     ipr_termfinder,
-    read_file_paths,
 )
 from reannota.visualization import gff_to_circos_png
 
@@ -161,17 +160,17 @@ def annotate(
         # Step 1: Process EggNOG
         if egg_input:
             logger.info("Processing EggNOG file...")
-            EGG_Terms = build_egg_dictionary_clean(str(egg_input))
+            egg_terms = build_egg_dictionary_clean(str(egg_input))
             egg_out = outdir / "eggnog_hits.tsv"
-            egg_dict_to_tsv(EGG_Terms, str(egg_out))
+            egg_dict_to_tsv(egg_terms, str(egg_out))
             logger.info(f"EggNOG results written to {egg_out}")
 
         # Step 2: Process InterPro
         if ipr_input:
             logger.info("Processing InterPro file...")
-            IPR_Terms = ipr_termfinder(str(ipr_input))
+            ipr_terms = ipr_termfinder(str(ipr_input))
             ipr_out = outdir / "ipr_hits.tsv"
-            ipr_dictotsv(IPR_Terms, str(ipr_out))
+            ipr_dictotsv(ipr_terms, str(ipr_out))
             logger.info(f"InterPro results written to {ipr_out}")
 
         # Step 3: Merge annotations into GBFF
@@ -190,16 +189,11 @@ def annotate(
             enhanced_gbff = str(gbff_input)
 
         if gecco_input:
-            gecco_files = read_file_paths(gecco_input)
-
-            if gecco_files:
-                combined_gbk = Path(outdir) / "combined_gecco_clusters.gbk"
-                combine_gbk_files(combined_gbk, gecco_files)
-                gecco_clusters_gbk = str(combined_gbk)
-            else:
-                print("⚠️ No GECCO GBK files found in CSV. Skipping GECCO processing.")
-                gecco_clusters_gbk = None
+            combined_gbk = Path(outdir) / "combined_gecco_clusters.gbk"
+            combine_gbk_files(gecco_input, combined_gbk)
+            gecco_clusters_gbk = str(combined_gbk)
         else:
+            print("⚠️ No GECCO GBK files found in CSV. Skipping GECCO processing.")
             gecco_clusters_gbk = None
 
         # Step 4: Convert GBFF to GFF

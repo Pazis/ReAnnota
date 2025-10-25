@@ -90,111 +90,111 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
                 if locus_tag in ipr_dictionary:
                     ipr_annotated += 1
                     values = ipr_dictionary[locus_tag]
-                    Description_ipr = values.get("Description", "")
-                    GO_terms = str(values.get("GO_terms", ""))
-                    Interpro_terms = str(values.get("Interpro_terms", ""))
+                    description_ipr = values.get("Description", "")
+                    go_terms = str(values.get("GO_terms", ""))
+                    interpro_terms = str(values.get("Interpro_terms", ""))
 
                     # Update 'product' field if InterPro description is available
                     if (
-                        Description_ipr is not None
-                        and str(Description_ipr).lower() != "nan"
-                        and str(Description_ipr).strip() != ""
+                        description_ipr is not None
+                        and str(description_ipr).lower() != "nan"
+                        and str(description_ipr).strip() != ""
                     ):
-                        feature.qualifiers["product"] = [str(Description_ipr)]
+                        feature.qualifiers["product"] = [str(description_ipr)]
 
                     feature.qualifiers.setdefault("db_xref", [])  # <--Ensure db_xref field exists
                     db_xrefs = feature.qualifiers["db_xref"]
 
                     # Add GO terms if not already present
                     if (
-                        GO_terms
-                        and GO_terms != "nan"
+                        go_terms
+                        and go_terms != "nan"
                         and not any(x.startswith("GO:") for x in db_xrefs)
                     ):
-                        feature.qualifiers["db_xref"].append(GO_terms)
+                        feature.qualifiers["db_xref"].append(go_terms)
 
                     # Add InterPro terms if not already present
                     if (
-                        Interpro_terms
-                        and Interpro_terms != "nan"
+                        interpro_terms
+                        and interpro_terms != "nan"
                         and not any(x.startswith("Interpro:") for x in db_xrefs)
                     ):
-                        feature.qualifiers["db_xref"].append(Interpro_terms)
+                        feature.qualifiers["db_xref"].append(interpro_terms)
 
                 # --------------Adding eggnog annotation to gbff and checking overlaps------#
 
                 if locus_tag in egg_dictionary:
                     egg_annotated += 1
                     values = egg_dictionary[locus_tag]
-                    Description = str(values.get("Description", ""))
-                    COG_ref = str(values.get("COG_ref", ""))
-                    COG_category = str(values.get("COG_category", ""))
-                    GOs = str(values.get("GOs", ""))
-                    PFAMs = str(values.get("PFAM", ""))
-                    KEGGs = str(values.get("KEGG_ko", ""))
+                    description = str(values.get("Description", ""))
+                    cog_ref = str(values.get("COG_ref", ""))
+                    cog_category = str(values.get("COG_category", ""))
+                    gos = str(values.get("GOs", ""))
+                    pfams = str(values.get("PFAM", ""))
+                    keggs = str(values.get("KEGG_ko", ""))
 
                     # Update 'product' or add to 'note' depending on length and existing product
                     feature.qualifiers.setdefault("note", [])
-                    if Description and Description != "nan":
-                        if len(Description) > DESCRIPTION_LENGTH_MAX:
+                    if description and description != "nan":
+                        if len(description) > DESCRIPTION_LENGTH_MAX:
                             feature.qualifiers["note"].append(
                                 f"Description={values['Description']}"
                             )
                         elif feature.qualifiers["product"] == ["hypothetical protein"]:
-                            feature.qualifiers["product"] = [Description]
+                            feature.qualifiers["product"] = [description]
 
                     feature.qualifiers.setdefault("db_xref", [])  # <--Ensure db_xref field exists
                     db_xrefs = feature.qualifiers["db_xref"]
 
                     # Add COG reference if not already present
                     if (
-                        COG_ref
-                        and COG_ref != "nan"
+                        cog_ref
+                        and cog_ref != "nan"
                         and not any(x.startswith("COG:") for x in db_xrefs)
                     ):
-                        feature.qualifiers["db_xref"].append(COG_ref)
+                        feature.qualifiers["db_xref"].append(cog_ref)
 
                     # Add COG category if not already present
                     if (
-                        COG_category
-                        and COG_category != "nan"
+                        cog_category
+                        and cog_category != "nan"
                         and not any(x.startswith("COG:") for x in db_xrefs)
                     ):
-                        feature.qualifiers["db_xref"].append(f"COG:{COG_category}")
+                        feature.qualifiers["db_xref"].append(f"COG:{cog_category}")
 
                     # Add GO terms if not already present
-                    if GOs and GOs != "nan" and not any(x.startswith("GO:") for x in db_xrefs):
-                        feature.qualifiers["db_xref"].append(GOs)
+                    if gos and gos != "nan" and not any(x.startswith("GO:") for x in db_xrefs):
+                        feature.qualifiers["db_xref"].append(gos)
 
                     if (
-                        KEGGs
-                        and KEGGs != "nan"
+                        keggs
+                        and keggs != "nan"
                         and not any(x.startswith("KEGG:") for x in db_xrefs)
                     ):
-                        feature.qualifiers["db_xref"].append(f"KEGG:{KEGGs}")
+                        feature.qualifiers["db_xref"].append(f"KEGG:{keggs}")
 
                     # Add PFAM information as a note
                     if (
-                        PFAMs
-                        and PFAMs != "nan"
+                        pfams
+                        and pfams != "nan"
                         and not any(x.startswith("PFAM:") for x in db_xrefs)
                     ):
-                        feature.qualifiers["note"].append(f"Eggnog PFAM comment:{PFAMs}")
+                        feature.qualifiers["note"].append(f"Eggnog PFAM comment:{pfams}")
 
                     #--------------Add Pseudogenes-------------------
                 if pseudofile != None:
                     if locus_tag in pseudo_dict:
                         pseudogenes += 1
                         values = pseudo_dict[locus_tag]
-                        Description_pseudo = values.get("attributes", "").replace("note=", "")
+                        description_pseudo = values.get("attributes", "").replace("note=", "")
 
                         feature.qualifiers.setdefault("note", [])
 
                         if feature.qualifiers["product"] == ["hypothetical protein"]:
                             feature.qualifiers["product"] = ["Pseudogene"]
-                            feature.qualifiers["note"].append(Description_pseudo)
+                            feature.qualifiers["note"].append(description_pseudo)
                         elif feature.qualifiers["product"] != ["hypothetical protein"]:
-                            feature.qualifiers["note"].append(Description_pseudo)
+                            feature.qualifiers["note"].append(description_pseudo)
 
 
     # Write the updated sequences to the output GenBank file
