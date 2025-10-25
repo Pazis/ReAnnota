@@ -112,18 +112,18 @@ reannota annotate \
 The output folder structure will look as follows:
 
 ```
-└─<PREFIX>
+└─<OUTDIR>
    ├─results
    │  |─Enhanced.gff3
    |  |─Enhanced.gbff
-   ├─Tool_hits
+   ├─tool_hits
    │  |─Interpro_hits.gff3
    │  |─eggNOG_hits.gff3
    ├─bgcs
    │  |─combined_gecco_clusters.gbk
-   |─Compare (optional)
+   |─compare (optional)
    |  |─gff_comparison.csv
-   |─Visualisation (optional)
+   |─visualisation (optional)
    |  |─Circos_plot_starter.png
    |  |─Circos_plot_enhanced.png
    |─pipeline.log
@@ -132,10 +132,10 @@ The output folder structure will look as follows:
 
 ### Merged files
 
-The two main output files for each genome are located in `<OUTDIR>/<PREFIX>/results/`:
+The two main output files for each genome are located in `<OUTDIR>/results/`:
 
-- `<PREFIX>_enhanced.gbff`:  annotation file produced after the integration of the tool outputs
-- `<PREFIX>_enhanced.gbff`:  the gff3 version of the produced .gbff file
+- `enhanced.gbff`:  annotation file produced after the integration of the tool outputs
+- `enhanced.gbff`:  the gff3 version of the produced .gbff file
 
 #### Comparison
 
