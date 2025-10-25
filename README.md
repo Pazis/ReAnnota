@@ -25,7 +25,7 @@ uv pip install e.
 | **Output** | Output GBFF file path *(required)* |
 | **EggNOG** | Annotation file in TSV format (`.tsv`) |
 | **InterProScan** | Annotation file in GFF3 format (`.gff3`) |
-| **antiSMASH** | regions file in JSON format (`.json`) |
+| **antiSMASH** | regions file in JS format (`.js`) |
 | **Pseudofinder** | Pseudofinder file in GFF format (`.gff`) |
 | **Gecco** | csv containing all Gecco produced cluster files in GenBank format (`.gbk`) |
 | **GFF comparison** | Gff file (`.gff`) produced by annotation tool |
@@ -36,7 +36,7 @@ uv pip install e.
 Running `ReAnnota` with the `--help` option will display th help message:
 
 ```angular2html
- Cyanobacteria genome annotation enhancement pipeline                           
+ Genome annotation enhancement pipeline                           
                                                                                 
 ╭─ Options ────────────────────────────────────────────────────────────────────╮
 │ --version  -v        Print the current tool version and exit.                │
@@ -93,7 +93,7 @@ Running the command `annotate` with the `--help` option will display th help mes
 Now you can run the pipeline using :
 
 ```bash
-cyano-annotate annotate \
+reannota annotate \
     --egg-input eggnog_input \
     --ipr-input interpro_input \
     --gbff-input input_annotation.gbff \
