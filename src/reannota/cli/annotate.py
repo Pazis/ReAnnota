@@ -157,11 +157,15 @@ def annotate(
     ipr_out = None
 
     try:
+
+        tool_hits_dir = Path(outdir) / "tool_hits"
+        tool_hits_dir.mkdir(parents=True, exist_ok=True)
+
         # Step 1: Process EggNOG
         if egg_input:
             logger.info("Processing EggNOG file...")
             egg_terms = build_egg_dictionary_clean(str(egg_input))
-            egg_out = outdir / "eggnog_hits.tsv"
+            egg_out = tool_hits_dir / "eggnog_hits.tsv"
             egg_dict_to_tsv(egg_terms, str(egg_out))
             logger.info(f"EggNOG results written to {egg_out}")
 
@@ -169,27 +173,32 @@ def annotate(
         if ipr_input:
             logger.info("Processing InterPro file...")
             ipr_terms = ipr_termfinder(str(ipr_input))
-            ipr_out = outdir / "ipr_hits.tsv"
+            ipr_out = tool_hits_dir / "ipr_hits.tsv"
             ipr_dictotsv(ipr_terms, str(ipr_out))
             logger.info(f"InterPro results written to {ipr_out}")
 
         # Step 3: Merge annotations into GBFF
         if egg_out or ipr_out:
             logger.info("Merging annotations into GBFF...")
+            results_dir = Path(outdir) / "results"
+            results_dir.mkdir(parents=True, exist_ok=True)
+            gbff_outpath = results_dir / "Enhanced.gbff"
             enhanced_gbff = merge_csv_to_gbff(
                 egg_file=str(egg_out) if egg_out else None,
                 interpro_file=str(ipr_out) if ipr_out else None,
                 gbff_in=str(gbff_input),
-                gbff_out=str(output_file),
+                gbff_out=str(gbff_outpath),
                 pseudofile=str(pseudofinder_input) if pseudofinder_input else None
             )
-            logger.info(f"Merged GBFF written to {output_file}")
+            logger.info(f"Merged GBFF written to {gbff_outpath}")
         else:
             logger.warning("No annotation files produced — skipping merge.")
             enhanced_gbff = str(gbff_input)
 
         if gecco_input:
-            combined_gbk = Path(outdir) / "combined_gecco_clusters.gbk"
+            bgcs_dir = Path(outdir) / "bgcs"
+            bgcs_dir.mkdir(parents=True, exist_ok=True)
+            combined_gbk = bgcs_dir / "combined_gecco_clusters.gbk"
             combine_gbk_files(gecco_input, combined_gbk)
             gecco_clusters_gbk = str(combined_gbk)
         else:
@@ -197,14 +206,16 @@ def annotate(
             gecco_clusters_gbk = None
 
         # Step 4: Convert GBFF to GFF
-        gff_file = outdir / "Enhanced.gff"
-        gff_generated = gbff_to_gff(enhanced_gbff, str(gff_file), str(antismash_input),str(gecco_clusters_gbk),antismash_version="7.1.0" )
-        logger.info(f"Enhanced GFF file created: {gff_file}")
+        gff_file_path = results_dir / "Enhanced.gff"
+        gff_generated = gbff_to_gff(enhanced_gbff, str(gff_file_path), str(antismash_input),str(gecco_clusters_gbk),antismash_version="7.1.0" )
+        logger.info(f"Enhanced GFF file created: {gff_file_path}")
 
         # Step 5: Compare GFFs
         if compare:
             if gff_input and gff_input.exists() and gff_generated:
-                csv_file = outdir / "gff_comparison.csv"
+                compare_dir = Path(outdir) / "compare"
+                compare_dir.mkdir(parents=True, exist_ok=True)
+                csv_file = compare_dir / "gff_comparison.csv"
                 compare_gff(str(gff_input), gff_generated, output_csv=str(csv_file))
                 logger.info(f"GFF comparison completed → {csv_file}")
 
@@ -218,7 +229,9 @@ def annotate(
         if circos:
 
             if gff_generated:
-                circos_png = outdir / "circos_enhanced.png"
+                visualisation_dir = Path(outdir) / "visualisation"
+                visualisation_dir.mkdir(parents=True, exist_ok=True)
+                circos_png = visualisation_dir / "circos_enhanced.png"
                 gff_to_circos_png(
                     gff_generated, str(circos_png)
                 )
@@ -227,7 +240,7 @@ def annotate(
                 logger.warning("Skipping Circos step for enhanced GFF (not produced).")
 
             if gff_input and gff_input.exists():
-                circos_png_input = outdir / "circos_input.png"
+                circos_png_input = visualisation_dir / "circos_input.png"
                 gff_to_circos_png(
                     str(gff_input),
                     str(circos_png_input),

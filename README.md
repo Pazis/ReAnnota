@@ -119,6 +119,8 @@ The output folder structure will look as follows:
    ├─Tool_hits
    │  |─Interpro_hits.gff3
    │  |─eggNOG_hits.gff3
+   ├─bgcs
+   │  |─combined_gecco_clusters.gbk
    |─Compare (optional)
    |  |─gff_comparison.csv
    |─Visualisation (optional)
