@@ -23,7 +23,7 @@ class LogLevel(str, Enum):
 
 # Create the main Typer app
 app = typer.Typer(
-    help="Cyanobacteria genome annotation enhancement pipeline",
+    help="Genome annotation enhancement pipeline",
     context_settings={"help_option_names": ["-h", "--help"]},
     add_completion=False,  # Disable shell completion options
 )

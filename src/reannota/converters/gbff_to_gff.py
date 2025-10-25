@@ -4,7 +4,7 @@ import logging
 
 from Bio import SeqIO
 
-from ReAnnota.parsers import (
+from reannota.parsers import (
     build_gecco_gff_rows,
     build_gff_rows,
     extract_cluster_genes,

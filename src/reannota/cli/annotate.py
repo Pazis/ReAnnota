@@ -7,9 +7,9 @@ from typing import Optional
 
 import typer
 
-from ReAnnota.analysis import compare_gff
-from ReAnnota.converters import gbff_to_gff, merge_csv_to_gbff
-from ReAnnota.parsers import (
+from reannota.analysis import compare_gff
+from reannota.converters import gbff_to_gff, merge_csv_to_gbff
+from reannota.parsers import (
     build_egg_dictionary_clean,
     combine_gbk_files,
     egg_dict_to_tsv,
@@ -17,7 +17,7 @@ from ReAnnota.parsers import (
     ipr_termfinder,
     read_file_paths,
 )
-from ReAnnota.visualization import gff_to_circos_png
+from reannota.visualization import gff_to_circos_png
 
 from .main import LogLevel, app, setup_logger
 

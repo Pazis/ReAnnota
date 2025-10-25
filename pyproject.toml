@@ -1,5 +1,5 @@
 [project]
-name = "cyano-annotation"
+name = "ReAnnota"
 version = "0.1.0"
 description = "Cyanobacteria genome annotation enhancement pipeline"
 authors = [
@@ -29,12 +29,12 @@ dev = [
 ]
 
 [project.scripts]
-cyano-annotate = "cyano_annotation.cli:app"
-isolate-hypotheticals = "cyano_annotation.analysis.isolate_hypotheticals:main"
+cyano-annotate = "ReAnnota.cli:app"
+isolate-hypotheticals = "ReAnnota.analysis.isolate_hypotheticals:main"
 
 [project.urls]
-Homepage = "https://github.com/CyanoLab-AUTH/cyano-annotation/tree/master"
-Repository = "https://github.com/CyanoLab-AUTH/cyano-annotation/tree/master"
+Homepage = "https://https://github.com/Pazis/ReAnnota/tree/master"
+Repository = "https://https://github.com/Pazis/ReAnnota/tree/master"
 
 [tool.black]
 line-length = 100
@@ -56,9 +56,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatchling.build.targets.wheel]
-packages = ["src/cyano_annotation"]
+packages = ["src/ReAnnota"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
-addopts = "-v --cov=cyano_annotation --cov-report=html --cov-report=term-missing"
+addopts = "-v --cov=ReAnnota --cov-report=html --cov-report=term-missing"

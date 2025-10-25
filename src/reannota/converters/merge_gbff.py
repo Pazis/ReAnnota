@@ -5,7 +5,7 @@ import logging
 import pandas as pd
 from Bio import SeqIO
 
-from ReAnnota.parsers import parse_pseudogff_to_dict
+from reannota.parsers import parse_pseudogff_to_dict
 
 logger = logging.getLogger("ReAnnota")
 

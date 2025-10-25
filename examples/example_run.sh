@@ -1,6 +1,6 @@
 #!/bin/bash
 # example_run.sh
-# Simple example demonstrating the cyano-annotation pipeline
+# Simple example demonstrating the ReAnnota pipeline
 #
 # This script shows how to enhance genome annotations by combining:
 # - Bakta initial annotation (GBFF format)
@@ -8,7 +8,7 @@
 # - InterProScan domain annotations (GFF3 format)
 #
 # Usage:
-#   cd cyano-annotation
+#   cd ReAnnota
 #   ./examples/example_run.sh
 
 set -e  # Exit immediately if a command exits with a non-zero status
@@ -36,7 +36,7 @@ OUTPUT_DIR="${PROJECT_ROOT}/examples/output"
 mkdir -p "${OUTPUT_DIR}"
 
 echo "============================================================"
-echo "  Cyano-Annotation Example Pipeline"
+echo "  ReAnnota Example Pipeline"
 echo "============================================================"
 echo ""
 echo "Project root: ${PROJECT_ROOT}"
@@ -51,9 +51,9 @@ echo ""
 echo "=== Step 1: Checking prerequisites ==="
 echo ""
 
-# Check if cyano-annotate command is available
-if ! command -v cyano-annotate &> /dev/null; then
-    echo "❌ ERROR: 'cyano-annotate' command not found!"
+# Check if ReAnnota command is available
+if ! command -v ReAnnota &> /dev/null; then
+    echo "❌ ERROR: 'ReAnnota' command not found!"
     echo ""
     echo "The package is not installed. Please install it first:"
     echo ""
@@ -65,7 +65,7 @@ if ! command -v cyano-annotate &> /dev/null; then
     exit 1
 fi
 
-echo "✅ cyano-annotate command found"
+echo "✅ ReAnnota command found"
 
 # Check if input files exist
 missing_files=0
@@ -102,7 +102,7 @@ echo "  4. Convert enhanced GBFF to GFF3 format"
 echo ""
 
 # Run the main pipeline
-cyano-annotate annotate \
+reannota annotate \
     --egg-input "${EGGNOG_TSV}" \
     --ipr-input "${INTERPRO_GFF}" \
     --gbff-input "${BAKTA_GBFF}" \
@@ -184,7 +184,7 @@ echo "  1. Examine the enhanced files in a genome browser"
 echo "  2. Compare with original annotation"
 echo "  3. Run with your own data:"
 echo ""
-echo "     cyano-annotate annotate \\"
+echo "     ReAnnota annotate \\"
 echo "       --egg-input your_eggnog.tsv \\"
 echo "       --ipr-input your_interpro.gff3 \\"
 echo "       --gbff-input your_bakta.gbff \\"
