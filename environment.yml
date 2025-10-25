@@ -1,4 +1,4 @@
-name: cyano-annotation
+name: ReAnnota
 channels:
   - conda-forge
   - bioconda
@@ -14,4 +14,4 @@ dependencies:
   # Install the package itself in editable mode with pip
   - pip
   - pip:
-      - -e .  # Installs cyano-annotation from pyproject.toml
+      - -e .  # Installs ReAnnota from pyproject.toml

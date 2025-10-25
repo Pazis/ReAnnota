@@ -1,2 +1,2 @@
-# Tests package for cyano-annotation
+# Tests package for ReAnnota
 

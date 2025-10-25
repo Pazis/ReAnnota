@@ -5,7 +5,7 @@ import os
 
 import pandas as pd
 
-logger = logging.getLogger("cyano_annotation")
+logger = logging.getLogger("ReAnnota")
 
 
 def compare_gff(gffstart, gff_enhanced, output_csv):

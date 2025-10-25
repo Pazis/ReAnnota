@@ -4,14 +4,14 @@ import logging
 
 from Bio import SeqIO
 
-from cyano_annotation.parsers import (
+from ReAnnota.parsers import (
     build_gecco_gff_rows,
     build_gff_rows,
     extract_cluster_genes,
     load_regions_json,
 )
 
-logger = logging.getLogger("cyano_annotation")
+logger = logging.getLogger("ReAnnota")
 
 
 def gbff_to_gff(gbff_in, gff_out, antismash_json=None,gecco_gbk=None, antismash_version="7.1.0"):

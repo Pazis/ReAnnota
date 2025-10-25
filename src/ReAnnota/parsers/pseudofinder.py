@@ -1,5 +1,3 @@
-
-
 def parse_pseudogff_to_dict(gff_file):
     """
     Επιστρέφει dictionary με key = ID και value = dict με βασικά πεδία

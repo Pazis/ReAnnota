@@ -6,7 +6,7 @@ import re
 
 import pandas as pd
 
-logger = logging.getLogger("cyano_annotation")
+logger = logging.getLogger("ReAnnota")
 
 E_VALUE_THRESHOLD = 1e-5
 

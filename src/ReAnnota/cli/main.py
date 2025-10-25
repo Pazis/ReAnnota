@@ -1,4 +1,4 @@
-"""Provide a command-line interface (CLI) for cyano-annotation functionality."""
+"""Provide a command-line interface (CLI) for ReAnnota functionality."""
 
 import logging
 from enum import Enum, unique
@@ -7,7 +7,7 @@ from typing import Optional
 
 import typer
 
-logger = logging.getLogger("cyano_annotation")
+logger = logging.getLogger("ReAnnota")
 
 
 @unique
@@ -40,9 +40,9 @@ def version_callback(is_set: bool) -> None:
         typer.Exit: With default code 0 to signal normal program end.
     """
     if is_set:
-        from cyano_annotation import __version__
+        from ReAnnota import __version__
 
-        typer.echo(f"cyano-annotation v{__version__}")
+        typer.echo(f"ReAnnota v{__version__}")
         raise typer.Exit(code=0)
 
 
@@ -80,7 +80,7 @@ def initialize(
         help="Print the current tool version and exit.",
     ),
 ) -> None:
-    """Initialize the cyano-annotation CLI."""
+    """Initialize the ReAnnota CLI."""
     # If no command was provided, show help
     if context.invoked_subcommand is None:
         typer.echo(context.get_help())

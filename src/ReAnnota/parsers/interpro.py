@@ -3,7 +3,7 @@
 import csv
 import logging
 
-logger = logging.getLogger("cyano_annotation")
+logger = logging.getLogger("ReAnnota")
 
 
 def ipr_termfinder(input_file):

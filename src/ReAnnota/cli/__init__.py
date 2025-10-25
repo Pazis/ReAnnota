@@ -1,9 +1,8 @@
-"""Provide the cyano-annotation command-line interface (CLI)."""
-
-from .main import app
+"""Provide the ReAnnota command-line interface (CLI)."""
 
 # Import commands to register them with the app
 from . import annotate  # noqa: F401
+from .main import app
 
 
 def main() -> None:

@@ -5,9 +5,9 @@ import logging
 import pandas as pd
 from Bio import SeqIO
 
-from cyano_annotation.parsers import parse_pseudogff_to_dict
+from ReAnnota.parsers import parse_pseudogff_to_dict
 
-logger = logging.getLogger("cyano_annotation")
+logger = logging.getLogger("ReAnnota")
 
 DESCRIPTION_LENGTH_MAX = 50
 
