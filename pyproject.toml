@@ -1,7 +1,7 @@
 [project]
 name = "ReAnnota"
-version = "0.1.1"
-description = "Cyanobacteria genome annotation enhancement pipeline"
+version = "0.1.2"
+description = "Genome annotation enhancement pipeline"
 authors = [
     {name = "Aggelos Pazis", email = "pazisangel@bio.auth.gr"},
     {name = "Efthymios Parisis", email = "eparisis@bio.auth.gr"}

@@ -77,9 +77,7 @@ def gbff_to_gff(gbff_in, gff_out, antismash_json=None,gecco_gbk=None, antismash_
                         attributes.append(f"ID={feature.qualifiers['locus_tag'][0]}")
                     if "product" in feature.qualifiers:
                         attributes.append(f"product={feature.qualifiers['product'][0]}")
-                    if "note" and "pseudogene" in feature.qualifiers:
-                        attributes.append(f"Note=Pseudogene candidate. Reason {','.join(feature.qualifiers['note'])}")
-                    elif "note" in feature.qualifiers:
+                    if "note" in feature.qualifiers:
                         attributes.append(f"Note={','.join(feature.qualifiers['note'])}")
                     else:
                         attributes.append("Note=")
