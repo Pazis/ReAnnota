@@ -81,6 +81,8 @@ def gbff_to_gff(gbff_in, gff_out, antismash_json=None,gecco_gbk=None, antismash_
                         attributes.append(f"Note=Pseudogene candidate. Reason {','.join(feature.qualifiers['note'])}")
                     elif "note" in feature.qualifiers:
                         attributes.append(f"Note={','.join(feature.qualifiers['note'])}")
+                    else:
+                        attributes.append("Note=")
                     if "db_xref" in feature.qualifiers:
                         attributes.append(f"Dbxref={','.join(feature.qualifiers['db_xref'])}")
 

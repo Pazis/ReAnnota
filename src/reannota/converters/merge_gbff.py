@@ -191,10 +191,8 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
                         feature.qualifiers.setdefault("note", [])
 
                         if feature.qualifiers["product"] == ["hypothetical protein"]:
-                            feature.qualifiers["product"] = ["Pseudogene"]
                             feature.qualifiers["note"].append(description_pseudo)
-                        elif feature.qualifiers["product"] != ["hypothetical protein"]:
-                            feature.qualifiers["note"].append(description_pseudo)
+
 
 
     # Write the updated sequences to the output GenBank file
