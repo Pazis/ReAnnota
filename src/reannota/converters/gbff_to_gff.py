@@ -26,7 +26,7 @@ def gbff_to_gff(gbff_in, gff_out, antismash_json=None,gecco_gbk=None, antismash_
     """
     logger.debug(f"Converting GBFF to GFF3: {gbff_in} → {gff_out}")
 
-    feature_counts = {"CDS": 0, "tRNA": 0, "rRNA": 0 , "tmRNA": 0}
+    feature_counts = {"CDS": 0, "tRNA": 0, "rRNA": 0 , "tmRNA": 0 , "ncRNA":0}
 
     # Load antiSMASH BGCs if provided
     antismash_rows = []
@@ -63,7 +63,7 @@ def gbff_to_gff(gbff_in, gff_out, antismash_json=None,gecco_gbk=None, antismash_
 
             # Iterate through features of interest
             for feature in record.features:
-                if feature.type in ["CDS", "tRNA", "rRNA", "tmRNA"]:
+                if feature.type in ["CDS", "tRNA", "rRNA", "tmRNA" , "ncRNA"]:
                     feature_counts[feature.type] += 1
 
                     # Convert feature location to 1-based coordinates (GFF standard)
@@ -79,8 +79,6 @@ def gbff_to_gff(gbff_in, gff_out, antismash_json=None,gecco_gbk=None, antismash_
                         attributes.append(f"product={feature.qualifiers['product'][0]}")
                     if "note" in feature.qualifiers:
                         attributes.append(f"Note={','.join(feature.qualifiers['note'])}")
-                    else:
-                        attributes.append("Note=")
                     if "db_xref" in feature.qualifiers:
                         attributes.append(f"Dbxref={','.join(feature.qualifiers['db_xref'])}")
 
@@ -105,6 +103,6 @@ def gbff_to_gff(gbff_in, gff_out, antismash_json=None,gecco_gbk=None, antismash_
 
     logger.info(
         f"GFF3 conversion complete: {feature_counts['CDS']} CDS, "
-        f"{feature_counts['tRNA']} tRNA, {feature_counts['rRNA']} rRNA features written"
+        f"{feature_counts['tRNA']} tRNA, {feature_counts['rRNA']} rRNA, {feature_counts['ncRNA']} ncRNA features written"
     )
     return gff_out

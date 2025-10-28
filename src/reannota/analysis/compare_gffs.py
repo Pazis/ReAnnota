@@ -54,7 +54,7 @@ def compare_gff(gffstart, gff_enhanced, output_csv):
                         counts["KEGG"] += 1
                     if "product=hypothetical" in attributes:
                         counts["Hypothetical"] += 1
-                    if "Note=Pseudogene" in attributes:
+                    if "Pseudogene candidate" in attributes:
                         counts["Pseudogene_candidates"] +=1
                 else:
                     # AntiSMASH section: count by feature type in column 3
