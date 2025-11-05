@@ -206,7 +206,7 @@ def annotate(
             gecco_clusters_gbk = None
 
         # Step 4: Convert GBFF to GFF
-        gff_file_path = results_dir / "Enhanced.gff"
+        gff_file_path = results_dir / "Enhanced.gff3"
         gff_generated = gbff_to_gff(enhanced_gbff, str(gff_file_path), str(antismash_input),str(gecco_clusters_gbk),antismash_version="7.1.0" )
         logger.info(f"Enhanced GFF file created: {gff_file_path}")
 
