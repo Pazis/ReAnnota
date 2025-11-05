@@ -1,4 +1,5 @@
 import csv
+import re
 from pathlib import Path
 
 from Bio import SeqIO
@@ -20,6 +21,7 @@ def read_file_paths(csv_path):
                     file_paths.append(path)
 
     return file_paths if file_paths else None
+
 
 def combine_gbk_files(csv_path, output_file=None):
     """
@@ -53,27 +55,11 @@ def combine_gbk_files(csv_path, output_file=None):
 
     return records
 
+
 def extract_cluster_genes(gecco_file):
     """
     Parse a GECCO GBFF file and extract all genes in each cluster
     along with the cluster type.
-
-    Parameters
-    ----------
-    gbff_file : str
-        Path to the GBFF file (GenBank format).
-
-    Returns
-    -------
-    genes_list : list of dict
-        Each dict contains:
-        - cluster_id
-        - cluster_type
-        - gene_name
-        - product
-        - start
-        - end
-        - strand
     """
     genes_list = []
 
@@ -87,19 +73,16 @@ def extract_cluster_genes(gecco_file):
                     cluster_type = line.split("::")[1].strip()
                     break
 
-        # 2. If still unknown, try scanning the raw record text (fallback)
         if cluster_type == "Unknown":
-            # Sometimes features or comments may be stored as text
             raw_text = record.format("genbank")
             for line in raw_text.splitlines():
                 if "cluster_type" in line and "::" in line:
                     cluster_type = line.split("::")[1].strip()
                     break
 
-        # Extract genes and CDS
         for feature in record.features:
-            if feature.type in ["CDS"]:
-                start = int(feature.location.start) + 1  # GFF 1-based
+            if feature.type == "CDS":
+                start = int(feature.location.start) + 1
                 end = int(feature.location.end)
                 strand = "+" if feature.location.strand == 1 else "-" if feature.location.strand == -1 else "."
                 gene_name = feature.qualifiers.get("locus_tag", ["N/A"])[0]
@@ -117,47 +100,65 @@ def extract_cluster_genes(gecco_file):
 
     return genes_list
 
-#TODO change gecco input from gbk to csv and make function that take the csv
-#  with file path and merges all gbk files into one that will be used for parsing
 
 def build_gecco_gff_rows(genes_list):
     """
-    Convert a list of gene dictionaries (from extract_cluster_genes)
-    into GFF3-formatted rows.
-
-    Parameters
-    ----------
-    genes_list : list of dict
-        Output from extract_cluster_genes.
-
-    Returns
-    -------
-    gff_lines : list of str
-        Each string is a GFF3-formatted line.
+    Convert a flat list of genes (from extract_cluster_genes)
+    into GFF3-formatted rows with one biosynthetic cluster per record.
     """
     gff_lines = []
 
-    for gene in genes_list:
+    # --- Group genes by cluster_id ---
+    clusters = {}
+    for g in genes_list:
+        if g["gene_name"].startswith("contig_"):
+            continue  # skip placeholder genes
+        cid = g["cluster_id"]
+        if cid not in clusters:
+            clusters[cid] = {"cluster_type": g["cluster_type"], "genes": []}
+        clusters[cid]["genes"].append(g)
 
-        if gene['gene_name'].startswith("contig_"):
-            continue
-        else:
-        # Prepare attributes
-            attributes = f"ID={gene['gene_name']};ClusterType={gene['cluster_type']};Product={gene['product']}"
+    # --- Build GFF rows ---
+    for i, (cluster_id, data) in enumerate(clusters.items(), start=1):
+        match = re.search(r"(contig_\d+)", cluster_id)
+        seqid = match.group(1) if match else cluster_id
 
-            # Build GFF3 line
-            line = (
-                f"{gene['cluster_id']}\t"     # seqid
-                f"GECCO\t"                    # source
-                f"CDS\t"                     # type
-                f"{gene['start']}\t"          # start
-                f"{gene['end']}\t"            # end
-                f".\t"                        # score
-                f"{gene['strand']}\t"         # strand
-                f".\t"                        # phase
-                f"{attributes}"               # attributes
+        cluster_start = min(g["start"] for g in data["genes"])
+        cluster_end = max(g["end"] for g in data["genes"])
+
+        cluster_tag = f"{seqid}_bgc{i}"
+        cluster_line = (
+            f"{seqid}\t"
+            f"GECCO\t"
+            f"biosynthetic-gene-cluster\t"
+            f"{cluster_start}\t{cluster_end}\t"
+            f".\t.\t.\t"
+            f"ID={cluster_tag}"
+        )
+        gff_lines.append(cluster_line)
+
+        for gene in data["genes"]:
+            # Clean seqid again for CDS lines
+            gmatch = re.search(r"(contig_\d+)", gene['cluster_id'])
+            gseqid = gmatch.group(1) if gmatch else gene['cluster_id']
+
+            attributes = (
+                f"ID={gene['gene_name']};"
+                f"Parent={cluster_tag};"
+                f"ClusterType={gene['cluster_type']};"
+                f"Product={gene['product']}"
             )
-            gff_lines.append(line)
+
+            gene_line = (
+                f"{gseqid}\t"      
+                f"GECCO\t"
+                f"CDS\t"
+                f"{gene['start']}\t{gene['end']}\t"
+                f".\t{gene['strand']}\t.\t"
+                f"{attributes}"
+            )
+            gff_lines.append(gene_line)
 
     return gff_lines
+
 
