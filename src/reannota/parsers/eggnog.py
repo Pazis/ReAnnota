@@ -8,7 +8,7 @@ import pandas as pd
 
 logger = logging.getLogger("ReAnnota")
 
-E_VALUE_THRESHOLD = 1e-5
+E_VALUE_THRESHOLD = 1
 
 
 def egg_gff_to_dataframe(input_file):
@@ -55,6 +55,7 @@ def egg_gff_to_dataframe(input_file):
     # Keep only relevant columns for annotation
     keep_cols = [
         "query",
+        "Preferred_name",
         "evalue",
         "eggNOG_OGs",
         "COG_category",
@@ -62,6 +63,7 @@ def egg_gff_to_dataframe(input_file):
         "GOs",
         "PFAMs",
         "KEGG_ko",
+        "EC",
     ]
 
     clean_df = df[keep_cols]
@@ -101,6 +103,9 @@ def build_egg_dictionary_clean(input_file):
         GOs = str(values["GOs"])
         PFAMs = str(values["PFAMs"])
         KEGGs = str(values["KEGG_ko"])
+        ECs   = str(values["EC"])
+        GN = str(values["Preferred_name"])
+
         outsiders = [
             "DUF",
             "Domain",
@@ -151,16 +156,27 @@ def build_egg_dictionary_clean(input_file):
                 # Append each cleaned KO to the KEGG list
                 for k in cleaned:
                     KEGG.append(k)
+            EC = []
+            if ECs != "-" and ECs.strip():
+                cleaned_ecs = [e.strip() for e in ECs.split(",")]
+                for e in cleaned_ecs:
+                    EC.append("EC:" + e)
+            
+            gene_name = []
+            if GN != "-" and GN.strip():
+                gene_name.append(GN)
 
         # Only keep if there are clean hits
-        if go_terms or pfam_terms or Desc or KEGG or EGG_COG:
+        if go_terms or pfam_terms or Desc or KEGG or EGG_COG or EC:
             dictionary_clean[query_id] = {
                 "GOs": go_terms,
                 "PFAM": pfam_terms,
                 "COG_category": COG_terms,
                 "COG_ref": [f"COG:{cog}" for cog in EGG_COG],
+                "EC": EC,
                 "KEGGs": KEGG,
                 "Description": Desc,
+                "Name": gene_name,
             }
 
     logger.info(
@@ -185,7 +201,7 @@ def egg_dict_to_tsv(dictionary, output_file):
         writer = csv.writer(out_handle, delimiter="\t")
 
         writer.writerow(
-            ["Query_ID", "GOs", "PFAM", "COG_category", "COG_ref", "KEGG_ko", "Description"]
+            ["Query_ID", "GOs", "PFAM", "COG_category", "COG_ref", "KEGG_ko", "EC", "Description" , "Gene_name"]
         )
 
         for query_id, vals in dictionary.items():
@@ -195,7 +211,11 @@ def egg_dict_to_tsv(dictionary, output_file):
             cog_terms = vals.get("COG_category", []) or [""]
             cog_ref_terms = vals.get("COG_ref", []) or [""]
             kegg_terms = vals.get("KEGGs", []) or [""]
-            max_len = max(len(go_terms), len(pfam_terms), len(cog_terms), len(cog_ref_terms))
+            ec_terms = vals.get("EC", []) or [""]
+            gene_name = vals.get("Name", [])
+            if not gene_name:
+                gene_name = [""]
+            max_len = max(len(go_terms), len(pfam_terms), len(cog_terms), len(cog_ref_terms), len(gene_name))
 
             for i in range(max_len):
                 go_val = go_terms[i] if i < len(go_terms) else ""
@@ -203,6 +223,8 @@ def egg_dict_to_tsv(dictionary, output_file):
                 cog_val = cog_terms[i] if i < len(cog_terms) else ""
                 cog_ref_val = cog_ref_terms[i] if i < len(cog_ref_terms) else ""
                 kegg_val = kegg_terms[i] if i < len(kegg_terms) else ""
-                writer.writerow([query_id, go_val, pfam_val, cog_val, cog_ref_val, kegg_val, desc])
+                ec_val = ec_terms[i] if i < len(ec_terms) else ""
+                gene_value = gene_name[i] if i < len(gene_name) else ""
+                writer.writerow([query_id, go_val, pfam_val, cog_val, cog_ref_val, kegg_val, ec_val, desc, gene_value])
 
     return output_file

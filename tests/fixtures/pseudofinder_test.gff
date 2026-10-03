@@ -1,0 +1,446 @@
+##gff-version 3
+#!annotation-date	2025-12-15 15:16:46
+##sequence-region contig_1 1 3757845
+contig_1	pseudofinder	gene	2	196	.	-	.	note=Pseudogene. Reason(s):ORF is 5.7%25 of the average length of hits to this gene., ORF is 5.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00001;old_locus_tag=OHJEEF_00001
+contig_1	pseudofinder	gene	6064	6257	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 7 blast hits.;locus_tag=contig_1_pseudo_00002;old_locus_tag=contig_1_ign_00005
+contig_1	pseudofinder	gene	16388	16597	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 36.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00003;old_locus_tag=OHJEEF_00015
+contig_1	pseudofinder	gene	17057	17172	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00004;old_locus_tag=contig_1_ign_00011
+contig_1	pseudofinder	gene	17612	17812	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 18.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00005;old_locus_tag=OHJEEF_00018
+contig_1	pseudofinder	gene	21429	21562	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00006;old_locus_tag=contig_1_ign_00015
+contig_1	pseudofinder	gene	79724	79788	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 14 blast hits.;locus_tag=contig_1_pseudo_00007;old_locus_tag=contig_1_ign_00057
+contig_1	pseudofinder	gene	79833	80138	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 36.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00008;old_locus_tag=OHJEEF_00080
+contig_1	pseudofinder	gene	107467	107546	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00009;old_locus_tag=contig_1_ign_00081
+contig_1	pseudofinder	gene	111130	111248	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00010;old_locus_tag=contig_1_ign_00083
+contig_1	pseudofinder	gene	157331	157591	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 46.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00011;old_locus_tag=OHJEEF_00146
+contig_1	pseudofinder	gene	178200	178667	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 62.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00012;old_locus_tag=OHJEEF_00160
+contig_1	pseudofinder	gene	196096	196259	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00013;old_locus_tag=contig_1_ign_00137
+contig_1	pseudofinder	gene	196262	>196498	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 59.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00014;old_locus_tag=OHJEEF_00174
+contig_1	pseudofinder	gene	330225	330374	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 22.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00015;old_locus_tag=OHJEEF_00293
+contig_1	pseudofinder	gene	335441	335622	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00016;old_locus_tag=contig_1_ign_00229
+contig_1	pseudofinder	gene	337498	337761	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 8.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00017;old_locus_tag=OHJEEF_00300
+contig_1	pseudofinder	gene	341139	341365	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00018;old_locus_tag=contig_1_ign_00233
+contig_1	pseudofinder	gene	402317	402969	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00019;old_locus_tag=OHJEEF_00365,contig_1_ign_00272
+contig_1	pseudofinder	gene	417074	418553	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00020;old_locus_tag=OHJEEF_00384,contig_1_ign_00285,OHJEEF_00385
+contig_1	pseudofinder	gene	418554	418609	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00021;old_locus_tag=contig_1_ign_00286
+contig_1	pseudofinder	gene	420823	421011	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 13.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00022;old_locus_tag=OHJEEF_00387
+contig_1	pseudofinder	gene	425327	425478	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00023;old_locus_tag=contig_1_ign_00291
+contig_1	pseudofinder	gene	426983	427170	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00024;old_locus_tag=contig_1_ign_00292
+contig_1	pseudofinder	gene	427628	427801	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 55.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00025;old_locus_tag=OHJEEF_00394
+contig_1	pseudofinder	gene	430390	430623	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00026;old_locus_tag=contig_1_ign_00295
+contig_1	pseudofinder	gene	431708	431941	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00027;old_locus_tag=contig_1_ign_00296
+contig_1	pseudofinder	gene	433073	433877	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00028;old_locus_tag=contig_1_ign_00297
+contig_1	pseudofinder	gene	435682	436486	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00029;old_locus_tag=contig_1_ign_00299
+contig_1	pseudofinder	gene	438181	438299	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00030;old_locus_tag=contig_1_ign_00301
+contig_1	pseudofinder	gene	438738	439541	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 61.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00031;old_locus_tag=OHJEEF_00403
+contig_1	pseudofinder	gene	448782	449537	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 25.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00032;old_locus_tag=OHJEEF_00412
+contig_1	pseudofinder	gene	463018	463130	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00033;old_locus_tag=contig_1_ign_00315
+contig_1	pseudofinder	gene	467064	467294	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 32.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00034;old_locus_tag=OHJEEF_00430
+contig_1	pseudofinder	gene	467344	467883	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 12 blast hits.;locus_tag=contig_1_pseudo_00035;old_locus_tag=contig_1_ign_00319
+contig_1	pseudofinder	gene	469251	469508	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 43.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00036;old_locus_tag=OHJEEF_00433
+contig_1	pseudofinder	gene	475116	475352	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 13.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00037;old_locus_tag=OHJEEF_00437
+contig_1	pseudofinder	gene	476514	476721	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00038;old_locus_tag=contig_1_ign_00326
+contig_1	pseudofinder	gene	479056	479387	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00039;old_locus_tag=contig_1_ign_00327
+contig_1	pseudofinder	gene	479389	479919	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 55.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00040;old_locus_tag=OHJEEF_00442
+contig_1	pseudofinder	gene	480275	480543	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00041;old_locus_tag=contig_1_ign_00328
+contig_1	pseudofinder	gene	481761	481906	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00042;old_locus_tag=contig_1_ign_00329
+contig_1	pseudofinder	gene	481909	482952	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00043;old_locus_tag=contig_1_ign_00330,OHJEEF_00444,OHJEEF_00445
+contig_1	pseudofinder	gene	483032	483165	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00044;old_locus_tag=contig_1_ign_00331
+contig_1	pseudofinder	gene	483649	483740	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 11 blast hits.;locus_tag=contig_1_pseudo_00045;old_locus_tag=contig_1_ign_00332
+contig_1	pseudofinder	gene	484344	484477	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00046;old_locus_tag=contig_1_ign_00333
+contig_1	pseudofinder	gene	486499	486720	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 11 blast hits.;locus_tag=contig_1_pseudo_00047;old_locus_tag=contig_1_ign_00335
+contig_1	pseudofinder	gene	490024	490248	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 20.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00048;old_locus_tag=OHJEEF_00453
+contig_1	pseudofinder	gene	491380	491862	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 35.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00049;old_locus_tag=OHJEEF_00455
+contig_1	pseudofinder	gene	495302	496058	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00050;old_locus_tag=contig_1_ign_00344
+contig_1	pseudofinder	gene	497496	497692	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00051;old_locus_tag=contig_1_ign_00345
+contig_1	pseudofinder	gene	498423	498728	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 42.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00052;old_locus_tag=OHJEEF_00461
+contig_1	pseudofinder	gene	498749	499381	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 14 blast hits.;locus_tag=contig_1_pseudo_00053;old_locus_tag=contig_1_ign_00346
+contig_1	pseudofinder	gene	502596	503415	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00054;old_locus_tag=contig_1_ign_00348
+contig_1	pseudofinder	gene	507239	507540	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00055;old_locus_tag=contig_1_ign_00351
+contig_1	pseudofinder	gene	511293	511721	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 26.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00056;old_locus_tag=OHJEEF_00471
+contig_1	pseudofinder	gene	513734	514504	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 63.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00057;old_locus_tag=OHJEEF_00474
+contig_1	pseudofinder	gene	517853	517959	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00058;old_locus_tag=contig_1_ign_00359
+contig_1	pseudofinder	gene	538436	538680	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00059;old_locus_tag=contig_1_ign_00373
+contig_1	pseudofinder	gene	538682	539194	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 64.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00060;old_locus_tag=OHJEEF_00504
+contig_1	pseudofinder	gene	540217	540293	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00061;old_locus_tag=contig_1_ign_00374
+contig_1	pseudofinder	gene	540296	540805	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 64.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00062;old_locus_tag=OHJEEF_00506
+contig_1	pseudofinder	gene	540807	540898	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00063;old_locus_tag=contig_1_ign_00375
+contig_1	pseudofinder	gene	541758	541849	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00064;old_locus_tag=contig_1_ign_00376
+contig_1	pseudofinder	gene	542673	542764	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00065;old_locus_tag=contig_1_ign_00377
+contig_1	pseudofinder	gene	543612	543703	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00066;old_locus_tag=contig_1_ign_00378
+contig_1	pseudofinder	gene	543839	544234	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 47.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00067;old_locus_tag=OHJEEF_00510
+contig_1	pseudofinder	gene	588741	588917	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 13.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00068;old_locus_tag=OHJEEF_00542
+contig_1	pseudofinder	gene	588920	589011	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00069;old_locus_tag=contig_1_ign_00406
+contig_1	pseudofinder	gene	649088	649212	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00070;old_locus_tag=contig_1_ign_00459
+contig_1	pseudofinder	gene	650813	650931	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00071;old_locus_tag=contig_1_ign_00460
+contig_1	pseudofinder	gene	661803	662210	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00072;old_locus_tag=OHJEEF_00622,contig_1_ign_00471
+contig_1	pseudofinder	gene	667770	667904	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 17.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00073;old_locus_tag=OHJEEF_00630
+contig_1	pseudofinder	gene	667926	668095	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00074;old_locus_tag=contig_1_ign_00476
+contig_1	pseudofinder	gene	671918	672225	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00075;old_locus_tag=contig_1_ign_00478
+contig_1	pseudofinder	gene	674286	675079	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00076;old_locus_tag=OHJEEF_00635,contig_1_ign_00481
+contig_1	pseudofinder	gene	682102	682181	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00077;old_locus_tag=contig_1_ign_00489
+contig_1	pseudofinder	gene	685241	685387	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 64.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00078;old_locus_tag=OHJEEF_00648
+contig_1	pseudofinder	gene	689562	690338	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 64.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00079;old_locus_tag=OHJEEF_00652
+contig_1	pseudofinder	gene	691444	691926	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 42.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00080;old_locus_tag=OHJEEF_00654
+contig_1	pseudofinder	gene	712961	714902	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00081;old_locus_tag=OHJEEF_00668,OHJEEF_00667
+contig_1	pseudofinder	gene	763807	763943	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00082;old_locus_tag=contig_1_ign_00536
+contig_1	pseudofinder	gene	763945	764514	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 52.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00083;old_locus_tag=OHJEEF_00708
+contig_1	pseudofinder	gene	766622	>767479	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00084;old_locus_tag=OHJEEF_00712,contig_1_ign_00539,OHJEEF_00711
+contig_1	pseudofinder	gene	769964	770419	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 13.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00085;old_locus_tag=OHJEEF_00716
+contig_1	pseudofinder	gene	778236	778390	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00086;old_locus_tag=contig_1_ign_00546
+contig_1	pseudofinder	gene	789419	789537	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00087;old_locus_tag=contig_1_ign_00555
+contig_1	pseudofinder	gene	813688	813975	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 61.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00088;old_locus_tag=OHJEEF_00756
+contig_1	pseudofinder	gene	822593	822886	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 52.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00089;old_locus_tag=OHJEEF_00768
+contig_1	pseudofinder	gene	823302	823532	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 45.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00090;old_locus_tag=OHJEEF_00769
+contig_1	pseudofinder	gene	836657	837058	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00091;old_locus_tag=OHJEEF_00785,contig_1_ign_00590
+contig_1	pseudofinder	gene	837064	838928	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00092;old_locus_tag=contig_1_ign_00591
+contig_1	pseudofinder	gene	843208	844176	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 135.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00093;old_locus_tag=OHJEEF_00789
+contig_1	pseudofinder	gene	882184	883635	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 35.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00094;old_locus_tag=OHJEEF_00822
+contig_1	pseudofinder	gene	883671	885122	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 53.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00095;old_locus_tag=OHJEEF_00823
+contig_1	pseudofinder	gene	885716	886171	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 46.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00096;old_locus_tag=OHJEEF_00825
+contig_1	pseudofinder	gene	889238	889587	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00097;old_locus_tag=OHJEEF_00829,OHJEEF_00830
+contig_1	pseudofinder	gene	913993	915320	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00098;old_locus_tag=OHJEEF_00853,contig_1_ign_00639
+contig_1	pseudofinder	gene	937093	937304	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 12 blast hits.;locus_tag=contig_1_pseudo_00099;old_locus_tag=contig_1_ign_00655
+contig_1	pseudofinder	gene	939963	940039	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00100;old_locus_tag=contig_1_ign_00656
+contig_1	pseudofinder	gene	975869	976537	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 42.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00101;old_locus_tag=OHJEEF_00911
+contig_1	pseudofinder	gene	984154	984300	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 13.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00102;old_locus_tag=OHJEEF_00919
+contig_1	pseudofinder	gene	986136	>986840	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 45.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00103;old_locus_tag=OHJEEF_00921
+contig_1	pseudofinder	gene	1000605	1001531	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 63.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00104;old_locus_tag=OHJEEF_00934
+contig_1	pseudofinder	gene	1004767	1005342	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 62.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00105;old_locus_tag=OHJEEF_00937
+contig_1	pseudofinder	gene	1006579	1009095	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 204.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00106;old_locus_tag=OHJEEF_00940
+contig_1	pseudofinder	gene	1011172	1011426	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 20.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00107;old_locus_tag=OHJEEF_00944
+contig_1	pseudofinder	gene	1013091	1013255	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 59.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00108;old_locus_tag=OHJEEF_00947
+contig_1	pseudofinder	gene	1044718	1045254	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 45.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00109;old_locus_tag=OHJEEF_00974
+contig_1	pseudofinder	gene	1065814	1065911	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00110;old_locus_tag=contig_1_ign_00731
+contig_1	pseudofinder	gene	1082610	1082846	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 7.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00111;old_locus_tag=OHJEEF_01005
+contig_1	pseudofinder	gene	1089485	1089666	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00112;old_locus_tag=contig_1_ign_00746
+contig_1	pseudofinder	gene	1105897	1106289	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 61.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00113;old_locus_tag=OHJEEF_01020
+contig_1	pseudofinder	gene	1112819	1112991	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00114;old_locus_tag=contig_1_ign_00757
+contig_1	pseudofinder	gene	1123451	1123870	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 41.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00115;old_locus_tag=OHJEEF_01037
+contig_1	pseudofinder	gene	1146224	1147002	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00116;old_locus_tag=contig_1_ign_00790
+contig_1	pseudofinder	gene	1155944	1156122	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00117;old_locus_tag=contig_1_ign_00800
+contig_1	pseudofinder	gene	1174383	1175361	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00118;old_locus_tag=contig_1_ign_00811,OHJEEF_01091,contig_1_ign_00812
+contig_1	pseudofinder	gene	1178953	1179026	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00119;old_locus_tag=contig_1_ign_00814
+contig_1	pseudofinder	gene	1187137	1187324	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00120;old_locus_tag=contig_1_ign_00817
+contig_1	pseudofinder	gene	1205143	1205816	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00121;old_locus_tag=contig_1_ign_00830,contig_1_ign_00831,OHJEEF_01117
+contig_1	pseudofinder	gene	1210422	1210739	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 37.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00122;old_locus_tag=OHJEEF_01121
+contig_1	pseudofinder	gene	1213944	1214069	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 15.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00123;old_locus_tag=OHJEEF_01126
+contig_1	pseudofinder	gene	1244765	1244875	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 12.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00124;old_locus_tag=OHJEEF_01155
+contig_1	pseudofinder	gene	1244853	1245140	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 31.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00125;old_locus_tag=OHJEEF_01156
+contig_1	pseudofinder	gene	1245958	1246215	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 44.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00126;old_locus_tag=OHJEEF_01158
+contig_1	pseudofinder	gene	1247071	1247147	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 7 blast hits.;locus_tag=contig_1_pseudo_00127;old_locus_tag=contig_1_ign_00857
+contig_1	pseudofinder	gene	1247150	1247362	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 25.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00128;old_locus_tag=OHJEEF_01160
+contig_1	pseudofinder	gene	1247363	1247679	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00129;old_locus_tag=contig_1_ign_00858
+contig_1	pseudofinder	gene	1248762	1249089	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00130;old_locus_tag=contig_1_ign_00859
+contig_1	pseudofinder	gene	1249847	1250038	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 21.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00131;old_locus_tag=OHJEEF_01163
+contig_1	pseudofinder	gene	1270069	1270756	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00132;old_locus_tag=OHJEEF_01180,OHJEEF_01181
+contig_1	pseudofinder	gene	1273212	1275224	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 64.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00133;old_locus_tag=OHJEEF_01183
+contig_1	pseudofinder	gene	1275655	1275770	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00134;old_locus_tag=contig_1_ign_00872
+contig_1	pseudofinder	gene	1385066	1385217	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00135;old_locus_tag=contig_1_ign_00948
+contig_1	pseudofinder	gene	1388669	1390807	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 164.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00136;old_locus_tag=OHJEEF_01297
+contig_1	pseudofinder	gene	1394108	1394211	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00137;old_locus_tag=contig_1_ign_00955
+contig_1	pseudofinder	gene	1426769	1426962	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 6 blast hits.;locus_tag=contig_1_pseudo_00138;old_locus_tag=contig_1_ign_00976
+contig_1	pseudofinder	gene	1427703	1428134	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00139;old_locus_tag=OHJEEF_01336,contig_1_ign_00979
+contig_1	pseudofinder	gene	1453786	1453982	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 8 blast hits.;locus_tag=contig_1_pseudo_00140;old_locus_tag=contig_1_ign_00995
+contig_1	pseudofinder	gene	1474466	1474670	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00141;old_locus_tag=contig_1_ign_01014
+contig_1	pseudofinder	gene	1499858	1500112	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 40.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00142;old_locus_tag=OHJEEF_01396
+contig_1	pseudofinder	gene	1500286	1500461	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00143;old_locus_tag=contig_1_ign_01032
+contig_1	pseudofinder	gene	1517660	1517830	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 17.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00144;old_locus_tag=OHJEEF_01409
+contig_1	pseudofinder	gene	1540451	1540635	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00145;old_locus_tag=contig_1_ign_01052
+contig_1	pseudofinder	gene	1546395	1546886	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 49.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00146;old_locus_tag=OHJEEF_01428
+contig_1	pseudofinder	gene	1553977	1554113	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00147;old_locus_tag=contig_1_ign_01061
+contig_1	pseudofinder	gene	1570347	1570576	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 12 blast hits.;locus_tag=contig_1_pseudo_00148;old_locus_tag=contig_1_ign_01070
+contig_1	pseudofinder	gene	1571506	1572269	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 12 blast hits.;locus_tag=contig_1_pseudo_00149;old_locus_tag=contig_1_ign_01071
+contig_1	pseudofinder	gene	1588498	1588682	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00150;old_locus_tag=contig_1_ign_01083
+contig_1	pseudofinder	gene	1593782	1593952	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 16.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00151;old_locus_tag=OHJEEF_01473
+contig_1	pseudofinder	gene	1593953	1594083	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00152;old_locus_tag=contig_1_ign_01086
+contig_1	pseudofinder	gene	1617557	1617729	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00153;old_locus_tag=contig_1_ign_01101
+contig_1	pseudofinder	gene	1637447	1637637	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00154;old_locus_tag=contig_1_ign_01114
+contig_1	pseudofinder	gene	1637656	1637853	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 13.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00155;old_locus_tag=OHJEEF_01511
+contig_1	pseudofinder	gene	1638284	1638399	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00156;old_locus_tag=contig_1_ign_01116
+contig_1	pseudofinder	gene	1638841	1639308	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 32.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00157;old_locus_tag=OHJEEF_01514
+contig_1	pseudofinder	gene	1647117	1647272	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 30.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00158;old_locus_tag=OHJEEF_01522
+contig_1	pseudofinder	gene	1647519	1648517	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 55.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00159;old_locus_tag=OHJEEF_01523
+contig_1	pseudofinder	gene	1650048	1650181	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 7 blast hits.;locus_tag=contig_1_pseudo_00160;old_locus_tag=contig_1_ign_01126
+contig_1	pseudofinder	gene	1663504	1664345	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00161;old_locus_tag=contig_1_ign_01135,OHJEEF_01537
+contig_1	pseudofinder	gene	1669592	1669750	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 26.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00162;old_locus_tag=OHJEEF_01543
+contig_1	pseudofinder	gene	1680888	1680964	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00163;old_locus_tag=contig_1_ign_01146
+contig_1	pseudofinder	gene	1685537	1686128	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00164;old_locus_tag=OHJEEF_01562,OHJEEF_01561
+contig_1	pseudofinder	gene	1686486	1686749	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 19.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00165;old_locus_tag=OHJEEF_01563
+contig_1	pseudofinder	gene	1696552	1699531	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 10 blast hits.;locus_tag=contig_1_pseudo_00166;old_locus_tag=contig_1_ign_01159
+contig_1	pseudofinder	gene	1699533	1700057	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 49.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00167;old_locus_tag=OHJEEF_01573
+contig_1	pseudofinder	gene	1742403	1742497	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00168;old_locus_tag=contig_1_ign_01186
+contig_1	pseudofinder	gene	1776142	1776294	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 150.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00169;old_locus_tag=OHJEEF_01640
+contig_1	pseudofinder	gene	1779939	1780370	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 17.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00170;old_locus_tag=OHJEEF_01646
+contig_1	pseudofinder	gene	1795267	1795713	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 32.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00171;old_locus_tag=OHJEEF_01663
+contig_1	pseudofinder	gene	1844701	1845832	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00172;old_locus_tag=OHJEEF_01713,OHJEEF_01712,contig_1_ign_01262
+contig_1	pseudofinder	gene	1846747	1847088	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 47.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00173;old_locus_tag=OHJEEF_01715
+contig_1	pseudofinder	gene	1848890	1849135	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 47.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00174;old_locus_tag=OHJEEF_01717
+contig_1	pseudofinder	gene	1849564	1849671	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 28.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00175;old_locus_tag=OHJEEF_01719
+contig_1	pseudofinder	gene	1850040	1850171	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 33.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00176;old_locus_tag=OHJEEF_01721
+contig_1	pseudofinder	gene	1854720	1855166	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 47.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00177;old_locus_tag=OHJEEF_01724
+contig_1	pseudofinder	gene	1855166	1856854	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 52.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00178;old_locus_tag=OHJEEF_01725
+contig_1	pseudofinder	gene	1857288	1857391	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00179;old_locus_tag=contig_1_ign_01266
+contig_1	pseudofinder	gene	1857835	1859691	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 60.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00180;old_locus_tag=OHJEEF_01728
+contig_1	pseudofinder	gene	1871446	1871507	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00181;old_locus_tag=contig_1_ign_01271
+contig_1	pseudofinder	gene	1889281	1889529	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 45.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00182;old_locus_tag=OHJEEF_01756
+contig_1	pseudofinder	gene	1901880	1905834	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 8 blast hits.;locus_tag=contig_1_pseudo_00183;old_locus_tag=contig_1_ign_01293
+contig_1	pseudofinder	gene	1906191	1906267	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00184;old_locus_tag=contig_1_ign_01294
+contig_1	pseudofinder	gene	1906269	1906376	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 54.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00185;old_locus_tag=OHJEEF_01771
+contig_1	pseudofinder	gene	1908793	1908989	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00186;old_locus_tag=contig_1_ign_01296
+contig_1	pseudofinder	gene	1910860	1910942	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 6 blast hits.;locus_tag=contig_1_pseudo_00187;old_locus_tag=contig_1_ign_01297
+contig_1	pseudofinder	gene	1910960	1911457	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 51.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00188;old_locus_tag=OHJEEF_01775
+contig_1	pseudofinder	gene	1911458	1911702	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00189;old_locus_tag=contig_1_ign_01298
+contig_1	pseudofinder	gene	1911704	1912231	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 45.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00190;old_locus_tag=OHJEEF_01776
+contig_1	pseudofinder	gene	1912431	1912513	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 6 blast hits.;locus_tag=contig_1_pseudo_00191;old_locus_tag=contig_1_ign_01299
+contig_1	pseudofinder	gene	1921353	1921571	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 36.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00192;old_locus_tag=OHJEEF_01784
+contig_1	pseudofinder	gene	1921617	1922249	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00193;old_locus_tag=OHJEEF_01785,contig_1_ign_01307,OHJEEF_01786
+contig_1	pseudofinder	gene	1922283	1922456	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 36.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00194;old_locus_tag=OHJEEF_01787
+contig_1	pseudofinder	gene	1923903	1924085	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00195;old_locus_tag=contig_1_ign_01310
+contig_1	pseudofinder	gene	1925633	1925851	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 36.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00196;old_locus_tag=OHJEEF_01790
+contig_1	pseudofinder	gene	1925922	1926526	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00197;old_locus_tag=OHJEEF_01792,OHJEEF_01791
+contig_1	pseudofinder	gene	1926938	1927626	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00198;old_locus_tag=contig_1_ign_01314
+contig_1	pseudofinder	gene	1927628	1928140	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 52.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00199;old_locus_tag=OHJEEF_01794
+contig_1	pseudofinder	gene	1928178	1928294	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 18.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00200;old_locus_tag=OHJEEF_01795
+contig_1	pseudofinder	gene	1931372	1931472	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 11 blast hits.;locus_tag=contig_1_pseudo_00201;old_locus_tag=contig_1_ign_01317
+contig_1	pseudofinder	gene	1931475	1931840	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 38.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00202;old_locus_tag=OHJEEF_01799
+contig_1	pseudofinder	gene	1933020	1933361	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 30.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00203;old_locus_tag=OHJEEF_01801
+contig_1	pseudofinder	gene	1933362	1933519	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00204;old_locus_tag=contig_1_ign_01319
+contig_1	pseudofinder	gene	1949085	1949312	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 16.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00205;old_locus_tag=OHJEEF_01817
+contig_1	pseudofinder	gene	1949313	1949599	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00206;old_locus_tag=contig_1_ign_01327
+contig_1	pseudofinder	gene	1965588	1965863	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 158.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00207;old_locus_tag=OHJEEF_01830
+contig_1	pseudofinder	gene	1976535	1978357	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00208;old_locus_tag=OHJEEF_01839,contig_1_ign_01345,OHJEEF_01840
+contig_1	pseudofinder	gene	1980231	1980358	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 7 blast hits.;locus_tag=contig_1_pseudo_00209;old_locus_tag=contig_1_ign_01347
+contig_1	pseudofinder	gene	1981719	1987086	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00210;old_locus_tag=OHJEEF_01844,OHJEEF_01845
+contig_1	pseudofinder	gene	2002859	2003131	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 34.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00211;old_locus_tag=OHJEEF_01856
+contig_1	pseudofinder	gene	2003128	2003535	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 47.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00212;old_locus_tag=OHJEEF_01857
+contig_1	pseudofinder	gene	2003672	2003977	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 43.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00213;old_locus_tag=OHJEEF_01858
+contig_1	pseudofinder	gene	2013837	2013958	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00214;old_locus_tag=contig_1_ign_01367
+contig_1	pseudofinder	gene	2013960	2015411	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 148.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00215;old_locus_tag=OHJEEF_01870
+contig_1	pseudofinder	gene	2026116	2026309	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00216;old_locus_tag=contig_1_ign_01376
+contig_1	pseudofinder	gene	2034678	2034956	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 7.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00217;old_locus_tag=OHJEEF_01892
+contig_1	pseudofinder	gene	2052169	2052344	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 9 blast hits.;locus_tag=contig_1_pseudo_00218;old_locus_tag=contig_1_ign_01392
+contig_1	pseudofinder	gene	2058086	2060745	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00219;old_locus_tag=contig_1_ign_01396
+contig_1	pseudofinder	gene	2061541	2063700	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00220;old_locus_tag=OHJEEF_01910,OHJEEF_01912
+contig_1	pseudofinder	gene	2061650	2063495	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00221;old_locus_tag=OHJEEF_01911,contig_1_ign_01398,contig_1_ign_01397
+contig_1	pseudofinder	gene	2063703	2064622	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00222;old_locus_tag=contig_1_ign_01399
+contig_1	pseudofinder	gene	2065166	2065312	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 7.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00223;old_locus_tag=OHJEEF_01913
+contig_1	pseudofinder	gene	2065351	2065901	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00224;old_locus_tag=contig_1_ign_01400
+contig_1	pseudofinder	gene	2065932	2067028	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00225;old_locus_tag=contig_1_ign_01401,OHJEEF_01914,OHJEEF_01915
+contig_1	pseudofinder	gene	2067601	2068778	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00226;old_locus_tag=contig_1_ign_01402
+contig_1	pseudofinder	gene	2069860	2070410	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00227;old_locus_tag=OHJEEF_01916,OHJEEF_01917
+contig_1	pseudofinder	gene	2071040	2071543	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00228;old_locus_tag=contig_1_ign_01404
+contig_1	pseudofinder	gene	2071546	2071710	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 26.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00229;old_locus_tag=OHJEEF_01919
+contig_1	pseudofinder	gene	2071940	2072618	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00230;old_locus_tag=contig_1_ign_01405
+contig_1	pseudofinder	gene	2072686	2073182	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00231;old_locus_tag=OHJEEF_01921,OHJEEF_01920
+contig_1	pseudofinder	gene	2073468	2074330	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00232;old_locus_tag=contig_1_ign_01406
+contig_1	pseudofinder	gene	2074528	2074758	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 60.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00233;old_locus_tag=OHJEEF_01922
+contig_1	pseudofinder	gene	2082896	2084449	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00234;old_locus_tag=OHJEEF_01929,contig_1_ign_01413,OHJEEF_01928
+contig_1	pseudofinder	gene	2099495	2101969	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 140.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00235;old_locus_tag=OHJEEF_01941
+contig_1	pseudofinder	gene	2149262	2149350	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00236;old_locus_tag=contig_1_ign_01451
+contig_1	pseudofinder	gene	2151403	2151633	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 16.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00237;old_locus_tag=OHJEEF_01980
+contig_1	pseudofinder	gene	2156370	2156567	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00238;old_locus_tag=contig_1_ign_01455
+contig_1	pseudofinder	gene	2158492	2158787	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00239;old_locus_tag=contig_1_ign_01456
+contig_1	pseudofinder	gene	2161702	2161817	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 10 blast hits.;locus_tag=contig_1_pseudo_00240;old_locus_tag=contig_1_ign_01459
+contig_1	pseudofinder	gene	2236277	2236525	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 24.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00241;old_locus_tag=OHJEEF_02067
+contig_1	pseudofinder	gene	2236553	2237542	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 64.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00242;old_locus_tag=OHJEEF_02068
+contig_1	pseudofinder	gene	2237543	2237873	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00243;old_locus_tag=contig_1_ign_01514
+contig_1	pseudofinder	gene	2239253	2239479	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00244;old_locus_tag=contig_1_ign_01515
+contig_1	pseudofinder	gene	2286503	2286567	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00245;old_locus_tag=contig_1_ign_01539
+contig_1	pseudofinder	gene	2299731	2300321	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 57.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00246;old_locus_tag=OHJEEF_02115
+contig_1	pseudofinder	gene	2300324	2300478	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00247;old_locus_tag=contig_1_ign_01547
+contig_1	pseudofinder	gene	2328194	2328312	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00248;old_locus_tag=contig_1_ign_01563
+contig_1	pseudofinder	gene	2351883	2353025	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 143.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00249;old_locus_tag=OHJEEF_02166
+contig_1	pseudofinder	gene	2360930	2362843	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 150.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00250;old_locus_tag=OHJEEF_02174
+contig_1	pseudofinder	gene	2363156	2363229	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 6 blast hits.;locus_tag=contig_1_pseudo_00251;old_locus_tag=contig_1_ign_01588
+contig_1	pseudofinder	gene	2376031	2377533	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 46.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00252;old_locus_tag=OHJEEF_02184
+contig_1	pseudofinder	gene	2377967	2378070	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00253;old_locus_tag=contig_1_ign_01597
+contig_1	pseudofinder	gene	2378514	2380469	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 58.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00254;old_locus_tag=OHJEEF_02187
+contig_1	pseudofinder	gene	2396657	2397172	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 146.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00255;old_locus_tag=OHJEEF_02199
+contig_1	pseudofinder	gene	2398284	2398859	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00256;old_locus_tag=OHJEEF_02202,contig_1_ign_01609
+contig_1	pseudofinder	gene	2399388	2399491	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00257;old_locus_tag=contig_1_ign_01610
+contig_1	pseudofinder	gene	2408275	2408786	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00258;old_locus_tag=contig_1_ign_01617,OHJEEF_02211
+contig_1	pseudofinder	gene	2448300	2448409	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00259;old_locus_tag=contig_1_ign_01649
+contig_1	pseudofinder	gene	2456307	2456660	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 28.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00260;old_locus_tag=OHJEEF_02270
+contig_1	pseudofinder	gene	2456666	2456880	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00261;old_locus_tag=contig_1_ign_01658
+contig_1	pseudofinder	gene	2456885	2457052	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 13.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00262;old_locus_tag=OHJEEF_02271
+contig_1	pseudofinder	gene	2475742	2476119	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00263;old_locus_tag=OHJEEF_02293,contig_1_ign_01670
+contig_1	pseudofinder	gene	2500842	2500960	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00264;old_locus_tag=contig_1_ign_01689
+contig_1	pseudofinder	gene	2556961	2557383	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 8.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00265;old_locus_tag=OHJEEF_02382
+contig_1	pseudofinder	gene	2582522	2583783	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00266;old_locus_tag=contig_1_ign_01758
+contig_1	pseudofinder	gene	2585245	2585932	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00267;old_locus_tag=OHJEEF_02414,OHJEEF_02413
+contig_1	pseudofinder	gene	2598195	>2598395	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 44.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00268;old_locus_tag=OHJEEF_02426
+contig_1	pseudofinder	gene	2598567	2598652	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00269;old_locus_tag=contig_1_ign_01768
+contig_1	pseudofinder	gene	2606938	2607125	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00270;old_locus_tag=contig_1_ign_01773
+contig_1	pseudofinder	gene	2634942	2638784	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 197.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00271;old_locus_tag=OHJEEF_02459
+contig_1	pseudofinder	gene	2642972	2643193	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 61.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00272;old_locus_tag=OHJEEF_02465
+contig_1	pseudofinder	gene	2643194	2643330	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00273;old_locus_tag=contig_1_ign_01791
+contig_1	pseudofinder	gene	2646922	2647172	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00274;old_locus_tag=contig_1_ign_01794
+contig_1	pseudofinder	gene	2650794	2650900	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00275;old_locus_tag=contig_1_ign_01798
+contig_1	pseudofinder	gene	2652812	2653053	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00276;old_locus_tag=contig_1_ign_01799
+contig_1	pseudofinder	gene	2653839	2660397	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00277;old_locus_tag=OHJEEF_02476,OHJEEF_02475
+contig_1	pseudofinder	gene	2660397	2661572	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 54.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00278;old_locus_tag=OHJEEF_02477
+contig_1	pseudofinder	gene	2663586	2664716	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 52.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00279;old_locus_tag=OHJEEF_02479
+contig_1	pseudofinder	gene	2673209	2673853	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 17.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00280;old_locus_tag=OHJEEF_02483
+contig_1	pseudofinder	gene	2676244	2676480	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 13 blast hits.;locus_tag=contig_1_pseudo_00281;old_locus_tag=contig_1_ign_01804
+contig_1	pseudofinder	gene	2679791	2679900	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00282;old_locus_tag=contig_1_ign_01807
+contig_1	pseudofinder	gene	2679929	2680147	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 64.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00283;old_locus_tag=OHJEEF_02487
+contig_1	pseudofinder	gene	2680161	2680486	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 6 blast hits.;locus_tag=contig_1_pseudo_00284;old_locus_tag=contig_1_ign_01808
+contig_1	pseudofinder	gene	2680563	2680661	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 23.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00285;old_locus_tag=OHJEEF_02488
+contig_1	pseudofinder	gene	2699247	2699414	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 48.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00286;old_locus_tag=OHJEEF_02508
+contig_1	pseudofinder	gene	2716374	2716849	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00287;old_locus_tag=contig_1_ign_01831,OHJEEF_02523
+contig_1	pseudofinder	gene	2742975	2743099	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00288;old_locus_tag=contig_1_ign_01850
+contig_1	pseudofinder	gene	2748792	2750801	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 176.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00289;old_locus_tag=OHJEEF_02553
+contig_1	pseudofinder	gene	2803112	2803209	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00290;old_locus_tag=contig_1_ign_01892
+contig_1	pseudofinder	gene	2822197	2822315	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 6 blast hits.;locus_tag=contig_1_pseudo_00291;old_locus_tag=contig_1_ign_01905
+contig_1	pseudofinder	gene	2838961	2840397	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00292;old_locus_tag=OHJEEF_02630,OHJEEF_02631
+contig_1	pseudofinder	gene	2871409	2871527	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00293;old_locus_tag=contig_1_ign_01933
+contig_1	pseudofinder	gene	2898501	2898737	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 53.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00294;old_locus_tag=OHJEEF_02687
+contig_1	pseudofinder	gene	2902465	2902830	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 53.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00295;old_locus_tag=OHJEEF_02690
+contig_1	pseudofinder	gene	2902999	2903157	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 21.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00296;old_locus_tag=OHJEEF_02691
+contig_1	pseudofinder	gene	2911352	>2911969	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 43.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00297;old_locus_tag=OHJEEF_02697
+contig_1	pseudofinder	gene	2911972	2912042	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 9 blast hits.;locus_tag=contig_1_pseudo_00298;old_locus_tag=contig_1_ign_01964
+contig_1	pseudofinder	gene	2912050	2912901	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 59.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00299;old_locus_tag=OHJEEF_02698
+contig_1	pseudofinder	gene	2917397	2917675	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 25.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00300;old_locus_tag=OHJEEF_02703
+contig_1	pseudofinder	gene	2918268	2919221	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 63.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00301;old_locus_tag=OHJEEF_02705
+contig_1	pseudofinder	gene	2919326	2919445	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 8.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00302;old_locus_tag=OHJEEF_02706
+contig_1	pseudofinder	gene	2919540	2919821	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 25.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00303;old_locus_tag=OHJEEF_02707
+contig_1	pseudofinder	gene	2924526	2925350	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 57.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00304;old_locus_tag=OHJEEF_02712
+contig_1	pseudofinder	gene	2927081	2928642	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00305;old_locus_tag=OHJEEF_02714,OHJEEF_02715
+contig_1	pseudofinder	gene	2929598	2931144	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00306;old_locus_tag=OHJEEF_02717,OHJEEF_02718
+contig_1	pseudofinder	gene	2931983	2932822	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 58.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00307;old_locus_tag=OHJEEF_02720
+contig_1	pseudofinder	gene	2932824	2932969	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00308;old_locus_tag=contig_1_ign_01984
+contig_1	pseudofinder	gene	2933012	2933997	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00309;old_locus_tag=OHJEEF_02721,OHJEEF_02722,contig_1_ign_01985
+contig_1	pseudofinder	gene	2937719	2938030	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 39.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00310;old_locus_tag=OHJEEF_02727
+contig_1	pseudofinder	gene	2941681	2941861	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00311;old_locus_tag=contig_1_ign_01994
+contig_1	pseudofinder	gene	2942388	2942726	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 40.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00312;old_locus_tag=OHJEEF_02732
+contig_1	pseudofinder	gene	2942717	2942953	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 27.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00313;old_locus_tag=OHJEEF_02733
+contig_1	pseudofinder	gene	2943667	2943870	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 39.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00314;old_locus_tag=OHJEEF_02735
+contig_1	pseudofinder	gene	2944957	2945160	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 39.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00315;old_locus_tag=OHJEEF_02737
+contig_1	pseudofinder	gene	2946199	2946402	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 39.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00316;old_locus_tag=OHJEEF_02739
+contig_1	pseudofinder	gene	2947844	2948079	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 13 blast hits.;locus_tag=contig_1_pseudo_00317;old_locus_tag=contig_1_ign_01999
+contig_1	pseudofinder	gene	2948098	2948379	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 26.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00318;old_locus_tag=OHJEEF_02742
+contig_1	pseudofinder	gene	2951658	2951838	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00319;old_locus_tag=contig_1_ign_02002
+contig_1	pseudofinder	gene	2954087	2954490	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00320;old_locus_tag=contig_1_ign_02005
+contig_1	pseudofinder	gene	2954498	2954692	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 17.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00321;old_locus_tag=OHJEEF_02749
+contig_1	pseudofinder	gene	2956454	2956689	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 12 blast hits.;locus_tag=contig_1_pseudo_00322;old_locus_tag=contig_1_ign_02007
+contig_1	pseudofinder	gene	2956708	2956989	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 26.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00323;old_locus_tag=OHJEEF_02751
+contig_1	pseudofinder	gene	2965897	2966664	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 142.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00324;old_locus_tag=OHJEEF_02760
+contig_1	pseudofinder	gene	2968683	2969075	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 61.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00325;old_locus_tag=OHJEEF_02764
+contig_1	pseudofinder	gene	2969431	2969601	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 45.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00326;old_locus_tag=OHJEEF_02765
+contig_1	pseudofinder	gene	2969615	2969786	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 7 blast hits.;locus_tag=contig_1_pseudo_00327;old_locus_tag=contig_1_ign_02017
+contig_1	pseudofinder	gene	2977241	2977633	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 61.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00328;old_locus_tag=OHJEEF_02774
+contig_1	pseudofinder	gene	2977656	2978084	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 42.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00329;old_locus_tag=OHJEEF_02775
+contig_1	pseudofinder	gene	2978284	2978565	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 40.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00330;old_locus_tag=OHJEEF_02776
+contig_1	pseudofinder	gene	2978580	2978704	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00331;old_locus_tag=contig_1_ign_02021
+contig_1	pseudofinder	gene	2979955	2980214	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00332;old_locus_tag=contig_1_ign_02022
+contig_1	pseudofinder	gene	2980218	2980532	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 51.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00333;old_locus_tag=OHJEEF_02778
+contig_1	pseudofinder	gene	2981735	2982127	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 61.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00334;old_locus_tag=OHJEEF_02781
+contig_1	pseudofinder	gene	2982190	2982570	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 46.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00335;old_locus_tag=OHJEEF_02782
+contig_1	pseudofinder	gene	2983798	2983968	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 26.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00336;old_locus_tag=OHJEEF_02784
+contig_1	pseudofinder	gene	2983975	2984078	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 10 blast hits.;locus_tag=contig_1_pseudo_00337;old_locus_tag=contig_1_ign_02028
+contig_1	pseudofinder	gene	2984527	2984633	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00338;old_locus_tag=contig_1_ign_02029
+contig_1	pseudofinder	gene	2985188	2985571	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 50.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00339;old_locus_tag=OHJEEF_02787
+contig_1	pseudofinder	gene	2986308	2986478	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 57.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00340;old_locus_tag=OHJEEF_02789
+contig_1	pseudofinder	gene	2989155	2989571	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 35.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00341;old_locus_tag=OHJEEF_02793
+contig_1	pseudofinder	gene	2989568	2990677	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 41.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00342;old_locus_tag=OHJEEF_02794
+contig_1	pseudofinder	gene	2990745	2990857	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00343;old_locus_tag=contig_1_ign_02034
+contig_1	pseudofinder	gene	2992098	2992201	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00344;old_locus_tag=contig_1_ign_02035
+contig_1	pseudofinder	gene	2992645	2992730	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 12 blast hits.;locus_tag=contig_1_pseudo_00345;old_locus_tag=contig_1_ign_02036
+contig_1	pseudofinder	gene	3016010	3016821	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00346;old_locus_tag=OHJEEF_02817,contig_1_ign_02051
+contig_1	pseudofinder	gene	3021201	3021455	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 44.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00347;old_locus_tag=OHJEEF_02825
+contig_1	pseudofinder	gene	3021456	3021616	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00348;old_locus_tag=contig_1_ign_02056
+contig_1	pseudofinder	gene	3023242	3023508	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 46.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00349;old_locus_tag=OHJEEF_02827
+contig_1	pseudofinder	gene	3029401	3029788	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 11 blast hits.;locus_tag=contig_1_pseudo_00350;old_locus_tag=contig_1_ign_02063
+contig_1	pseudofinder	gene	3047018	3047200	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 49.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00351;old_locus_tag=OHJEEF_02852
+contig_1	pseudofinder	gene	3047204	3047334	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00352;old_locus_tag=contig_1_ign_02080
+contig_1	pseudofinder	gene	3080510	3081223	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 52.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00353;old_locus_tag=OHJEEF_02877
+contig_1	pseudofinder	gene	3081226	3081380	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00354;old_locus_tag=contig_1_ign_02103
+contig_1	pseudofinder	gene	3094955	3095702	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00355;old_locus_tag=OHJEEF_02891,OHJEEF_02890
+contig_1	pseudofinder	gene	3096289	3096407	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00356;old_locus_tag=contig_1_ign_02115
+contig_1	pseudofinder	gene	3112259	3113077	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 51.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00357;old_locus_tag=OHJEEF_02911
+contig_1	pseudofinder	gene	3126585	3127246	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00358;old_locus_tag=contig_1_ign_02139,OHJEEF_02925
+contig_1	pseudofinder	gene	3127904	3128221	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 36.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00359;old_locus_tag=OHJEEF_02927
+contig_1	pseudofinder	gene	3152186	3152680	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 42.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00360;old_locus_tag=OHJEEF_02943
+contig_1	pseudofinder	gene	3171453	3171794	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 39.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00361;old_locus_tag=OHJEEF_02965
+contig_1	pseudofinder	gene	3171796	3172004	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00362;old_locus_tag=contig_1_ign_02169
+contig_1	pseudofinder	gene	3172309	3173565	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 43.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00363;old_locus_tag=OHJEEF_02966
+contig_1	pseudofinder	gene	3173681	3173872	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 49.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00364;old_locus_tag=OHJEEF_02967
+contig_1	pseudofinder	gene	3175559	3175698	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00365;old_locus_tag=contig_1_ign_02172
+contig_1	pseudofinder	gene	3175701	3176744	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00366;old_locus_tag=OHJEEF_02971,OHJEEF_02970,contig_1_ign_02173
+contig_1	pseudofinder	gene	3181282	3181650	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 13.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00367;old_locus_tag=OHJEEF_02975
+contig_1	pseudofinder	gene	3181652	3181878	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00368;old_locus_tag=contig_1_ign_02177
+contig_1	pseudofinder	gene	3181881	3182309	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 62.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00369;old_locus_tag=OHJEEF_02976
+contig_1	pseudofinder	gene	3189378	3189512	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 32.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00370;old_locus_tag=OHJEEF_02980
+contig_1	pseudofinder	gene	3189576	3191618	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 59.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00371;old_locus_tag=OHJEEF_02981
+contig_1	pseudofinder	gene	3194295	3195248	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 28.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00372;old_locus_tag=OHJEEF_02985
+contig_1	pseudofinder	gene	3195241	3195759	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 16.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00373;old_locus_tag=OHJEEF_02986
+contig_1	pseudofinder	gene	3195837	3196029	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 14 blast hits.;locus_tag=contig_1_pseudo_00374;old_locus_tag=contig_1_ign_02183
+contig_1	pseudofinder	gene	3197047	3197619	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 32.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00375;old_locus_tag=OHJEEF_02989
+contig_1	pseudofinder	gene	3198069	3198977	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 60.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00376;old_locus_tag=OHJEEF_02990
+contig_1	pseudofinder	gene	3201486	3201887	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 25.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00377;old_locus_tag=OHJEEF_02993
+contig_1	pseudofinder	gene	3221718	3221839	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 8 blast hits.;locus_tag=contig_1_pseudo_00378;old_locus_tag=contig_1_ign_02203
+contig_1	pseudofinder	gene	3255739	3255875	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 10 blast hits.;locus_tag=contig_1_pseudo_00379;old_locus_tag=contig_1_ign_02226
+contig_1	pseudofinder	gene	3258306	3258682	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00380;old_locus_tag=contig_1_ign_02228
+contig_1	pseudofinder	gene	3258826	3259823	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00381;old_locus_tag=contig_1_ign_02229,OHJEEF_03048,OHJEEF_03047
+contig_1	pseudofinder	gene	3259825	3259911	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 8 blast hits.;locus_tag=contig_1_pseudo_00382;old_locus_tag=contig_1_ign_02230
+contig_1	pseudofinder	gene	3260045	3260584	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 54.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00383;old_locus_tag=OHJEEF_03049
+contig_1	pseudofinder	gene	3260587	3260813	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00384;old_locus_tag=contig_1_ign_02231
+contig_1	pseudofinder	gene	3260815	3261312	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 51.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00385;old_locus_tag=OHJEEF_03050
+contig_1	pseudofinder	gene	3261849	3262163	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 57.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00386;old_locus_tag=OHJEEF_03052
+contig_1	pseudofinder	gene	3266129	3266557	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 46.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00387;old_locus_tag=OHJEEF_03056
+contig_1	pseudofinder	gene	3268286	3269192	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00388;old_locus_tag=OHJEEF_03058,OHJEEF_03059
+contig_1	pseudofinder	gene	3272628	3272876	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 31.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00389;old_locus_tag=OHJEEF_03062
+contig_1	pseudofinder	gene	3274082	3274345	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 36.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00390;old_locus_tag=OHJEEF_03064
+contig_1	pseudofinder	gene	3274348	3274571	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00391;old_locus_tag=contig_1_ign_02242
+contig_1	pseudofinder	gene	3274599	3275045	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 51.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00392;old_locus_tag=OHJEEF_03065
+contig_1	pseudofinder	gene	3275592	3275912	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 38.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00393;old_locus_tag=OHJEEF_03066
+contig_1	pseudofinder	gene	3277190	3277531	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 39.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00394;old_locus_tag=OHJEEF_03068
+contig_1	pseudofinder	gene	3277534	3277841	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00395;old_locus_tag=contig_1_ign_02245
+contig_1	pseudofinder	gene	3278046	3278363	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 43.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00396;old_locus_tag=OHJEEF_03069
+contig_1	pseudofinder	gene	3286931	3300379	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 175.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00397;old_locus_tag=OHJEEF_03076
+contig_1	pseudofinder	gene	3300758	3318565	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 228.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00398;old_locus_tag=OHJEEF_03077
+contig_1	pseudofinder	gene	3318558	3318866	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 6.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00399;old_locus_tag=OHJEEF_03078
+contig_1	pseudofinder	gene	3336158	3336348	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00400;old_locus_tag=contig_1_ign_02259
+contig_1	pseudofinder	gene	3349594	3349761	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 21.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00401;old_locus_tag=OHJEEF_03099
+contig_1	pseudofinder	gene	3400792	3401157	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 51.4%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00402;old_locus_tag=OHJEEF_03137
+contig_1	pseudofinder	gene	3402690	3402901	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00403;old_locus_tag=contig_1_ign_02301
+contig_1	pseudofinder	gene	3403647	3403949	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 54.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00404;old_locus_tag=OHJEEF_03140
+contig_1	pseudofinder	gene	3409299	3409450	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 9 blast hits.;locus_tag=contig_1_pseudo_00405;old_locus_tag=contig_1_ign_02307
+contig_1	pseudofinder	gene	3518607	3525068	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 63.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00406;old_locus_tag=OHJEEF_03239
+contig_1	pseudofinder	gene	3525141	3525533	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 61.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00407;old_locus_tag=OHJEEF_03240
+contig_1	pseudofinder	gene	3570544	3570777	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 21.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00408;old_locus_tag=OHJEEF_03278
+contig_1	pseudofinder	gene	3570833	3571132	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 31.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00409;old_locus_tag=OHJEEF_03279
+contig_1	pseudofinder	gene	3571318	3572715	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 177.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00410;old_locus_tag=OHJEEF_03280
+contig_1	pseudofinder	gene	3572766	3572938	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 7 blast hits.;locus_tag=contig_1_pseudo_00411;old_locus_tag=contig_1_ign_02402
+contig_1	pseudofinder	gene	3575672	3575763	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 5 blast hits.;locus_tag=contig_1_pseudo_00412;old_locus_tag=contig_1_ign_02405
+contig_1	pseudofinder	gene	3578724	>3578834	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 22.2%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00413;old_locus_tag=OHJEEF_03289
+contig_1	pseudofinder	gene	3578869	3579119	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00414;old_locus_tag=contig_1_ign_02409
+contig_1	pseudofinder	gene	3579128	3579397	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 39.0%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00415;old_locus_tag=OHJEEF_03290
+contig_1	pseudofinder	gene	3581024	3581206	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 13.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00416;old_locus_tag=OHJEEF_03295
+contig_1	pseudofinder	gene	3581264	3581656	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 48.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00417;old_locus_tag=OHJEEF_03296
+contig_1	pseudofinder	gene	3582018	3582187	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00418;old_locus_tag=contig_1_ign_02415
+contig_1	pseudofinder	gene	3582189	3582614	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 58.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00419;old_locus_tag=OHJEEF_03298
+contig_1	pseudofinder	gene	3583912	3584227	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 11 blast hits.;locus_tag=contig_1_pseudo_00420;old_locus_tag=contig_1_ign_02417
+contig_1	pseudofinder	gene	3585235	3585419	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00421;old_locus_tag=contig_1_ign_02418
+contig_1	pseudofinder	gene	3585423	3586178	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 55.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00422;old_locus_tag=OHJEEF_03302
+contig_1	pseudofinder	gene	3589523	3590210	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00423;old_locus_tag=OHJEEF_03308,OHJEEF_03307
+contig_1	pseudofinder	gene	3590244	3590455	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00424;old_locus_tag=contig_1_ign_02422
+contig_1	pseudofinder	gene	3594668	3594870	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00425;old_locus_tag=contig_1_ign_02426
+contig_1	pseudofinder	gene	3595344	3595459	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00426;old_locus_tag=contig_1_ign_02427
+contig_1	pseudofinder	gene	3597606	3597749	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 10.3%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00427;old_locus_tag=OHJEEF_03316
+contig_1	pseudofinder	gene	3597752	3597837	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00428;old_locus_tag=contig_1_ign_02430
+contig_1	pseudofinder	gene	3597930	3598526	.	+	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00429;old_locus_tag=OHJEEF_03318,OHJEEF_03317,contig_1_ign_02431
+contig_1	pseudofinder	gene	3598529	3598665	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00430;old_locus_tag=contig_1_ign_02432
+contig_1	pseudofinder	gene	3614986	3615234	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 38.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00431;old_locus_tag=OHJEEF_03330
+contig_1	pseudofinder	gene	3654303	3654406	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00432;old_locus_tag=contig_1_ign_02471
+contig_1	pseudofinder	gene	3668787	3669546	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00433;old_locus_tag=OHJEEF_03386,contig_1_ign_02483
+contig_1	pseudofinder	gene	3669510	3669953	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 32.1%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00434;old_locus_tag=OHJEEF_03387
+contig_1	pseudofinder	gene	3670086	3670373	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 26.8%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00435;old_locus_tag=OHJEEF_03388
+contig_1	pseudofinder	gene	3670357	3670551	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 47.6%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00436;old_locus_tag=OHJEEF_03389
+contig_1	pseudofinder	gene	3673870	3674001	.	.	.	note=Pseudogene candidate. Reason(s):Intergenic region with 15 blast hits.;locus_tag=contig_1_pseudo_00437;old_locus_tag=contig_1_ign_02487
+contig_1	pseudofinder	gene	3679239	3679535	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 32.5%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00438;old_locus_tag=OHJEEF_03395
+contig_1	pseudofinder	gene	3693741	3694543	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00439;old_locus_tag=OHJEEF_03410,contig_1_ign_02504
+contig_1	pseudofinder	gene	3697815	3700264	.	-	.	note=Pseudogene candidate. Reason(s):Predicted fragmentation of a single gene.;locus_tag=contig_1_pseudo_00440;old_locus_tag=OHJEEF_03416,OHJEEF_03417
+contig_1	pseudofinder	gene	3701943	3702299	.	-	.	note=Pseudogene candidate. Reason(s):ORF is 141.9%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00441;old_locus_tag=OHJEEF_03418
+contig_1	pseudofinder	gene	3704037	3704441	.	+	.	note=Pseudogene candidate. Reason(s):ORF is 56.7%25 of the average length of hits to this gene.;locus_tag=contig_1_pseudo_00442;old_locus_tag=OHJEEF_03420
+contig_1	pseudofinder	gene	3754460	>3757843	.	-	.	note=Pseudogene. Reason(s):;locus_tag=contig_1_pseudo_00443;old_locus_tag=OHJEEF_03468

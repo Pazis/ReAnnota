@@ -11,7 +11,6 @@ from reannota.analysis import compare_gff
 from reannota.converters import gbff_to_gff, merge_csv_to_gbff
 from reannota.parsers import (
     build_egg_dictionary_clean,
-    combine_gbk_files,
     egg_dict_to_tsv,
     ipr_dictotsv,
     ipr_termfinder,
@@ -40,15 +39,22 @@ def annotate(
         readable=True,
         resolve_path=True,
     ),
-    output_file: Path = typer.Option(
+    output_dir: Path = typer.Option(
         ...,
         "--output",
         "-o",
-        help="Output GBFF file path.",
-        file_okay=True,
-        dir_okay=False,
+        help="Output directory path.",
+        file_okay=False,
+        dir_okay=True,
         writable=True,
         resolve_path=True,
+    ),
+    prefix: str = typer.Option(
+        None,
+        "--prefix",
+        "-p",
+        help="Prefix for output files.",
+
     ),
     egg_input: Optional[Path] = typer.Option(
         None,
@@ -76,7 +82,7 @@ def annotate(
         None,
         "--antismash-input",
         "-ai",
-        help="Input antiSMASH annotation file (.json).",
+        help="Input antiSMASH annotation file (.gbk).",
         exists=True,
         file_okay=True,
         dir_okay=False,
@@ -86,7 +92,7 @@ def annotate(
     pseudofinder_input: Optional[Path] = typer.Option(
         None,
         "--pseudofinder-input",
-        "-pi",
+        "-pfi",
         help="Input Pseudofinder annotation file (.gff).",
         exists=True,
         file_okay=True,
@@ -99,6 +105,17 @@ def annotate(
         "--gecco-input",
         "-pi",
         help="Input Gecco csv file with all .gbk paths.",
+        exists=True,
+        file_okay=True,
+        dir_okay=False,
+        readable=True,
+        resolve_path=True,
+    ),
+    gecco_summary: Optional[Path] = typer.Option(
+        None,
+        "--gecco-summary",
+        "-ps",
+        help="Input Gecco summary clusters.tsv file.",
         exists=True,
         file_okay=True,
         dir_okay=False,
@@ -143,7 +160,7 @@ def annotate(
 ) -> None:
     """Run ReAnnota genome annotation enhancement pipeline."""
     # Prepare output directory and log file
-    outdir = output_file.parent
+    outdir = output_dir
     outdir.mkdir(parents=True, exist_ok=True)
 
     if log_file is None:
@@ -180,9 +197,12 @@ def annotate(
         # Step 3: Merge annotations into GBFF
         if egg_out or ipr_out:
             logger.info("Merging annotations into GBFF...")
-            results_dir = Path(outdir) / "results"
+            results_dir = Path(outdir) / "enhanced"
             results_dir.mkdir(parents=True, exist_ok=True)
-            gbff_outpath = results_dir / "Enhanced.gbff"
+            if prefix:
+                gbff_outpath = results_dir / f"{prefix}_enhanced.gbff"
+            else:
+                gbff_outpath = results_dir / "enhanced.gbff"
             enhanced_gbff = merge_csv_to_gbff(
                 egg_file=str(egg_out) if egg_out else None,
                 interpro_file=str(ipr_out) if ipr_out else None,
@@ -195,19 +215,12 @@ def annotate(
             logger.warning("No annotation files produced — skipping merge.")
             enhanced_gbff = str(gbff_input)
 
-        if gecco_input:
-            bgcs_dir = Path(outdir) / "bgcs"
-            bgcs_dir.mkdir(parents=True, exist_ok=True)
-            combined_gbk = bgcs_dir / "combined_gecco_clusters.gbk"
-            combine_gbk_files(gecco_input, combined_gbk)
-            gecco_clusters_gbk = str(combined_gbk)
-        else:
-            print("⚠️ No GECCO GBK files found in CSV. Skipping GECCO processing.")
-            gecco_clusters_gbk = None
-
         # Step 4: Convert GBFF to GFF
-        gff_file_path = results_dir / "Enhanced.gff3"
-        gff_generated = gbff_to_gff(enhanced_gbff, str(gff_file_path), str(antismash_input),str(gecco_clusters_gbk),antismash_version="7.1.0" )
+        if prefix:
+            gff_file_path = results_dir / f"{prefix}_enhanced.gff3"
+        else:
+            gff_file_path = results_dir / "Enhanced.gff3"
+        gff_generated = gbff_to_gff(enhanced_gbff, str(gff_file_path), str(antismash_input),str(gecco_input), str(gecco_summary))
         logger.info(f"Enhanced GFF file created: {gff_file_path}")
 
         # Step 5: Compare GFFs

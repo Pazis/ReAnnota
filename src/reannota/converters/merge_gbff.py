@@ -84,6 +84,7 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
             if feature.type == "CDS":  # <-- Filter and focus only on CDS
                 cds_count += 1
                 locus_tag = feature.qualifiers.get("locus_tag", [""])[0]
+                product = feature.qualifiers.get("product", [""])[0]
 
                 # ---------------Adding Interpro annotation to Gbff-----------------#
 
@@ -91,17 +92,23 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
                     ipr_annotated += 1
                     values = ipr_dictionary[locus_tag]
                     description_ipr = values.get("Description", "")
-                    go_terms = str(values.get("GO_terms", ""))
-                    interpro_terms = str(values.get("Interpro_terms", ""))
+                    go_terms = str(values.get("GO_terms", "")).replace ('"', '')
+                    interpro_terms = str(values.get("Interpro_terms", "")).replace ('"', '')
+                    gene_name = str(values.get("Gene_name", "")).replace ('"', '')
 
                     # Update 'product' field if InterPro description is available
                     if (
                         description_ipr is not None
+                        and product == "hypothetical protein"
                         and str(description_ipr).lower() != "nan"
                         and str(description_ipr).strip() != ""
                     ):
                         feature.qualifiers["product"] = [str(description_ipr)]
 
+                    if (gene_name is not None and feature.qualifiers.get("gene", []) == []):
+                        feature.qualifiers.setdefault("gene", [])
+                        feature.qualifiers["gene"].append(gene_name)
+                            
                     feature.qualifiers.setdefault("db_xref", [])  # <--Ensure db_xref field exists
                     db_xrefs = feature.qualifiers["db_xref"]
 
@@ -132,16 +139,22 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
                     gos = str(values.get("GOs", ""))
                     pfams = str(values.get("PFAM", ""))
                     keggs = str(values.get("KEGG_ko", ""))
+                    ecs = str(values.get("EC", ""))
+                    gname = str(values.get("Gene_name", ""))
 
                     # Update 'product' or add to 'note' depending on length and existing product
                     feature.qualifiers.setdefault("note", [])
                     if description and description != "nan":
                         if len(description) > DESCRIPTION_LENGTH_MAX:
                             feature.qualifiers["note"].append(
-                                f"Description={values['Description']}"
+                                f"{values['Description']}"
                             )
                         elif feature.qualifiers["product"] == ["hypothetical protein"]:
                             feature.qualifiers["product"] = [description]
+                    
+                    if gname is not None and feature.qualifiers.get("gene", []) == []:
+                        feature.qualifiers.setdefault("gene", [])
+                        feature.qualifiers["gene"].append(gname)
 
                     feature.qualifiers.setdefault("db_xref", [])  # <--Ensure db_xref field exists
                     db_xrefs = feature.qualifiers["db_xref"]
@@ -160,7 +173,7 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
                         and cog_category != "nan"
                         and not any(x.startswith("COG:") for x in db_xrefs)
                     ):
-                        feature.qualifiers["db_xref"].append(f"COG:{cog_category}")
+                        feature.qualifiers["db_xref"].append(f"COG_cat:{cog_category}")
 
                     # Add GO terms if not already present
                     if gos and gos != "nan" and not any(x.startswith("GO:") for x in db_xrefs):
@@ -173,25 +186,35 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
                     ):
                         feature.qualifiers["db_xref"].append(f"KEGG:{keggs}")
 
+                    if (
+                        ecs
+                        and ecs != "nan"
+                        and not any(x.startswith("EC:") for x in db_xrefs)
+                    ):
+                        feature.qualifiers["db_xref"].append(f"EC:{ecs}")
+                        
                     # Add PFAM information as a note
                     if (
                         pfams
                         and pfams != "nan"
                         and not any(x.startswith("PFAM:") for x in db_xrefs)
                     ):
-                        feature.qualifiers["note"].append(f"Eggnog PFAM comment:{pfams}")
+                        feature.qualifiers["note"].append(f" Eggnog PFAM comment:{pfams}")
 
                     #--------------Add Pseudogenes-------------------
                 if pseudofile != None:
                     if locus_tag in pseudo_dict:
                         pseudogenes += 1
                         values = pseudo_dict[locus_tag]
-                        description_pseudo = values.get("attributes", "").replace("note=", "")
+                        raw_attr = values.get("attributes", "").replace("note=", "")
+                        description_pseudo = raw_attr.split(';')[0].strip()
+                        description_pseudo = description_pseudo.replace("%25", "%").strip()
+                        description_pseudo = " ".join(description_pseudo.split())
 
-                        feature.qualifiers.setdefault("note", [])
+                        feature.qualifiers.setdefault("pseudogene", [])
 
-                        if feature.qualifiers["product"] == ["hypothetical protein"]:
-                            feature.qualifiers["note"].append(description_pseudo)
+                        if feature.qualifiers["product"] == ["hypothetical protein"] and not feature.qualifiers.get("pseudogene", []):
+                            feature.qualifiers["pseudogene"].append(description_pseudo)
 
 
 

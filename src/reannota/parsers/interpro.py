@@ -54,7 +54,7 @@ def ipr_termfinder(input_file):
                     if '"GO:' in terms:
                         for values in terms.replace("=", ",").split(","):
                             values = values.strip()
-                            if values.startswith('"GO:') and values not in go_terms:
+                            if values.startswith('"GO:'):
                                 go_terms.append(values)
 
             # Extract InterPro terms
@@ -66,6 +66,12 @@ def ipr_termfinder(input_file):
                             values = values.strip()
                             if values.startswith('"InterPro:') and values not in ipr_terms:
                                 ipr_terms.append(values)
+
+            name = []
+            for terms in attributes.split(";"):
+                if terms.startswith("Name="):
+                    value = terms.split("=", 1)[1].strip()
+                    name.append(value)
 
             # Extract functional descriptions (ignoring generic/unknown terms)
             description = []
@@ -80,7 +86,9 @@ def ipr_termfinder(input_file):
                     "GO": go_terms,
                     "InterPro": ipr_terms,
                     "Description": description,
+                    "Name": name,
                 }
+            
 
     logger.info(
         f"InterPro processing: {len(dictionary)} entries with annotations found "
@@ -98,24 +106,23 @@ def ipr_dictotsv(dictionary, output_file):
     output_file : str
     Path to the output TSV file.
     """
+    go_ipr_separator = ","
+
     logger.debug(f"Writing InterPro results to TSV: {output_file}")
     with open(output_file, "w", newline="") as out_handle:
         writer = csv.writer(out_handle, delimiter="\t")
 
         # Write header
-        writer.writerow(["Query_ID", "GO_terms", "Interpro_terms", "Description"])
+        writer.writerow(["Query_ID", "GO_terms", "Interpro_terms", "Description" , "Gene_name"])
 
         for query_id, vals in dictionary.items():
-            go_terms = vals["GO"] or [""]  # <--Use empty string if no GO terms
-            ipr_terms = vals["InterPro"] or [""]  # <-- Use empty string if no InterPro terms
+            go_list = vals.get("GO", [])
+            go_terms_string = go_ipr_separator.join(go_list)
+            ipr_list = vals.get("InterPro", [])
+            ipr_terms_string = go_ipr_separator.join(ipr_list)  # <-- Use empty string if no InterPro terms
             desc = ",".join(vals["Description"])  # <--Combine descriptions into a single string
+            gene_name = ",".join(vals["Name"])  # <--Combine gene names into a single string
 
-            max_len = max(len(go_terms), len(ipr_terms))
-
-            # Write each GO/IPR term on a separate line, reusing description
-            for i in range(max_len):
-                go_val = go_terms[i] if i < len(go_terms) else ""
-                ipr_val = ipr_terms[i] if i < len(ipr_terms) else ""
-                writer.writerow([query_id, go_val, ipr_val, desc])
+            writer.writerow([query_id, go_terms_string, ipr_terms_string, desc, gene_name])
 
     return output_file

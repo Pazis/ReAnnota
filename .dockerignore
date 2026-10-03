@@ -1,0 +1,40 @@
+Exclude Python's cache
+
+pycache/
+*.pyc
+*.pyo
+
+Exclude virtual environment
+
+.venv
+venv/
+env/
+
+Exclude build artifacts
+
+.eggs/
+*.egg-info/
+dist/
+build/
+wheelhouse/
+
+Exclude test and dev files
+
+.pytest_cache/
+.tox/
+tests/
+htmlcov/
+.coverage
+
+Exclude Git and other VC
+
+.git/
+.gitignore
+
+Exclude editor and OS files
+
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store

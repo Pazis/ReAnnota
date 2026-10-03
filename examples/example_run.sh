@@ -23,13 +23,14 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 # Input files (from test fixtures)
 TEST_FIXTURES="${PROJECT_ROOT}/tests/fixtures"
-BAKTA_GBFF="${TEST_FIXTURES}/Bakta_anotation.gbff"
-EGGNOG_TSV="${TEST_FIXTURES}/Egg_NOG_anotation.tsv"
-INTERPRO_GFF="${TEST_FIXTURES}/Interpro_anotation.gff3"
-GFF_INPUT="${TEST_FIXTURES}/Comparison_genome.gff3" 
-ANTISMASH_OUTPUT="${TEST_FIXTURES}/Antismash_output.js"
-PSEUDOFINDER_INPUT="${TEST_FIXTURES}/pseudofindertest_pseudos.gff"
-GECCO_INPUT="${TEST_FIXTURES}/gecco_Cylindrospermopsis_genome_gbks.csv"
+BAKTA_GBFF="${TEST_FIXTURES}/bakta_test.gbff"
+EGGNOG_TSV="${TEST_FIXTURES}/eggnogmapper_test.annotations"
+INTERPRO_GFF="${TEST_FIXTURES}/interproscan_test.gff3"
+GFF_INPUT="${TEST_FIXTURES}/bakta_test.gff3"
+ANTISMASH_OUTPUT="${TEST_FIXTURES}/antismash_test.gbk"
+PSEUDOFINDER_INPUT="${TEST_FIXTURES}/pseudofinder_test.gff"
+GECCO_INPUT="${TEST_FIXTURES}/gecco_gbks_test.csv"
+GECCO_SUMMARY="${TEST_FIXTURES}/gecco_summary_test.clusters.tsv"
 
 # Output directory
 OUTPUT_DIR="${PROJECT_ROOT}/examples/output"
@@ -107,10 +108,12 @@ reannota annotate \
     --ipr-input "${INTERPRO_GFF}" \
     --gbff-input "${BAKTA_GBFF}" \
     --gff-input "${GFF_INPUT}" \
-    --output "${OUTPUT_DIR}/enhanced_annotation.gbff" \
+    --output "${OUTPUT_DIR}" \
     --antismash-input "${ANTISMASH_OUTPUT}" \
     --pseudofinder-input "${PSEUDOFINDER_INPUT}" \
     --gecco-input "${GECCO_INPUT}" \
+    --gecco-summary "${GECCO_SUMMARY}" \
+    --prefix test \
     --compare \
     --circos \
 
