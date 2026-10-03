@@ -7,7 +7,7 @@ authors = [
     {name = "Efthymios Parisis", email = "eparisis@bio.auth.gr"}
 ]
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = [
     "pandas>=2.1.0",
     "biopython>=1.82",

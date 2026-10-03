@@ -86,47 +86,6 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
                 locus_tag = feature.qualifiers.get("locus_tag", [""])[0]
                 product = feature.qualifiers.get("product", [""])[0]
 
-                # ---------------Adding Interpro annotation to Gbff-----------------#
-
-                if locus_tag in ipr_dictionary:
-                    ipr_annotated += 1
-                    values = ipr_dictionary[locus_tag]
-                    description_ipr = values.get("Description", "")
-                    go_terms = str(values.get("GO_terms", "")).replace ('"', '')
-                    interpro_terms = str(values.get("Interpro_terms", "")).replace ('"', '')
-                    gene_name = str(values.get("Gene_name", "")).replace ('"', '')
-
-                    # Update 'product' field if InterPro description is available
-                    if (
-                        description_ipr is not None
-                        and product == "hypothetical protein"
-                        and str(description_ipr).lower() != "nan"
-                        and str(description_ipr).strip() != ""
-                    ):
-                        feature.qualifiers["product"] = [str(description_ipr)]
-
-                    if (gene_name is not None and feature.qualifiers.get("gene", []) == []):
-                        feature.qualifiers.setdefault("gene", [])
-                        feature.qualifiers["gene"].append(gene_name)
-                            
-                    feature.qualifiers.setdefault("db_xref", [])  # <--Ensure db_xref field exists
-                    db_xrefs = feature.qualifiers["db_xref"]
-
-                    # Add GO terms if not already present
-                    if (
-                        go_terms
-                        and go_terms != "nan"
-                        and not any(x.startswith("GO:") for x in db_xrefs)
-                    ):
-                        feature.qualifiers["db_xref"].append(go_terms)
-
-                    # Add InterPro terms if not already present
-                    if (
-                        interpro_terms
-                        and interpro_terms != "nan"
-                        and not any(x.startswith("Interpro:") for x in db_xrefs)
-                    ):
-                        feature.qualifiers["db_xref"].append(interpro_terms)
 
                 # --------------Adding eggnog annotation to gbff and checking overlaps------#
 
@@ -200,6 +159,48 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
                         and not any(x.startswith("PFAM:") for x in db_xrefs)
                     ):
                         feature.qualifiers["note"].append(f" Eggnog PFAM comment:{pfams}")
+
+                # ---------------Adding Interpro annotation to Gbff-----------------#
+
+                if locus_tag in ipr_dictionary:
+                    ipr_annotated += 1
+                    values = ipr_dictionary[locus_tag]
+                    description_ipr = values.get("Description", "")
+                    go_terms = str(values.get("GO_terms", "")).replace ('"', '')
+                    interpro_terms = str(values.get("Interpro_terms", "")).replace ('"', '')
+                    gene_name = str(values.get("Gene_name", "")).replace ('"', '')
+
+                    # Update 'product' field if InterPro description is available
+                    if (
+                        description_ipr is not None
+                        and product == "hypothetical protein"
+                        and str(description_ipr).lower() != "nan"
+                        and str(description_ipr).strip() != ""
+                    ):
+                        feature.qualifiers["product"] = [str(description_ipr)]
+
+                    if (gene_name is not None and feature.qualifiers.get("gene", []) == []):
+                        feature.qualifiers.setdefault("gene", [])
+                        feature.qualifiers["gene"].append(gene_name)
+                            
+                    feature.qualifiers.setdefault("db_xref", [])  # <--Ensure db_xref field exists
+                    db_xrefs = feature.qualifiers["db_xref"]
+
+                    # Add GO terms if not already present
+                    if (
+                        go_terms
+                        and go_terms != "nan"
+                        and not any(x.startswith("GO:") for x in db_xrefs)
+                    ):
+                        feature.qualifiers["db_xref"].append(go_terms)
+
+                    # Add InterPro terms if not already present
+                    if (
+                        interpro_terms
+                        and interpro_terms != "nan"
+                        and not any(x.startswith("Interpro:") for x in db_xrefs)
+                    ):
+                        feature.qualifiers["db_xref"].append(interpro_terms)
 
                     #--------------Add Pseudogenes-------------------
                 if pseudofile != None:
