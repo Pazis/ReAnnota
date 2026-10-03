@@ -17,6 +17,7 @@ dependencies = [
     "pycirclize>=1.10",
     "requests>=2.31.0",
     "demjson3>=3.0",
+    "goatools>=1.6.5"
 ]
 
 [project.optional-dependencies]

@@ -35,6 +35,8 @@ htmlcov/
 examples/output/
 output/
 worklab/
+go-basic*
+work/
 
 # IDE
 .vscode/

@@ -1,5 +1,5 @@
+tests/fixtures/gecco_clusters/contig_1_cluster_1.gbk
 tests/fixtures/gecco_clusters/contig_1_cluster_2.gbk
-tests/fixtures/gecco_clusters/contig_1_cluster_3.gbk
 tests/fixtures/gecco_clusters/contig_1_cluster_4.gbk
 tests/fixtures/gecco_clusters/contig_1_cluster_5.gbk
 tests/fixtures/gecco_clusters/contig_1_cluster_6.gbk
@@ -7,3 +7,4 @@ tests/fixtures/gecco_clusters/contig_1_cluster_7.gbk
 tests/fixtures/gecco_clusters/contig_1_cluster_9.gbk
 tests/fixtures/gecco_clusters/contig_1_cluster_8.gbk
 tests/fixtures/gecco_clusters/contig_1_cluster_10.gbk
+tests/fixtures/gecco_clusters/contig_1_cluster_11.gbk

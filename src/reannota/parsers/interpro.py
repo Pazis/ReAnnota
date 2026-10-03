@@ -2,127 +2,137 @@
 
 import csv
 import logging
+import re
+from collections import defaultdict
 
 logger = logging.getLogger("ReAnnota")
 
-
 def ipr_termfinder(input_file):
     """
-    Parses the intepro GFF3-like file to extract GO terms, InterPro terms, and functional descriptions.
+    Parses the InterPro GFF3-like file to extract GO terms, InterPro terms, 
+    and functional descriptions using a hierarchical database algorithm.
 
     Parameters:
     -----------
     input_file : str
-        Path to the input file, typically a GFF3 file or similar tab-delimited format.
+        Path to the input file (GFF3 format).
 
     Returns:
     --------
     dict
-        A dictionary keyed by Query_ID, with values containing:
-        - "GO": list of GO terms
-        - "InterPro": list of InterPro terms
-        - "Description": list of functional descriptions
+        A dictionary keyed by Query_ID containing accumulated, non-redundant annotations.
     """
     logger.debug(f"Reading InterPro file: {input_file}")
-    dictionary = {}
+    
+    # Using defaultdict prevents the "Overwrite Bug"
+    dictionary = defaultdict(lambda: {
+        "GO": set(),
+        "InterPro": set(),
+        "Desc_Tier1": set(), # Whole-protein databases
+        "Desc_Tier2": set(), # High-quality domain databases
+        "Desc_Tier3": set()  # Structural/Generic databases
+    })
+    
     line_count = 0
+
+    # Terms that carry no biological meaning
+    outsiders = [
+        "Protein of unknown function",
+        "Domain of unknown function",
+        "Region",
+        "Signal",
+        "Uncharacterized protein",
+        "hypothetical protein"
+    ]
+
+    # Define database hierarchy for descriptions
+    tier1_dbs = {"TIGRFAM", "NCBIFAM", "PANTHER", "HAMAP", "PRINTS"}
+    tier2_dbs = {"PFAM", "CDD", "SMART", "PROSITEPROFILES", "PROSITEPATTERNS"}
 
     with open(input_file) as in_handle:
         for line in in_handle:
             line_count += 1
-            if line.startswith("#"):  # <-- Skip comment lines
+            if line.startswith("#"):
                 continue
-            parts = line.strip().split("\t")
-            if len(parts) < 9:  # <--Skip incomplete lines
-                continue
-
-            query_id = parts[0]  # Feature_ID
-            attributes = parts[8]  # Column 9 contains all the attributes
-
-            # Terms that should be ignored in the description
-            outsiders = [
-                "Protein of unknown function",
-                "Domain of unknown function",
-                "Region",
-                "Signal",
-            ]
-
-            # Extract GO terms
-            go_terms = []
-            if '"GO:' in attributes:
-                for terms in attributes.split(";"):
-                    if '"GO:' in terms:
-                        for values in terms.replace("=", ",").split(","):
-                            values = values.strip()
-                            if values.startswith('"GO:'):
-                                go_terms.append(values)
-
-            # Extract InterPro terms
-            ipr_terms = []
-            if '"InterPro:' in attributes:
-                for terms in attributes.split(";"):
-                    if '"InterPro:' in terms:
-                        for values in terms.replace("=", ",").split(","):
-                            values = values.strip()
-                            if values.startswith('"InterPro:') and values not in ipr_terms:
-                                ipr_terms.append(values)
-
-            name = []
-            for terms in attributes.split(";"):
-                if terms.startswith("Name="):
-                    value = terms.split("=", 1)[1].strip()
-                    name.append(value)
-
-            # Extract functional descriptions (ignoring generic/unknown terms)
-            description = []
-            for terms in attributes.split(";"):
-                if terms.startswith("signature_desc="):
-                    value = terms.split("=", 1)[1].strip()
-                    if not any(value.startswith(x) for x in outsiders):
-                        description.append(value)
-
-            if go_terms or ipr_terms:
-                dictionary[query_id] = {
-                    "GO": go_terms,
-                    "InterPro": ipr_terms,
-                    "Description": description,
-                    "Name": name,
-                }
             
+            parts = line.strip().split("\t")
+            if len(parts) < 9:
+                continue
 
-    logger.info(
-        f"InterPro processing: {len(dictionary)} entries with annotations found "
-        f"from {line_count} lines"
-    )
+            query_id = parts[0]
+            analysis_db = parts[1].upper() # e.g., 'PFAM', 'NCBIFAM'
+            attributes = parts[8]
+
+            # 1. Extract GO terms using Regex (much safer than string splitting)
+            # Looks for exactly "GO:" followed by 7 digits
+            go_matches = re.findall(r'GO:\d{7}', attributes)
+            dictionary[query_id]["GO"].update(go_matches)
+
+            # 2. Extract InterPro terms using Regex
+            # Looks for exactly "IPR" followed by 6 digits
+            ipr_matches = re.findall(r'IPR\d{6}', attributes)
+            dictionary[query_id]["InterPro"].update([f"InterPro:{ipr}" for ipr in ipr_matches])
+
+            # 3. Extract and Categorize Descriptions
+            desc_match = re.search(r'signature_desc=([^;]+)', attributes)
+            if desc_match:
+                desc = desc_match.group(1).strip()
+                
+                # Filter out useless descriptions
+                if not any(desc.startswith(x) for x in outsiders):
+                    
+                    # Route the description to the correct biological Tier
+                    if analysis_db in tier1_dbs:
+                        dictionary[query_id]["Desc_Tier1"].add(desc)
+                    elif analysis_db in tier2_dbs:
+                        dictionary[query_id]["Desc_Tier2"].add(desc)
+                    else:
+                        dictionary[query_id]["Desc_Tier3"].add(desc)
+
+    logger.info(f"InterPro processing: {len(dictionary)} unique proteins found from {line_count} lines")
     return dictionary
 
 
 def ipr_dictotsv(dictionary, output_file):
     """
-    Write the annotation dictionary into a tab-delimited TSV file.
-
-    dictionary : dict
-    Dictionary returned by termfinder(), containing GO, InterPro, and Description for each Query_ID.
-    output_file : str
-    Path to the output TSV file.
+    Write the hierarchical annotation dictionary into a tab-delimited TSV file,
+    resolving the best description for each protein.
     """
-    go_ipr_separator = ","
-
     logger.debug(f"Writing InterPro results to TSV: {output_file}")
+    
     with open(output_file, "w", newline="") as out_handle:
         writer = csv.writer(out_handle, delimiter="\t")
 
-        # Write header
-        writer.writerow(["Query_ID", "GO_terms", "Interpro_terms", "Description" , "Gene_name"])
+        # Note: Gene_name is intentionally left blank. InterPro 'Name=' is a signature ID (e.g. PF1234), not a gene name.
+        writer.writerow(["Query_ID", "GO_terms", "Interpro_terms", "Description", "Gene_name"])
 
         for query_id, vals in dictionary.items():
-            go_list = vals.get("GO", [])
-            go_terms_string = go_ipr_separator.join(go_list)
-            ipr_list = vals.get("InterPro", [])
-            ipr_terms_string = go_ipr_separator.join(ipr_list)  # <-- Use empty string if no InterPro terms
-            desc = ",".join(vals["Description"])  # <--Combine descriptions into a single string
-            gene_name = ",".join(vals["Name"])  # <--Combine gene names into a single string
+            
+            # Join non-redundant GO and IPR terms
+            go_terms_string = ",".join(sorted(vals["GO"]))
+            ipr_terms_string = ",".join(sorted(vals["InterPro"]))
+            
+            # --- THE BEST MATCH ALGORITHM ---
+            # Attempt 1: Use Tier 1 (Whole Protein names like "ATP-dependent DNA helicase RecG")
+            if vals["Desc_Tier1"]:
+                # If there are multiple, pick the longest one (usually the most descriptive)
+                best_desc = max(vals["Desc_Tier1"], key=len)
+            
+            # Attempt 2: Use Tier 2 (Specific Domains)
+            elif vals["Desc_Tier2"]:
+                # A protein might have multiple valid domains. Join them with a semicolon.
+                # Example: "DEAD/DEAH box helicase; RecG wedge domain"
+                best_desc = "; ".join(sorted(vals["Desc_Tier2"]))
+            
+            # Attempt 3: Fallback to Tier 3
+            elif vals["Desc_Tier3"]:
+                best_desc = "; ".join(sorted(vals["Desc_Tier3"]))
+            
+            # No description found
+            else:
+                best_desc = ""
 
-            writer.writerow([query_id, go_terms_string, ipr_terms_string, desc, gene_name])
+            # Write row (Leaving Gene_name empty so it doesn't pollute the GenBank file)
+            writer.writerow([query_id, go_terms_string, ipr_terms_string, best_desc, ""])
 
     return output_file
