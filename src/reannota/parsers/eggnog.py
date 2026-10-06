@@ -152,7 +152,7 @@ def build_egg_dictionary_clean(input_file):
             KEGG = []
             if KEGGs != "-" and KEGGs.strip():
                 # Clean each KO
-                cleaned = [k.strip().replace("ko:K", "KO").upper() for k in KEGGs.split(",")]
+                cleaned = [k.strip().replace("ko:K", "K").upper() for k in KEGGs.split(",")]
                 # Append each cleaned KO to the KEGG list
                 for k in cleaned:
                     KEGG.append(k)
