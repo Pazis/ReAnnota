@@ -220,7 +220,7 @@ def annotate(
             gff_file_path = results_dir / f"{prefix}_enhanced.gff3"
         else:
             gff_file_path = results_dir / "Enhanced.gff3"
-        gff_generated = gbff_to_gff(enhanced_gbff, str(gff_file_path), str(antismash_input),str(gecco_input), str(gecco_summary))
+        gff_generated = gbff_to_gff(enhanced_gbff, str(gff_file_path), str(antismash_input),str(gecco_input), str(gecco_summary), str(gff_input))
         logger.info(f"Enhanced GFF file created: {gff_file_path}")
 
         # Step 5: Compare GFFs
