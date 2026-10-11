@@ -54,7 +54,6 @@ def annotate(
         "--prefix",
         "-p",
         help="Prefix for output files.",
-
     ),
     egg_input: Optional[Path] = typer.Option(
         None,
@@ -133,6 +132,16 @@ def annotate(
         readable=True,
         resolve_path=True,
     ),
+    go_obo: Optional[Path] = typer.Option(
+        None,
+        "--go-obo",
+        "-go",
+        help="Path to the go-basic.obo file. Defaults to 'go-basic.obo' in the working directory.",
+        exists=False,
+        file_okay=True,
+        dir_okay=False,
+        resolve_path=True,
+    ),
     log_file: Optional[Path] = typer.Option(
         None,
         "--log-file",
@@ -208,7 +217,8 @@ def annotate(
                 interpro_file=str(ipr_out) if ipr_out else None,
                 gbff_in=str(gbff_input),
                 gbff_out=str(gbff_outpath),
-                pseudofile=str(pseudofinder_input) if pseudofinder_input else None
+                pseudofile=str(pseudofinder_input) if pseudofinder_input else None,
+                go_obo_file=str(go_obo) if go_obo else "go-basic.obo"
             )
             logger.info(f"Merged GBFF written to {gbff_outpath}")
         else:
@@ -270,4 +280,3 @@ def annotate(
 
     logger.info("=== Pipeline completed successfully ===")
     logger.info(f"Full log saved at: {log_file}")
-

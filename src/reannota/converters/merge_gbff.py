@@ -9,12 +9,6 @@ from goatools.obo_parser import GODag
 from reannota.parsers import parse_pseudogff_to_dict
 
 logger = logging.getLogger("ReAnnota")
-logger.info("Loading GO database (go-basic.obo)...")
-try:
-    godag = GODag("go-basic.obo")
-except FileNotFoundError:
-    logger.error("Could not find go-basic.obo! Download it with: wget http://purl.obolibrary.org/obo/go/go-basic.obo")
-    godag = None
 
 DESCRIPTION_LENGTH_MAX = 50
 
@@ -87,35 +81,21 @@ def resolve_go_terms(egg_go_str, ipr_go_str, ipr_desc, godag):
     
     return list(final_gos), bridge_notes
 
-def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=None ):
+# NOTE: Added 'go_obo_file' as a parameter here with a default fallback
+def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out, pseudofile=None, go_obo_file="go-basic.obo"):
     """
     Merge functional annotations from EggNOG and InterPro CSV files into a GenBank (GBFF) file.
-
-    Parameters:
-    -----------
-    egg_file : str
-        Path to the EggNOG annotation CSV file (tab-delimited) containing functional information.
-    interpro_file : str
-        Path to the InterPro annotation CSV file (tab-delimited) containing InterPro and GO annotations.
-    gbff_in : str
-        Path to the input GenBank (.gbff) file to be annotated.
-    gbff_out : str
-        Path to the output GenBank (.gbff) file with merged annotations.
-
-
-    1. Read the EggNOG and InterPro CSV files into pandas DataFrames.
-    2. Convert the DataFrames into dictionaries keyed by "Query_ID"
-    3. Parse the input GenBank file into SeqRecord objects using Bio.SeqIO from biopython.
-    4. Loop over each CDS feature in the GenBank sequences.
-        a. Add InterPro annotations:
-            - Update 'product' with InterPro description if available.
-            - Add GO and InterPro terms to 'db_xref'.
-        b. Add EggNOG annotations:
-            - Updates 'product' or 'note' with EggNOG description.
-            - Add COG references, COG categories, GO terms, and PFAM information to 'db_xref' or 'note'.
-    5. Write the updated sequences to a new _enchanced GenBank output file.
     """
     logger.debug(f"Merging annotations from EggNOG and InterPro into GBFF: {gbff_in}")
+
+    # --- LOAD GO DATABASE DYNAMICALLY HERE ---
+    godag = None
+    if go_obo_file:
+        logger.info(f"Loading GO database ({go_obo_file})...")
+        try:
+            godag = GODag(go_obo_file)
+        except FileNotFoundError:
+            logger.error(f"Could not find {go_obo_file}! GO terms will merge via fallback. Download it with: wget http://purl.obolibrary.org/obo/go/go-basic.obo")
 
     # Read EggNOG and InterPro CSV files as pandas DataFrames
     if egg_file is not None:
@@ -146,7 +126,7 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out , pseudofile=No
     gbff_read = list(SeqIO.parse(gbff_in, "genbank"))
     logger.debug(f"Loaded {len(gbff_read)} sequences from GBFF file")
 
-   # Counters for statistics
+    # Counters for statistics
     cds_count = 0
     ipr_annotated = 0
     egg_annotated = 0
