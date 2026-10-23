@@ -43,6 +43,7 @@ def ipr_termfinder(input_file):
         "Signal",
         "consensus disorder prediction",
         "Uncharacterized protein",
+        "DUF",
         "hypothetical protein"
     ]
 
