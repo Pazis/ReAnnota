@@ -41,6 +41,7 @@ def ipr_termfinder(input_file):
         "Domain of unknown function",
         "Region",
         "Signal",
+        "consensus disorder prediction",
         "Uncharacterized protein",
         "hypothetical protein"
     ]
