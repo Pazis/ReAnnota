@@ -12,9 +12,12 @@ logger = logging.getLogger("ReAnnota")
 
 DESCRIPTION_LENGTH_MAX = 50
 
-def resolve_go_terms(egg_go_str, ipr_go_str, ipr_desc, godag):
+def resolve_go_terms(egg_go_str, ipr_go_str, ipr_desc, godag, bakta_gos=()):
     """
     Implements the Maximal Specificity Algorithm.
+    EggNOG terms are first tested against the GO terms Bakta already provided
+    (dropping duplicates and less specific parents), then InterPro terms are
+    tested against EggNOG.
     Returns: (list_of_final_go_terms, list_of_bridge_notes)
     """
     def parse_gos(raw_str):
@@ -24,15 +27,20 @@ def resolve_go_terms(egg_go_str, ipr_go_str, ipr_desc, godag):
 
     egg_list = parse_gos(egg_go_str)
     ipr_list = parse_gos(ipr_go_str)
-
-    # Start our final list with all EggNOG terms (they are the baseline)
-    final_gos = set(egg_list)
     bridge_notes = []
 
     # If no DAG is loaded, fallback to safe addition without notes
     if not godag:
-        final_gos.update(ipr_list)
-        return list(final_gos), bridge_notes
+        return list(set(egg_list) | set(ipr_list)), bridge_notes
+
+    # Keep EggNOG terms unless Bakta already has the same term or a more specific child of it
+    def covered_by_bakta(egg_go):
+        return any(
+            egg_go == b or (godag.get(b) and egg_go in godag[b].get_all_parents())
+            for b in bakta_gos
+        )
+
+    final_gos = {g for g in egg_list if not covered_by_bakta(g)}
 
     # Evaluate every InterPro term against the EggNOG baseline
     for ipr_go in ipr_list:
@@ -213,7 +221,8 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out, pseudofile=Non
                 egg_go_set = set(g.strip() for g in egg_gos.replace('"', '').split(',') if 'GO:' in g)
                 ipr_go_set = set(g.strip() for g in ipr_gos.replace('"', '').split(',') if 'GO:' in g)
 
-                final_gos, bridge_notes = resolve_go_terms(egg_gos, ipr_gos, ipr_desc, godag)
+                bakta_gos = [x for x in feature.qualifiers["db_xref"] if x.startswith("GO:")]
+                final_gos, bridge_notes = resolve_go_terms(egg_gos, ipr_gos, ipr_desc, godag, bakta_gos)
                 
                 eggnog_gos_added = 0
                 interpro_gos_added = 0
