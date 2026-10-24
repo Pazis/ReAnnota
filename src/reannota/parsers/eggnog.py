@@ -160,7 +160,10 @@ def build_egg_dictionary_clean(input_file):
             if ECs != "-" and ECs.strip():
                 cleaned_ecs = [e.strip() for e in ECs.split(",")]
                 for e in cleaned_ecs:
-                    EC.append("EC:" + e)
+                    # Store bare EC numbers; merge_gbff adds the "EC:" db_xref prefix.
+                    # (Adding it here as well produced "EC:EC:x.x.x.x" in the GBFF.)
+                    if e:
+                        EC.append(e)
             
             gene_name = []
             if GN != "-" and GN.strip():
@@ -217,13 +220,19 @@ def egg_dict_to_tsv(dictionary, output_file):
                 gene_name = [""]
             max_len = max(len(go_terms), len(pfam_terms), len(cog_terms), len(cog_ref_terms), len(gene_name))
 
+            # Write ALL KOs and ECs of a protein as one comma-separated field.
+            # (Indexing them by row kept only the first KO/EC, because max_len
+            # did not include these lists.)
+            kegg_joined = ",".join(k for k in kegg_terms if k)
+            ec_joined = ",".join(e for e in ec_terms if e)
+
             for i in range(max_len):
                 go_val = go_terms[i] if i < len(go_terms) else ""
                 pfam_val = pfam_terms[i] if i < len(pfam_terms) else ""
                 cog_val = cog_terms[i] if i < len(cog_terms) else ""
                 cog_ref_val = cog_ref_terms[i] if i < len(cog_ref_terms) else ""
-                kegg_val = kegg_terms[i] if i < len(kegg_terms) else ""
-                ec_val = ec_terms[i] if i < len(ec_terms) else ""
+                kegg_val = kegg_joined
+                ec_val = ec_joined
                 gene_value = gene_name[i] if i < len(gene_name) else ""
                 writer.writerow([query_id, go_val, pfam_val, cog_val, cog_ref_val, kegg_val, ec_val, desc, gene_value])
 

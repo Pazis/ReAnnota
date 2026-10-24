@@ -12,6 +12,13 @@ ORF = namedtuple("ORF", "locus_tag start end strand type product")
 def load_antismash_gbk(file_path):
     """
     Load BGCs and ORFs from an antiSMASH GenBank (.gbk) file.
+
+    One BGC is reported per antiSMASH *region* (the unit antiSMASH itself
+    reports). Protoclusters are sub-units of a region and can overlap each
+    other, so counting them inflated the number of antiSMASH clusters and
+    listed CDS shared by overlapping protoclusters more than once. The
+    region's /product qualifier already lists the products of all its
+    protoclusters.
     """
     bgcs = []
 
@@ -20,16 +27,18 @@ def load_antismash_gbk(file_path):
         cluster_idx = 1
 
         for feature in record.features:
-            if feature.type == "protocluster":
+            if feature.type == "region":
                 # 1. Extract BGC info
                 bgc_start = int(feature.location.start) + 1
                 bgc_end = int(feature.location.end)
                 product_list = feature.qualifiers.get("product", ["unknown"])
                 bgc_product = ";".join(product_list)
-                bgc_name = f"{record.id}_bgc{cluster_idx}"
+                region_number = feature.qualifiers.get("region_number", [str(cluster_idx)])[0]
+                bgc_name = f"{record.id}_region{region_number}"
 
-                # 2. Extract ORFs within this BGC
+                # 2. Extract ORFs within this BGC (each CDS once)
                 orfs = []
+                seen_tags = set()
                 for sub_feat in record.features:
                     if sub_feat.type == "CDS" and \
                        sub_feat.location.start >= feature.location.start and \
@@ -39,6 +48,12 @@ def load_antismash_gbk(file_path):
                         locus_tag = sub_feat.qualifiers.get("locus_tag", ["unknown"])[0]
                         prod = sub_feat.qualifiers.get("product", ["hypothetical protein"])[0]
                         strand = sub_feat.location.strand # 1 or -1
+
+                        dedup_key = locus_tag if locus_tag != "unknown" else (
+                            int(sub_feat.location.start), int(sub_feat.location.end), strand)
+                        if dedup_key in seen_tags:
+                            continue
+                        seen_tags.add(dedup_key)
 
                         orfs.append(ORF(
                             locus_tag=locus_tag,

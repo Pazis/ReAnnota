@@ -1,6 +1,12 @@
 def parse_pseudogff_to_dict(gff_file):
     """
-    Επιστρέφει dictionary με key = ID και value = dict με βασικά πεδία
+    Parse a Pseudofinder GFF and return a dictionary keyed by the original
+    (Bakta) locus tag, with the basic fields of the pseudogene call as value.
+
+    Pseudofinder reports fragmented genes ("Predicted fragmentation of a
+    single gene") with several comma-separated tags in old_locus_tag, e.g.
+    old_locus_tag=JDBBEK_05692,JDBBEK_05693. Each tag is registered
+    separately so that every fragment can be matched to its CDS.
     """
     gff_dict = {}
 
@@ -21,16 +27,18 @@ def parse_pseudogff_to_dict(gff_file):
                     attr_dict[key] = value
 
             if 'old_locus_tag' in attr_dict:
-                gff_dict[attr_dict['old_locus_tag']] = {
+                tags = [t.strip() for t in attr_dict['old_locus_tag'].split(',') if t.strip()]
+                record = {
                     'seqid': seqid,
                     'source': source,
                     'type': type_,
                     'start': start,
                     'end': end,
                     'strand': strand,
-                    'attributes': attributes
+                    'attributes': attributes,
+                    'locus_tags': tags,
                 }
+                for tag in tags:
+                    gff_dict[tag] = record
 
     return gff_dict
-
-

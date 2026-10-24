@@ -12,40 +12,87 @@ logger = logging.getLogger("ReAnnota")
 
 DESCRIPTION_LENGTH_MAX = 50
 
+# Pseudogene policy for Bakta-hypothetical loci that Pseudofinder flags AND
+# that eggNOG/InterPro could name:
+#   True  -> conservative: flag the locus as a pseudogene, keep /product as
+#            "hypothetical protein" and put the candidate name in /note.
+#   False -> keep the eggNOG/InterPro name as /product AND flag the locus as
+#            a pseudogene.
+# Either way the Pseudofinder check now runs on Bakta's ORIGINAL product, so a
+# renamed locus can no longer escape the pseudogene flag.
+PSEUDO_CANDIDATES_KEEP_HYPOTHETICAL = True
+
+# GO root terms (biological_process, molecular_function, cellular_component)
+# carry no information and are never added.
+ROOT_GO_TERMS = {"GO:0008150", "GO:0003674", "GO:0005575"}
+
+
+def _parse_gos(raw_str):
+    if str(raw_str).lower() == "nan" or not raw_str:
+        return []
+    return [g.strip() for g in str(raw_str).replace('"', '').split(',') if 'GO:' in g]
+
+
+def _canonical_go(go_id, godag):
+    """Map alternative GO IDs to their primary ID (unknown IDs are returned unchanged)."""
+    term = godag.get(go_id) if godag else None
+    return term.id if term is not None else go_id
+
+
+def _most_specific(go_ids, godag):
+    """Return the terms of a set that are not an ancestor of another term in the set."""
+    ancestors = set()
+    for go_id in go_ids:
+        term = godag.get(go_id)
+        if term is not None:
+            ancestors |= term.get_all_parents()
+    return {g for g in go_ids if g not in ancestors}
+
+
 def resolve_go_terms(egg_go_str, ipr_go_str, ipr_desc, godag, bakta_gos=()):
     """
     Implements the Maximal Specificity Algorithm.
-    EggNOG terms are first tested against the GO terms Bakta already provided
-    (dropping duplicates and less specific parents), then InterPro terms are
-    tested against EggNOG.
+
+    EggNOG-mapper reports GO terms fully propagated (every ancestor of each
+    annotated term), so the candidate set is first collapsed to its most
+    specific terms. Then:
+      * InterPro terms are tested against EggNOG terms (exact match / parent:
+        discard; child: keep; unrelated: keep + bridge note);
+      * the union of EggNOG + InterPro terms is collapsed together with the
+        GO terms Bakta already provided, so no added term is an ancestor of
+        another added term or of a Bakta term, and no term Bakta already
+        has is added again;
+      * GO root terms are never added.
+    Bakta's own GO terms are never removed.
+
     Returns: (list_of_final_go_terms, list_of_bridge_notes)
     """
-    def parse_gos(raw_str):
-        if str(raw_str).lower() == "nan" or not raw_str:
-            return []
-        return [g.strip() for g in str(raw_str).replace('"', '').split(',') if 'GO:' in g]
-
-    egg_list = parse_gos(egg_go_str)
-    ipr_list = parse_gos(ipr_go_str)
+    egg_list = _parse_gos(egg_go_str)
+    ipr_list = _parse_gos(ipr_go_str)
     bridge_notes = []
 
     # If no DAG is loaded, fallback to safe addition without notes
+    # (redundancy cannot be resolved without the ontology)
     if not godag:
-        return list(set(egg_list) | set(ipr_list)), bridge_notes
+        return list((set(egg_list) | set(ipr_list)) - ROOT_GO_TERMS - set(bakta_gos)), bridge_notes
 
-    # Keep EggNOG terms unless Bakta already has the same term or a more specific child of it
-    def covered_by_bakta(egg_go):
-        return any(
-            egg_go == b or (godag.get(b) and egg_go in godag[b].get_all_parents())
-            for b in bakta_gos
-        )
+    egg_list = sorted({_canonical_go(g, godag) for g in egg_list})
+    bakta_set = {_canonical_go(g, godag) for g in bakta_gos}
 
-    final_gos = {g for g in egg_list if not covered_by_bakta(g)}
+    # Collapse the propagated EggNOG list to its most specific terms.
+    # The InterPro comparison below still uses the full EggNOG list (roots
+    # included), so the duplicate / parent / child / unrelated classification
+    # (and therefore the bridge notes) behaves as before.
+    final_gos = _most_specific(set(egg_list) - ROOT_GO_TERMS, godag)
+    unrelated_ipr = set()
 
     # Evaluate every InterPro term against the EggNOG baseline
     for ipr_go in ipr_list:
         ipr_term = godag.get(ipr_go)
         if not ipr_term:
+            continue
+        ipr_go = ipr_term.id  # primary ID
+        if ipr_go in ROOT_GO_TERMS:
             continue
 
         is_duplicate = False
@@ -80,14 +127,17 @@ def resolve_go_terms(egg_go_str, ipr_go_str, ipr_desc, godag, bakta_gos=()):
         else:
             # 4. Completely Unrelated (Scenario 4) -> Swiss Army Knife domain
             final_gos.add(ipr_go)
-            if ipr_desc and ipr_desc.lower() != "nan":
-                # Create the Bridge Note to explain WHY this unrelated term is here
-                bridge_notes.append(f"InterPro detected additional domain/function: {ipr_desc}")
+            unrelated_ipr.add(ipr_go)
 
-    # Deduplicate notes in case multiple unrelated terms triggered the same description
-    bridge_notes = list(set(bridge_notes))
-    
-    return list(final_gos), bridge_notes
+    # Collapse EggNOG + InterPro + Bakta together; keep only what is new
+    final_gos = _most_specific(final_gos | bakta_set, godag) - bakta_set
+
+    # Bridge note only if an unrelated InterPro term actually survived
+    if unrelated_ipr & final_gos and ipr_desc and ipr_desc.lower() != "nan":
+        # Explain WHY this unrelated term is here
+        bridge_notes.append(f"InterPro detected additional domain/function: {ipr_desc}")
+
+    return sorted(final_gos), bridge_notes
 
 # NOTE: Added 'go_obo_file' as a parameter here with a default fallback
 def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out, pseudofile=None, go_obo_file="go-basic.obo"):
@@ -184,23 +234,40 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out, pseudofile=Non
                 initial_go_count = sum(1 for x in feature.qualifiers["db_xref"] if x.startswith("GO:"))
                 initial_other_xref = len(feature.qualifiers["db_xref"]) - initial_go_count
 
+                # --- STEP 0: Pseudogene candidacy, decided on Bakta's ORIGINAL product ---
+                # (Previously this was checked after renaming, so any hypothetical
+                # locus that eggNOG/InterPro could name escaped the pseudogene flag.)
+                bakta_product = feature.qualifiers.get("product", [""])[0]
+                pseudo_candidate = (
+                    pseudofile is not None
+                    and locus_tag in pseudo_dict
+                    and bakta_product == "hypothetical protein"
+                    and not feature.qualifiers.get("pseudogene", [])
+                )
+
+                def assign_product(name):
+                    """Set /product, or divert the name to /note for kept-hypothetical pseudogene candidates."""
+                    if pseudo_candidate and PSEUDO_CANDIDATES_KEEP_HYPOTHETICAL:
+                        feature.qualifiers["note"].append(f"Pseudogene candidate; similar to: {name}")
+                        return False
+                    feature.qualifiers["product"] = [name]
+                    return True
+
                 # --- STEP 1: Product Name & Gene Name ---
                 egg_desc = str(egg_data.get("Description", "")).strip()
                 ipr_desc = str(ipr_data.get("Description", "")).strip()
-                
+
                 junk_names = ["nan", "hypothetical protein", "", "uncharacterized protein"]
-                
+
                 # Assign Product Name
                 if egg_desc and egg_desc.lower() not in junk_names:
                     if len(egg_desc) > DESCRIPTION_LENGTH_MAX:
                         feature.qualifiers["note"].append(egg_desc)
-                    elif feature.qualifiers.get("product", [""])[0] == "hypothetical protein":
-                        feature.qualifiers["product"] = [egg_desc]
-                        eggnog_product_changed = True
+                    elif bakta_product == "hypothetical protein":
+                        eggnog_product_changed = assign_product(egg_desc)
                 elif ipr_desc and ipr_desc.lower() not in junk_names:
-                    if feature.qualifiers.get("product", [""])[0] == "hypothetical protein":
-                        feature.qualifiers["product"] = [ipr_desc]
-                        interpro_product_changed = True
+                    if bakta_product == "hypothetical protein":
+                        interpro_product_changed = assign_product(ipr_desc)
 
                 # Assign Gene Name (EggNOG priority)
                 egg_gene = str(egg_data.get("Gene_name", "")).replace('"', '').strip()
@@ -217,9 +284,9 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out, pseudofile=Non
                 egg_gos = str(egg_data.get("GOs", ""))
                 ipr_gos = str(ipr_data.get("GO_terms", ""))
                 
-                # Parse strings into sets to check origin later
-                egg_go_set = set(g.strip() for g in egg_gos.replace('"', '').split(',') if 'GO:' in g)
-                ipr_go_set = set(g.strip() for g in ipr_gos.replace('"', '').split(',') if 'GO:' in g)
+                # Parse strings into sets to check origin later (primary GO IDs)
+                egg_go_set = {_canonical_go(g, godag) for g in _parse_gos(egg_gos)}
+                ipr_go_set = {_canonical_go(g, godag) for g in _parse_gos(ipr_gos)}
 
                 bakta_gos = [x for x in feature.qualifiers["db_xref"] if x.startswith("GO:")]
                 final_gos, bridge_notes = resolve_go_terms(egg_gos, ipr_gos, ipr_desc, godag, bakta_gos)
@@ -253,10 +320,18 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out, pseudofile=Non
                         feature.qualifiers["db_xref"].append(cog_ref)
                     if cog_cat and cog_cat != "nan" and not any(x.startswith("COG_cat:") for x in db_xrefs):
                         feature.qualifiers["db_xref"].append(f"COG_cat:{cog_cat}")
+                    # KOs and ECs: one db_xref per identifier (a protein can carry
+                    # several). Added only when Bakta has none of that type, as before.
+                    # removeprefix() also tolerates hit tables written by the old
+                    # parser ("EC:x.x.x.x", "ko:Kxxxxx").
                     if keggs and keggs != "nan" and not any(x.startswith("KEGG:") for x in db_xrefs):
-                        feature.qualifiers["db_xref"].append(f"KEGG:{keggs}")
+                        for ko in dict.fromkeys(k.strip().removeprefix("ko:") for k in keggs.split(",")):
+                            if ko:
+                                feature.qualifiers["db_xref"].append(f"KEGG:{ko}")
                     if ecs and ecs != "nan" and not any(x.startswith("EC:") for x in db_xrefs):
-                        feature.qualifiers["db_xref"].append(f"EC:{ecs}")
+                        for ec in dict.fromkeys(e.strip().removeprefix("EC:") for e in ecs.split(",")):
+                            if ec:
+                                feature.qualifiers["db_xref"].append(f"EC:{ec}")
                     if pfams and pfams != "nan":
                         feature.qualifiers["note"].append(f"Eggnog PFAM comment:{pfams}")
 
@@ -270,8 +345,10 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out, pseudofile=Non
                                 feature.qualifiers["db_xref"].append(ipr)
 
                 #--------------Add Pseudogenes-------------------
-                if pseudofile != None and locus_tag in pseudo_dict:
+                if pseudofile is not None and locus_tag in pseudo_dict:
                     pseudogenes += 1
+
+                if pseudo_candidate:
                     values = pseudo_dict[locus_tag]
                     raw_attr = values.get("attributes", "").replace("note=", "")
                     description_pseudo = raw_attr.split(';')[0].strip()
@@ -279,10 +356,8 @@ def merge_csv_to_gbff(egg_file, interpro_file, gbff_in, gbff_out, pseudofile=Non
                     description_pseudo = " ".join(description_pseudo.split())
 
                     feature.qualifiers.setdefault("pseudogene", [])
-
-                    if feature.qualifiers.get("product", [""])[0] == "hypothetical protein" and not feature.qualifiers.get("pseudogene", []):
-                        feature.qualifiers["pseudogene"].append(description_pseudo)
-                        pseudogene_added = True
+                    feature.qualifiers["pseudogene"].append(description_pseudo)
+                    pseudogene_added = True
 
                 # ----------------- TRACKING EVALUATION & LOGGING -----------------
                 final_note_count = len(feature.qualifiers["note"])
